@@ -4,11 +4,23 @@
 use Illuminate\Support\Facades\Storage;
 
 if ($clients instanceof \Illuminate\Support\Collection || $clients instanceof \Illuminate\Database\Eloquent\Collection) {
-    $clients = $clients->map(fn($p) => [
-        'name' => $p->title,
-        'logo' => $p->logo_path ? Storage::url($p->logo_path) : 'assets/images/client-' . strtolower(str_replace(' ', '-', $p->title)) . '.png',
-        'desc' => $p->subtitle ?? '',
-    ]);
+    $clients = $clients->map(function($p) {
+        $logo = $p->logo_path;
+        if (!$logo) {
+            $slug = strtolower(str_replace([' ', 'ó', 'é', 'í', 'á', 'ú', 'ñ'], ['-', 'o', 'e', 'i', 'a', 'u', 'n'], $p->title));
+            $logo = 'assets/images/client-' . $slug . '.png';
+            if (!file_exists(public_path($logo))) {
+                $logo = 'assets/images/logo.png';
+            }
+        } else {
+            $logo = Storage::url($logo);
+        }
+        return [
+            'name' => $p->title,
+            'logo' => $logo,
+            'desc' => $p->subtitle ?? '',
+        ];
+    });
 } else {
     $clients = $clients ?: [
         ['name' => 'RESITER', 'logo' => 'assets/images/client-resiter.png', 'desc' => 'Planta Industrial'],
