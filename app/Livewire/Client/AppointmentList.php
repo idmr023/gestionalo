@@ -11,28 +11,48 @@ class AppointmentList extends Component
 {
     use WithPagination;
 
-    public string $title = '';
+    public string $title = 'Visita Técnica / Saneamiento Predial';
 
     public string $description = '';
 
-    public string $scheduled_at = '';
+    public string $date = '';
+
+    public string $time = '';
+
+    public array $availableTimes = [
+        '09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00'
+    ];
 
     public function create(): void
     {
         $this->validate([
             'title' => 'required|max:255',
             'description' => 'nullable',
-            'scheduled_at' => 'required|date|after:now',
+            'date' => 'required|date|after_or_equal:today',
+            'time' => 'required',
         ]);
+
+        $scheduledAt = $this->date . ' ' . $this->time . ':00';
+
+        // Check if slot is already taken
+        $exists = Appointment::where('scheduled_at', $scheduledAt)
+            ->where('status', '!=', 'cancelled')
+            ->exists();
+
+        if ($exists) {
+            $this->addError('time', 'Este horario ya se encuentra reservado. Por favor, seleccione otro.');
+            return;
+        }
 
         auth()->user()->appointments()->create([
             'title' => $this->title,
             'description' => $this->description,
-            'scheduled_at' => $this->scheduled_at,
+            'scheduled_at' => $scheduledAt,
+            'status' => 'pending',
         ]);
 
-        $this->reset(['title', 'description', 'scheduled_at']);
-        session()->flash('message', 'Cita agendada correctamente.');
+        $this->reset(['description', 'date', 'time']);
+        session()->flash('message', '¡Cita agendada correctamente! Recuerda enviar tu comprobante por WhatsApp.');
     }
 
     public function cancel(Appointment $appointment): void

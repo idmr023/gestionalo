@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Usuario y Guía Global - Gestionalo</title>
+    <style>
+        :root {
+            --primary: #0F172A;
+            --accent: #EA580C;
+            --surface: #FAFAFA;
+            --border: rgba(15, 23, 42, 0.08);
+        }
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            color: var(--primary);
+            background-color: var(--surface);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        header p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.1rem;
+        }
+        .container {
+            max-width: 900px;
+            margin: -2rem auto 4rem auto;
+            padding: 0 1.5rem;
+        }
+        .card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+        }
+        h2 {
+            color: var(--primary);
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+            display: inline-block;
+        }
+        h3 {
+            color: var(--accent);
+            font-size: 1.1rem;
+            margin-top: 1.5rem;
+        }
+        ul {
+            padding-left: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        .badge {
+            display: inline-block;
+            background-color: rgba(234, 88, 12, 0.1);
+            color: var(--accent);
+            padding: 0.25rem 0.75rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        .highlight {
+            background-color: #FFF7ED;
+            border-left: 4px solid var(--accent);
+            padding: 1rem;
+            margin: 1rem 0;
+            font-size: 0.95rem;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: rgba(15, 23, 42, 0.5);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <span class="badge">Guía General del Propietario</span>
+        <h1>Gestionalo CMS</h1>
+        <p>Manual explicativo de funcionamiento y administración de la plataforma</p>
+    </header>
+
+    <main class="container">
+
+        <!-- Sección 1: Introducción -->
+        <section class="card">
+            <h2>1. ¿Qué es Gestionalo?</h2>
+            <p>Gestionalo es la plataforma web corporativa e integral diseñada exclusivamente para la empresa de arquitectura legal y seguridad industrial. El sitio cuenta con una parte pública orientada a captar clientes (Landing Page, Servicios, Proyectos, Blog y Contacto) y un potente panel administrativo privado.</p>
+        </section>
+
+        <!-- Sección 2: La Landing Page -->
+        <section class="card">
+            <h2>2. La Página Pública (Landing Page)</h2>
+            <p>Todo visitante que ingrese a tu página web encontrará una estructura moderna y limpia dividida en secciones estratégicas:</p>
+            <ul>
+                <li><strong>Inicio / Hero:</strong> Presentación principal con elementos visuales modernos y accesos directos.</li>
+                <li><strong>Servicios:</strong> Detalle de los servicios especializados de arquitectura e inspección.</li>
+                <li><strong>Proyectos / Clientes:</strong> Muestra las empresas que confían en ustedes (con sus respectivos logotipos oficiales) y una galería interactiva con fotos reales de trabajos ejecutados.</li>
+                <li><strong>Blog:</strong> Artículos informativos y normativos organizados por categorías.</li>
+                <li><strong>Contacto:</strong> Formulario directo para que los potenciales clientes escriban sus consultas (las cuales se guardan en el sistema y notifican al equipo).</li>
+            </ul>
+        </section>
+
+        <!-- Sección 3: Sistema de Citas Nativo -->
+        <section class="card">
+            <h2>3. Nuevo Sistema de Citas (Visitas Técnicas)</h2>
+            <p>Hemos integrado un sistema de agendamiento nativo directo en la plataforma, eliminando herramientas externas:</p>
+            <ul>
+                <li><strong>Columna Informativa de Costos y Pagos:</strong> El cliente tiene a la vista toda la información necesaria (Costos del 1 al 6 para visitas de obra y saneamiento predial, números de Yape/Plin, cuentas bancarias de Interbank con CCI y titular).</li>
+                <li><strong>Calendario y Horarios Interactivos:</strong> El usuario selecciona la fecha de su preferencia y elige un horario disponible (atención de <strong>09:00 a 16:00 horas</strong>, diferenciados por bloques de 1 hora).</li>
+                <li><strong>Confirmación por WhatsApp:</strong> Se le indica al cliente que la cita quedará registrada en el sistema y se confirmará definitivamente al enviar su comprobante de pago al número de WhatsApp del Arq. Olán Nureña.</li>
+            </ul>
+            <div class="highlight">
+                <strong>Acceso de Administrador para pruebas:</strong><br>
+                Correo: <code>admin@gestionalo.pe</code><br>
+                Contraseña: <code>gestionalo2024</code>
+            </div>
+        </section>
+
+        <!-- Sección 4: El Panel de Administración -->
+        <section class="card">
+            <h2>4. El Panel de Administración (Gestión Interna)</h2>
+            <p>Al iniciar sesión como administrador, tienes el control absoluto de la plataforma sin necesidad de programar:</p>
+            <ul>
+                <li><strong>Dashboard:</strong> Resumen general de citas pendientes, contactos recientes y métricas clave.</li>
+                <li><strong>Servicios y Proyectos:</strong> Crear, editar o eliminar servicios y proyectos del portafolio, subiendo imágenes y logotipos corporativos.</li>
+                <li><strong>Blog y Categorías:</strong> Publicación y redacción de artículos para posicionamiento web.</li>
+                <li><strong>Gestión de Citas:</strong> Visualizar las visitas técnicas solicitadas por los clientes, cambiar su estado (confirmar, pendiente o cancelar).</li>
+                <li><strong>Bandeja de Contactos:</strong> Revisar los mensajes enviados desde el formulario de contacto público.</li>
+                <li><strong>Papelera e Historial de Cambios:</strong> Auditoría completa y WORM (historial inalterable de modificaciones por seguridad) y opción de recuperar elementos eliminados.</li>
+            </ul>
+        </section>
+
+        <!-- Sección 5: Despliegue y Funcionamiento -->
+        <section class="card">
+            <h2>5. Alojamiento y Nube (Render)</h2>
+            <p>La plataforma está alojada en servidores en la nube seguros (Render), conectados a una base de datos PostgreSQL de alto rendimiento. Cada vez que actualizas código en GitHub, el sistema se actualiza automáticamente de manera limpia y sincronizada.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gestionalo CMS. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
