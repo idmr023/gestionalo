@@ -1,6 +1,7 @@
 @props(['src', 'alt' => '', 'class' => ''])
 
 @php
+$src = ltrim($src, '/');
 $ext = pathinfo($src, PATHINFO_EXTENSION);
 $base = substr($src, 0, strrpos($src, '.'));
 $webp = $base . '.webp';
