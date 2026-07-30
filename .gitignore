@@ -1,13 +1,22 @@
 /node_modules
 /vendor
 /.env
-/storage(app/public)
-/storage/framework/cache/data
-/storage/logs/*.log
+/.env.backup
 /.phpunit.result.cache
+/.phpunit.cache
 /.idea
 /.vscode
 /npm-debug.log
 yarn-error.log
-.env.backup
-.phpunit.cache
+
+# Laravel Storage & Cache
+/storage/app/*
+/storage/framework/*
+/storage/logs/*
+/storage/debugbar/*
+!/storage/app/.gitignore
+!/storage/framework/.gitignore
+!/storage/framework/cache/.gitignore
+!/storage/framework/sessions/.gitignore
+!/storage/framework/views/.gitignore
+!/storage/logs/.gitignore
