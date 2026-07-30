@@ -28,7 +28,7 @@
             @else
                 <a href="{{ route('login') }}" class="text-sm text-primary/60 hover:text-accent transition font-medium">Iniciar sesión</a>
             @endauth
-            <a href="{{ config('site.contact.calendly_url') }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-white text-sm font-semibold px-5 py-2.5 transition tracking-wide">
+            <a href="{{ route('client.dashboard') }}" class="inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-white text-sm font-semibold px-5 py-2.5 transition tracking-wide">
                 Agendar Cita
             </a>
         </div>
@@ -54,7 +54,7 @@
             <a href="{{ route('contact') }}" @click="open = false" class="py-3 px-4 font-medium text-primary/70 border-b border-[rgba(15,23,42,0.06)]">Contacto</a>
         </nav>
         <div class="mt-6">
-            <a href="{{ config('site.contact.calendly_url') }}" target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-accent hover:bg-accent-hover text-white font-semibold px-5 py-3 transition tracking-wide">
+            <a href="{{ route('client.dashboard') }}" class="block w-full text-center bg-accent hover:bg-accent-hover text-white font-semibold px-5 py-3 transition tracking-wide">
                 Agendar Cita
             </a>
         </div>
