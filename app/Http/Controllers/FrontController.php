@@ -10,6 +10,7 @@ use App\Models\Service;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\View\View;
 
 class FrontController extends Controller
 {
@@ -82,6 +83,11 @@ class FrontController extends Controller
         Contact::create($validated);
 
         return redirect()->route('contact')->with('message', 'Mensaje enviado correctamente. Te contactaremos pronto.');
+    }
+
+    public function bookAppointment(): View
+    {
+        return view('pages.citas');
     }
 
     public function terms()

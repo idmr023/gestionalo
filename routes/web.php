@@ -15,6 +15,8 @@ Route::get('/blog/categoria/{category:slug}', [FrontController::class, 'blogByCa
 Route::get('/contacto', [FrontController::class, 'contact'])->name('contact');
 Route::post('/contacto', [FrontController::class, 'sendContact'])->middleware('throttle:contact');
 
+Route::get('/citas', [FrontController::class, 'bookAppointment'])->name('appointments.book');
+
 Route::get('/terminos', [FrontController::class, 'terms'])->name('terms');
 Route::get('/privacidad', [FrontController::class, 'privacy'])->name('privacy');
 
