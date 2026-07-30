@@ -39,6 +39,9 @@ RUN npm install && npm run build \
 RUN chmod -R 775 storage bootstrap/cache \
     && php artisan storage:link --ansi || true
 
+# Make start script executable
+RUN chmod +x start.sh
+
 EXPOSE 10000
 
-CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=10000"]
+CMD ["./start.sh"]
