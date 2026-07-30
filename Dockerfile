@@ -33,12 +33,14 @@ COPY . /var/www/html
 # Install PHP dependencies
 RUN composer install --no-dev --optimize-autoloader --no-interaction
 
-# Install Node dependencies and build assets
-RUN npm install && npm run build
+# Install Node dependencies and build assets, remove vite hot file if present
+RUN npm install && npm run build \
+    && rm -f public/hot
 
-# Set permissions for Laravel storage and bootstrap cache
-RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache \
-    && chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache
+# Set permissions and storage link
+RUN chown -R www-data:www-data /var/www/html \
+    && chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache \
+    && php artisan storage:link --ansi || true
 
 # Configure Nginx for Laravel
 COPY <<EOF /etc/nginx/sites-available/default
@@ -80,6 +82,7 @@ EOF
 COPY <<EOF /etc/supervisor/conf.d/supervisord.conf
 [supervisord]
 nodaemon=true
+user=root
 
 [program:php-fpm]
 command=php-fpm
