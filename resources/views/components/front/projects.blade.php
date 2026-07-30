@@ -8,9 +8,10 @@ if ($clients instanceof \Illuminate\Support\Collection || $clients instanceof \I
         $logo = $p->logo_path;
         if (!$logo) {
             $logo = 'assets/images/logo.png';
+        } elseif (str_starts_with($logo, 'assets/')) {
+            $logo = asset($logo);
         } else {
-            // Si empieza con storage/, aseguramos que no duplique barras y sea una URL válida
-            $logo = str_starts_with($logo, 'storage/') ? asset($logo) : Storage::url($logo);
+            $logo = Storage::url($logo);
         }
         return [
             'name' => $p->title,
