@@ -7,11 +7,7 @@ if ($clients instanceof \Illuminate\Support\Collection || $clients instanceof \I
     $clients = $clients->map(function($p) {
         $logo = $p->logo_path;
         if (!$logo) {
-            $slug = strtolower(str_replace([' ', 'ó', 'é', 'í', 'á', 'ú', 'ñ'], ['-', 'o', 'e', 'i', 'a', 'u', 'n'], $p->title));
-            $logo = 'assets/images/client-' . $slug . '.png';
-            if (!file_exists(public_path($logo))) {
-                $logo = 'assets/images/logo.png';
-            }
+            $logo = 'assets/images/logo.png';
         } else {
             $logo = Storage::url($logo);
         }

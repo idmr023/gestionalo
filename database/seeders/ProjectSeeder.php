@@ -60,7 +60,7 @@ class ProjectSeeder extends Seeder
                 'title' => 'PROYECTO VISTA INDUSTRIAL',
                 'subtitle' => 'Diseño y Renderizado 3D de Complejo',
                 'description' => 'Desarrollo de vistas 3D avanzadas, volumetría y fachadas para complejos industriales de gran envergadura. Optimización de accesos vehiculares y seguridad perimetral.',
-                'logo_path' => null,
+                'logo_path' => 'assets/images/client-castello.png',
                 'gallery' => [
                     'assets/images/portafolio/proyvista.jpg',
                     'assets/images/portafolio/proyvista.jpg.jpg',
@@ -121,7 +121,7 @@ class ProjectSeeder extends Seeder
                 'title' => 'GALERÍA TÉCNICA E INSPECCIONES',
                 'subtitle' => 'Portafolio General de Auditorías',
                 'description' => 'Conjunto de inspecciones técnicas, levantamientos arquitectónicos y peritajes de seguridad en diversas edificaciones comerciales e industriales.',
-                'logo_path' => null,
+                'logo_path' => 'assets/images/logo.png',
                 'gallery' => [
                     'assets/images/portafolio/2.jpg',
                     'assets/images/portafolio/3.jpg',
