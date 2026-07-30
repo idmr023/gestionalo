@@ -1,6 +1,6 @@
 FROM php:8.2-fpm
 
-# Install system dependencies and Nginx
+# Install system dependencies, Nginx, Supervisor, and Node.js
 RUN apt-get update && apt-get install -y \
     git \
     curl \
@@ -11,7 +11,9 @@ RUN apt-get update && apt-get install -y \
     zip \
     unzip \
     nginx \
-    supervisor
+    supervisor \
+    && curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
+    && apt-get install -y nodejs
 
 # Clear cache
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
@@ -30,6 +32,9 @@ COPY . /var/www/html
 
 # Install PHP dependencies
 RUN composer install --no-dev --optimize-autoloader --no-interaction
+
+# Install Node dependencies and build assets
+RUN npm install && npm run build
 
 # Set permissions for Laravel storage and bootstrap cache
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache \
