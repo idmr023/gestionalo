@@ -9,7 +9,8 @@ if ($clients instanceof \Illuminate\Support\Collection || $clients instanceof \I
         if (!$logo) {
             $logo = 'assets/images/logo.png';
         } else {
-            $logo = Storage::url($logo);
+            // Si empieza con storage/, aseguramos que no duplique barras y sea una URL válida
+            $logo = str_starts_with($logo, 'storage/') ? asset($logo) : Storage::url($logo);
         }
         return [
             'name' => $p->title,
@@ -42,7 +43,7 @@ if ($clients instanceof \Illuminate\Support\Collection || $clients instanceof \I
             @foreach ($clients as $client)
                 <div class="text-center group border-b border-r border-[rgba(15,23,42,0.06)] p-8 transition-colors hover:bg-white">
                     <div class="h-24 flex items-center justify-center mb-3">
-                        @if (str_contains($client['logo'], 'storage/'))
+                        @if (str_contains($client['logo'], 'storage/') || str_contains($client['logo'], 'http'))
                             <img src="{{ $client['logo'] }}" alt="Logo {{ $client['name'] }}" class="max-h-12 w-auto object-contain grayscale group-hover:grayscale-0 transition duration-500">
                         @else
                             <x-front.picture :src="$client['logo']" alt="Logo {{ $client['name'] }}" class="max-h-12 w-auto object-contain grayscale group-hover:grayscale-0 transition duration-500" />
