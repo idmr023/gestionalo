@@ -29,6 +29,7 @@ foreach ($attributes->all() as $__key => $__value) {
 unset($__defined_vars); ?>
 
 <?php
+$src = ltrim($src, '/');
 $ext = pathinfo($src, PATHINFO_EXTENSION);
 $base = substr($src, 0, strrpos($src, '.'));
 $webp = $base . '.webp';

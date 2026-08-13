@@ -132,8 +132,8 @@ unset($__errorArgs, $__bag); ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendB
 
                     <div>
                         <h3 class="text-sm font-semibold font-display text-primary uppercase tracking-[0.2em] mb-4">Agenda una cita</h3>
-                        <p class="text-sm text-primary/50 mb-4">Programa una reunión virtual para resolver tus dudas directamente con nuestro equipo.</p>
-                        <a href="<?php echo e(config('site.contact.calendly_url')); ?>" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-white font-semibold px-6 py-3 transition text-sm tracking-wide">
+                        <p class="text-sm text-primary/50 mb-4">Programa una visita técnica o asesoría con nuestro equipo directamente en nuestra plataforma.</p>
+                        <a href="<?php echo e(route('client.dashboard')); ?>" class="inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-white font-semibold px-6 py-3 transition text-sm tracking-wide">
                             Agendar cita
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
                         </a>

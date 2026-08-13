@@ -32,11 +32,21 @@ unset($__defined_vars); ?>
 use Illuminate\Support\Facades\Storage;
 
 if ($clients instanceof \Illuminate\Support\Collection || $clients instanceof \Illuminate\Database\Eloquent\Collection) {
-    $clients = $clients->map(fn($p) => [
-        'name' => $p->title,
-        'logo' => $p->logo_path ? Storage::url($p->logo_path) : 'assets/images/client-' . strtolower(str_replace(' ', '-', $p->title)) . '.png',
-        'desc' => $p->subtitle ?? '',
-    ]);
+    $clients = $clients->map(function($p) {
+        $logo = $p->logo_path;
+        if (!$logo) {
+            $logo = 'assets/images/logo.png';
+        } elseif (str_starts_with($logo, 'assets/')) {
+            $logo = asset($logo);
+        } else {
+            $logo = Storage::url($logo);
+        }
+        return [
+            'name' => $p->title,
+            'logo' => $logo,
+            'desc' => $p->subtitle ?? '',
+        ];
+    });
 } else {
     $clients = $clients ?: [
         ['name' => 'RESITER', 'logo' => 'assets/images/client-resiter.png', 'desc' => 'Planta Industrial'],
@@ -62,7 +72,7 @@ if ($clients instanceof \Illuminate\Support\Collection || $clients instanceof \I
             <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php $__currentLoopData = $clients; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $client): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <div class="text-center group border-b border-r border-[rgba(15,23,42,0.06)] p-8 transition-colors hover:bg-white">
                     <div class="h-24 flex items-center justify-center mb-3">
-                        <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if(str_contains($client['logo'], 'storage/')): ?>
+                        <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if(str_contains($client['logo'], 'storage/') || str_contains($client['logo'], 'http')): ?>
                             <img src="<?php echo e($client['logo']); ?>" alt="Logo <?php echo e($client['name']); ?>" class="max-h-12 w-auto object-contain grayscale group-hover:grayscale-0 transition duration-500">
                         <?php else: ?>
                             <?php if (isset($component)) { $__componentOriginal671d372eac62910ec53af33795aee79b = $component; } ?>

@@ -29,8 +29,8 @@
 <?php unset($__componentOriginale280ba8d55bbd76e5ea71c9ba0fc94c5); ?>
 <?php endif; ?>
 
-    <main class="pt-[72px] min-h-screen bg-surface py-16">
-        <div class="max-w-4xl mx-auto px-6">
+    <main class="pt-[72px] min-h-screen bg-surface py-20">
+        <div class="max-w-5xl mx-auto px-6">
             <div class="bg-white border border-[rgba(15,23,42,0.06)] p-8">
                 <div class="flex items-center gap-4 mb-8 pb-6 border-b border-[rgba(15,23,42,0.06)]">
                     <div class="w-14 h-14 flex items-center justify-center bg-accent-light text-accent font-bold text-xl font-display">
@@ -44,7 +44,7 @@
                 </div>
 
                 <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if(auth()->user()->isAdmin()): ?>
-                    <div class="bg-accent-light/50 border border-accent/10 p-6 mb-6">
+                    <div class="bg-accent-light/50 border border-accent/10 p-6 mb-8">
                         <div class="flex items-center gap-4 mb-4">
                             <div class="w-10 h-10 flex items-center justify-center bg-accent/10 text-accent">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
@@ -63,12 +63,14 @@
                     </div>
                 <?php endif; ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php endif; ?>
 
-                <div class="grid md:grid-cols-2 gap-6 mb-8">
-                    <div class="bg-surface border border-[rgba(15,23,42,0.06)] p-6">
-                        <div class="w-10 h-10 flex items-center justify-center text-accent mb-4">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                <div class="grid md:grid-cols-5 gap-8">
+                    <div class="md:col-span-3 bg-surface border border-[rgba(15,23,42,0.06)] p-6">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-10 h-10 flex items-center justify-center text-accent">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                            </div>
+                            <h3 class="font-semibold text-primary">Mis citas</h3>
                         </div>
-                        <h3 class="font-semibold text-primary mb-4">Mis citas</h3>
                         <?php
 $__split = function ($name, $params = []) {
     return [$name, $params];
@@ -92,17 +94,38 @@ if (isset($__slots)) unset($__slots);
 ?>
                     </div>
 
-                    <div class="bg-surface border border-[rgba(15,23,42,0.06)] p-6">
-                        <div class="w-10 h-10 flex items-center justify-center text-primary/40 mb-4">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                    <div class="md:col-span-2 bg-surface border border-[rgba(15,23,42,0.06)] p-6">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-10 h-10 flex items-center justify-center text-primary/40">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                            </div>
+                            <h3 class="font-semibold text-primary">Mi perfil</h3>
                         </div>
-                        <h3 class="font-semibold text-primary mb-1">Mi perfil</h3>
-                        <p class="text-sm text-primary/50">Gestiona tu información personal.</p>
-                        <p class="inline-block mt-4 text-sm text-primary/30">Próximamente</p>
+                        <?php
+$__split = function ($name, $params = []) {
+    return [$name, $params];
+};
+[$__name, $__params] = $__split('client.profile-form');
+
+$__key = null;
+
+$__key ??= \Livewire\Features\SupportCompiledWireKeys\SupportCompiledWireKeys::generateKey('lw-1298794493-1', $__key);
+
+$__html = app('livewire')->mount($__name, $__params, $__key);
+
+echo $__html;
+
+unset($__html);
+unset($__key);
+unset($__name);
+unset($__params);
+unset($__split);
+if (isset($__slots)) unset($__slots);
+?>
                     </div>
                 </div>
 
-                <div class="flex items-center justify-between pt-6 border-t border-[rgba(15,23,42,0.06)]">
+                <div class="flex items-center justify-between pt-6 mt-8 border-t border-[rgba(15,23,42,0.06)]">
                     <p class="text-xs text-primary/30">Miembro desde <?php echo e(auth()->user()->created_at->format('d/m/Y')); ?></p>
                     <form method="POST" action="<?php echo e(route('logout')); ?>">
                         <?php echo csrf_field(); ?>

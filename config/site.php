@@ -7,7 +7,7 @@ return [
         'cta_primary_text' => 'Agendar Diagnóstico Técnico Preventivo Gratis',
         'cta_primary_url' => 'https://calendly.com/gestionalo/visita-tecnica-s',
         'cta_secondary_text' => 'Descargar Brochure Ejecutivo B2B',
-        'cta_secondary_url' => 'https://drive.google.com',
+        'cta_secondary_url' => '/BROCHURE_2026.pdf',
         'carousel_slides' => ['hero-bg.svg', 'white'],
     ],
     'cuanto' => [
