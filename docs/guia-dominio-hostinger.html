@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía para comprar el dominio y conectar la página web</title>
+    <style>
+        :root {
+            --primary: #0F172A;
+            --accent: #EA580C;
+            --accent-hover: #C2410C;
+            --surface: #FAFAFA;
+            --border: rgba(15,23,42,0.08);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background: var(--surface);
+            color: var(--primary);
+            line-height: 1.7;
+            padding: 2rem 1.5rem;
+        }
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+        }
+        .hero {
+            background: var(--primary);
+            color: white;
+            padding: 3rem 2.5rem;
+            margin-bottom: 2.5rem;
+            border: 1px solid var(--border);
+        }
+        .hero h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+        .hero p {
+            color: rgba(255,255,255,0.65);
+            font-size: 1rem;
+            margin-top: 0.75rem;
+            max-width: 600px;
+        }
+        .hero .emoji-intro {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .card {
+            background: white;
+            border: 1px solid var(--border);
+            padding: 2rem 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .card h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .card h2 .step {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background: var(--accent);
+            color: white;
+            font-size: 0.85rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        .card p, .card li {
+            font-size: 0.95rem;
+            color: rgba(15,23,42,0.75);
+        }
+        .card ul {
+            padding-left: 1.5rem;
+            margin-top: 0.75rem;
+        }
+        .card li {
+            margin-bottom: 0.6rem;
+        }
+        .card .highlight {
+            background: rgba(234,88,12,0.06);
+            border-left: 4px solid var(--accent);
+            padding: 1rem 1.25rem;
+            margin: 1.25rem 0;
+            font-size: 0.9rem;
+        }
+        .card .highlight strong {
+            color: var(--primary);
+        }
+        .card .info-box {
+            background: rgba(15,23,42,0.03);
+            border: 1px solid var(--border);
+            padding: 1.25rem;
+            margin: 1.25rem 0;
+        }
+        .card .info-box h4 {
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.75rem 1.5rem;
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border: none;
+            cursor: pointer;
+            transition: background 0.2s;
+            margin-top: 1rem;
+        }
+        .btn:hover { background: var(--accent-hover); }
+        .checklist {
+            list-style: none;
+            padding: 0 !important;
+        }
+        .checklist li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .checklist li:last-child { border-bottom: none; }
+        .checklist .box {
+            width: 22px;
+            height: 22px;
+            border: 2px solid var(--accent);
+            flex-shrink: 0;
+            margin-top: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            color: var(--accent);
+        }
+        .tag-warning {
+            display: inline-block;
+            background: #FEF3C7;
+            color: #92400E;
+            font-size: 0.75rem;
+            padding: 0.15rem 0.55rem;
+            font-weight: 600;
+        }
+        .tag-info {
+            display: inline-block;
+            background: rgba(234,88,12,0.1);
+            color: var(--accent);
+            font-size: 0.75rem;
+            padding: 0.15rem 0.55rem;
+            font-weight: 600;
+        }
+        .divider {
+            height: 1px;
+            background: var(--border);
+            margin: 1.75rem 0;
+        }
+        .emoji-lg { font-size: 1.5rem; }
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: rgba(15,23,42,0.35);
+            font-size: 0.8rem;
+        }
+        @media (max-width: 600px) {
+            .hero { padding: 2rem 1.25rem; }
+            .card { padding: 1.5rem 1.25rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!-- HERO -->
+    <div class="hero">
+        <div class="emoji-intro">🧭</div>
+        <h1>Guía para comprar el dominio<br>y conectar la página web</h1>
+        <p>Todo explicado paso a paso, sin palabras técnicas complicadas. Si en cualquier momento tienes una duda, pregúntame sin problema.</p>
+    </div>
+
+    <!-- INTRO -->
+    <div class="card">
+        <h2><span class="emoji-lg">🏠</span> ¿De qué trata todo esto?</h2>
+        <p>Imagina que tu página web ya está lista y viviendo en un departamento (el servidor de Render). Lo que falta es ponerle un <strong>letrero afuera</strong> para que la gente sepa cómo llegar. Ese letrero es el <strong>dominio</strong>.</p>
+        <p style="margin-top:0.75rem;">
+            Sin dominio: <code>gestionalo-4d8m.onrender.com</code> (difícil de recordar)<br>
+            Con dominio: <code>gestionalo.pe</code> (fácil y profesional)
+        </p>
+        <p style="margin-top:0.75rem;">
+            El dominio se compra en <strong>Hostinger</strong> (la tienda de letreros) y yo lo conecto al departamento donde ya está la página. Tú solo compras el dominio, de lo demás me encargo yo.
+        </p>
+    </div>
+
+    <!-- PASO 1 -->
+    <div class="card">
+        <h2><span class="step">1</span> Comprar el dominio en Hostinger</h2>
+        <p>Sigue estos pasos desde tu computadora o celular:</p>
+        <ul>
+            <li><strong>Paso 1:</strong> Ve a la página de <a href="https://www.hostinger.pe" target="_blank" style="color:var(--accent);">Hostinger</a>.</li>
+            <li><strong>Paso 2:</strong> En el buscador grande, escribe el nombre del dominio que quieras. Por ejemplo: <code>gestionalo.pe</code>, <code>gestionalo.com</code>, <code>gestionaloarquitectos.pe</code>, etc. Luego haz clic en <strong>"Buscar"</strong>.</li>
+            <li><strong>Paso 3:</strong> Te aparecerán varias opciones. Elige la que más te guste (normalmente <code>.pe</code> o <code>.com</code>) y haz clic en <strong>"Añadir al carrito"</strong>.</li>
+            <li><strong>Paso 4:</strong> En el carrito, elige <strong>1 año</strong> de registro (es el período mínimo).</li>
+            <li><strong>Paso 5:</strong> Completa tus datos personales y de facturación, y procede al pago.</li>
+        </ul>
+        <div class="highlight">
+            <strong>⚠️ Muy importante:</strong> Después de comprar el dominio, <strong>NO</strong> toques ninguna configuración de "DNS", "nameservers" ni "zonas". Simplemente cierra la página y avísame. Si tocas algo sin querer, no pasa nada grave, pero me atrasa la configuración.
+        </div>
+    </div>
+
+    <!-- PASO 2 -->
+    <div class="card">
+        <h2><span class="step">2</span> Avisarme el dominio que compraste</h2>
+        <p>Una vez que hayas comprado el dominio, solo necesito que me digas <strong>cuál es el nombre exacto</strong> que compraste. Puedes escribirme por WhatsApp o correo:</p>
+        <div class="highlight">
+            ✅ <strong>"Ya compré el dominio. Se llama: ___________"</strong>
+        </div>
+        <p>Con eso me basta. <strong>Yo me encargo del resto</strong> (conectarlo con el servidor de Render, configurar el certificado de seguridad, etc.).</p>
+    </div>
+
+    <!-- PASO 3 -->
+    <div class="card">
+        <h2><span class="step">3</span> ¿Qué pasa después?</h2>
+        <p>Una vez que yo haga la configuración, el dominio no funciona de inmediato en todo el mundo. Hay un proceso llamado <strong>propagación</strong> que puede tardar entre 1 hora y 2 días.</p>
+        <ul>
+            <li><strong>¿Qué significa?</strong> Que mientras el aviso de "este letrero está aquí" se va corriendo por internet, algunas personas verán la página con el dominio nuevo y otras con la dirección temporal antigua.</li>
+            <li><strong>¿Hay que hacer algo?</strong> No, solo esperar. Pasadas 48 horas como máximo, <strong>todo el mundo verá tu página con tu dominio propio</strong>.</li>
+            <li><strong>¿El candadito de seguridad (https)?</strong> Lo configura Render automáticamente. No tienes que hacer nada.</li>
+        </ul>
+    </div>
+
+    <!-- PASO 4: SLEEP -->
+    <div class="card">
+        <h2><span class="step">⏰</span> Un detalle importante: la página se duerme</h2>
+        <p>Hay algo que tienes que saber para que no te lleves una sorpresa:</p>
+        <p>La página actualmente está en el <strong>plan gratis de Render</strong>. Eso significa que si nadie entra por un rato (como 15 minutos), la página se <strong>"duerme"</strong>. Cuando alguien vuelve a entrar, la página tiene que <strong>despertarse</strong> y eso demora entre 30 segundos y 1 minuto.</p>
+        <p>Para una página de una empresa, eso no está bien. Un cliente no puede estar esperando medio minuto para ver la página.</p>
+    </div>
+
+    <!-- PASO 5: SOLUCIONES -->
+    <div class="card">
+        <h2><span class="step">💡</span> Solución: dos opciones para que la página siempre esté despierta</h2>
+
+        <div class="info-box">
+            <h4>✅ Opción 1 — La más fácil: Plan básico de Render (S/ 26 al mes)</h4>
+            <p style="font-size:0.9rem;margin:0;">
+                Contratar el plan más básico de Render cuesta <strong>alrededor de 26 soles al mes (7 dólares)</strong>.<br><br>
+                <strong>Ventajas:</strong>
+            </p>
+            <ul style="font-size:0.9rem; margin-top:0.5rem;">
+                <li>La página queda <strong>siempre despierta</strong>, sin tiempos de espera.</li>
+                <li><strong>No hay que tocar nada</strong> del proyecto. Ya está funcionando, solo se activa el plan de pago y listo.</li>
+                <li>El dominio que compres en Hostinger se conecta igual, sin problemas.</li>
+                <li>Si más adelante quieres cambiar a algo más barato, se puede evaluar.</li>
+            </ul>
+        </div>
+
+        <div class="info-box">
+            <h4>💰 Opción 2 — La más barata: Hostinger (S/ 15 al mes)</h4>
+            <p style="font-size:0.9rem;margin:0;">
+                Hostinger también ofrece planes de hosting (alrededor de 15 soles al mes) donde podríamos tener la página alojada junto con el dominio en un solo lugar.<br><br>
+                <strong>Ventajas:</strong> Unos soles más barato y todo centralizado en Hostinger.<br>
+                <strong>Desventaja:</strong> Hay que <strong>reconfigurar todo el proyecto</strong> porque actualmente está armado para funcionar en Render. Implica un trabajo de adaptación que toma algo de tiempo.
+            </p>
+        </div>
+
+        <div class="highlight">
+            <strong>🙋‍♂️ Mi recomendación:</strong> Mantener la página donde está mientras que compras tu dominio, pruebas la página y me das el feedback de cualquier funcionalidad. Yo voy mejorando lo que consideras y una vez ya esté listo por completo compras el Plan de Hostinger
+        </div>
+    </div>
+
+    <!-- PASO 6: CUENTA -->
+    <div class="card">
+        <h2><span class="step">🔐</span> ¿Por qué la página está en mi cuenta y no en la tuya?</h2>
+        <p>Esto es importante que lo entiendas para que estés tranquilo:</p>
+        <p>Tu página web actualmente está alojada dentro de <strong>mi cuenta personal de Render</strong>. Render es como un "edificio digital" donde cada página web tiene su propio departamento. Los departamentos están separados y no se mezclan entre sí.</p>
+
+        <div class="info-box">
+            <h4>✅ ¿Es seguro?</h4>
+            <p style="font-size:0.9rem;margin:0;">Sí. Tu página está separada del resto de proyectos que pueda tener. Nadie más que yo tiene acceso a hacer cambios. Sin mi autorización, no se puede modificar nada.</p>
+        </div>
+
+        <div class="info-box">
+            <h4>📦 ¿Se puede mover a tu propia cuenta?</h4>
+            <p style="font-size:0.9rem;margin:0;">
+                Sí, se puede. Más adelante podemos crear una cuenta de Render a tu nombre y mover toda la página allá. También podemos mudarlo a Hostinger si prefieres la Opción 2. Ambas son posibles, toman aproximadamente 1 hora de trabajo y lo hago yo por ti.<br><br>
+                Por ahora te sugiero que empecemos con la Opción 1 para que la página quede funcionando bien rápido, y cuando quieras, me dices y evaluamos si la dejamos ahí o la movemos.
+            </p>
+        </div>
+    </div>
+
+    <!-- CHECKLIST FINAL -->
+    <div class="card">
+        <h2>✅ Checklist final: lo que tienes que hacer tú</h2>
+        <ul class="checklist">
+            <li>
+                <span class="box">☐</span>
+                <span>Comprar el dominio en Hostinger (elige el nombre que más te guste)</span>
+            </li>
+            <li>
+                <span class="box">☐</span>
+                <span>Avisarme por WhatsApp o correo el nombre exacto del dominio comprado</span>
+            </li>
+            <li>
+                <span class="box">☐</span>
+                <span>Decidir entre Opción 1 (Render de pago, S/26/mes) u Opción 2 (Hostinger, S/15/mes) — o preguntarme si tienes dudas</span>
+            </li>
+            <li>
+                <span class="box">☐</span>
+                <span>Esperar la propagación (máximo 48 horas) — no hay que hacer nada</span>
+            </li>
+            <li>
+                <span class="box">☐</span>
+                <span>🎉 ¡Disfrutar de tu página web con dominio propio!</span>
+            </li>
+        </ul>
+
+        <div style="margin-top:1.5rem; padding-top:1rem; border-top:1px solid var(--border);">
+            <p style="font-size:0.9rem; color:rgba(15,23,42,0.5);">
+                <strong>Lo que yo hago (sin que te preocupes):</strong> Configurar los registros DNS, conectar el dominio con Render, activar el certificado SSL (candadito de seguridad), verificar que todo funcione correctamente.
+            </p>
+        </div>
+
+        <a href="https://www.hostinger.pe" target="_blank" class="btn">
+            🌐 Ir a Hostinger a comprar el dominio
+        </a>
+    </div>
+
+    <!-- CIERRE -->
+    <div class="card" style="text-align:center; background: var(--primary); color: white; border-color: var(--primary);">
+        <p style="font-size:1rem; color:rgba(255,255,255,0.8); margin-bottom:0.5rem;">
+            💬 ¿Tienes alguna duda?
+        </p>
+        <p style="font-size:0.9rem; color:rgba(255,255,255,0.55);">
+            Escríbeme cuando quieras y te ayudo con el proceso. No hay apuro, primero lee la guía con calma y cuando estés listo, compras el dominio.
+        </p>
+    </div>
+
+    <footer>
+        <p>Guía creada para el proyecto Gestionalo CMS. Julio 2026.</p>
+    </footer>
+
+</div>
+</body>
+</html>

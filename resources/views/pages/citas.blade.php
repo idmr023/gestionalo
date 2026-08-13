@@ -11,6 +11,7 @@
             </div>
 
             @auth
+                @livewire('client.appointment-booking')
                 @livewire('client.appointment-list')
             @else
                 <div class="bg-white border border-[rgba(15,23,42,0.06)] p-12 text-center max-w-md mx-auto">

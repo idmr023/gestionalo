@@ -11,6 +11,8 @@ class AppointmentList extends Component
 {
     use WithPagination;
 
+    protected $listeners = ['appointmentCreated' => '$refresh'];
+
     public function cancel(Appointment $appointment): void
     {
         if ($appointment->user_id !== auth()->id()) {

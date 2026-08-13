@@ -12,7 +12,7 @@ return new class extends Migration
             $table->string('role', 20)->default('client')->after('email');
         });
 
-        DB::table('users')->where('is_admin', true)->update(['role' => 'admin']);
+        DB::table('users')->whereRaw('is_admin = true')->update(['role' => 'admin']);
     }
 
     public function down(): void

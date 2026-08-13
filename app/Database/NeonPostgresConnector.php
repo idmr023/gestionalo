@@ -21,12 +21,6 @@ class NeonPostgresConnector extends BaseConnector
 
         $search = $config['search_path'] ?? 'public';
         if (is_string($search) && preg_match('/^[a-zA-Z_][a-zA-Z0-9_,\s]*$/', $search)) {
-            // Create schema if not exists (safe even if it does)
-            try {
-                $pdo->exec("CREATE SCHEMA IF NOT EXISTS {$search} AUTHORIZATION {$config['username']}");
-            } catch (\Throwable $e) {
-                // If we can't create, ignore and continue
-            }
             $pdo->exec("SET search_path TO {$search}");
         }
 
