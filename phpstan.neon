@@ -9,9 +9,10 @@ parameters:
         - database
         - routes
     excludePaths:
-        - vendor
-        - node_modules
-        - storage
-        - bootstrap/cache
+        analyseAndScan:
+            - vendor (?)
+            - node_modules (?)
+            - storage (?)
+            - bootstrap/cache (?)
     tmpDir: storage/framework/cache/phpstan
 
