@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\idmr_\OneDrive\Escritorio\gestionalo\app\Services\CircuitBreaker.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Services\CircuitBreaker
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.5.8-c9284dbc99673ca9b06ca13b28b27ba73f9a74096d534b52bd7a587237c520e4',
+   'variableKey' => 'v2-6.70.0.3-8.5.8-b41322540ce0c870c4e54d12efa8abda6c5f64afa3dea26bfe3cb7c9815c9fe7',
    'data' => 
   array (
     'locatedSource' => 
@@ -45,15 +45,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'implementingClassName' => 'App\\Services\\CircuitBreaker',
         'name' => 'PREFIX',
         'modifiers' => 4,
-        'type' => 
-        array (
-          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
-          'data' => 
-          array (
-            'name' => 'string',
-            'isIdentifier' => true,
-          ),
-        ),
+        'type' => NULL,
         'value' => 
         array (
           'code' => '\'circuit_breaker_\'',
@@ -61,10 +53,10 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           array (
             'startLine' => 16,
             'endLine' => 16,
-            'startTokenPos' => 54,
-            'startFilePos' => 250,
-            'endTokenPos' => 54,
-            'endFilePos' => 267,
+            'startTokenPos' => 52,
+            'startFilePos' => 243,
+            'endTokenPos' => 52,
+            'endFilePos' => 260,
           ),
         ),
         'docComment' => NULL,
@@ -74,7 +66,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'startLine' => 16,
         'endLine' => 16,
         'startColumn' => 5,
-        'endColumn' => 53,
+        'endColumn' => 46,
       ),
     ),
     'immediateProperties' => 
@@ -216,10 +208,10 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
               array (
                 'startLine' => 18,
                 'endLine' => 18,
-                'startTokenPos' => 74,
-                'startFilePos' => 337,
-                'endTokenPos' => 74,
-                'endFilePos' => 337,
+                'startTokenPos' => 72,
+                'startFilePos' => 330,
+                'endTokenPos' => 72,
+                'endFilePos' => 330,
               ),
             ),
             'type' => 
@@ -254,10 +246,10 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
               array (
                 'startLine' => 18,
                 'endLine' => 18,
-                'startTokenPos' => 83,
-                'startFilePos' => 355,
-                'endTokenPos' => 83,
-                'endFilePos' => 356,
+                'startTokenPos' => 81,
+                'startFilePos' => 348,
+                'endTokenPos' => 81,
+                'endFilePos' => 349,
               ),
             ),
             'type' => 

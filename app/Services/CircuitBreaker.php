@@ -13,7 +13,7 @@ class CircuitBreaker
 
     private int $timeout;
 
-    private const string PREFIX = 'circuit_breaker_';
+    private const PREFIX = 'circuit_breaker_';
 
     public function __construct(string $service, int $threshold = 3, int $timeout = 60)
     {

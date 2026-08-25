@@ -528,7 +528,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Services\\CircuitBreaker.php' => 
     array (
-      0 => 'c9284dbc99673ca9b06ca13b28b27ba73f9a74096d534b52bd7a587237c520e4',
+      0 => 'b41322540ce0c870c4e54d12efa8abda6c5f64afa3dea26bfe3cb7c9815c9fe7',
       1 => 
       array (
         0 => 'app\\services\\circuitbreaker',
