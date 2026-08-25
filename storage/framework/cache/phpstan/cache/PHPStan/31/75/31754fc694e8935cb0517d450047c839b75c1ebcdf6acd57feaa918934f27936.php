@@ -851,7 +851,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\Chat.php' => 
     array (
-      0 => '534d6c9be0133063e8b534b0039c3e3eefb3353c2891a954cd0fcf2472a0ae67',
+      0 => '95f29866633c749703f6bb1ba76265cad95bf3f028697a04d6fa68c76865f54a',
       1 => 
       array (
         0 => 'app\\livewire\\client\\chat',
@@ -860,11 +860,12 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
         0 => 'app\\livewire\\client\\mount',
         1 => 'app\\livewire\\client\\createsession',
-        2 => 'app\\livewire\\client\\sendmessage',
-        3 => 'app\\livewire\\client\\updatesessiontitle',
-        4 => 'app\\livewire\\client\\switchsession',
-        5 => 'app\\livewire\\client\\deletesession',
-        6 => 'app\\livewire\\client\\render',
+        2 => 'app\\livewire\\client\\ask',
+        3 => 'app\\livewire\\client\\sendmessage',
+        4 => 'app\\livewire\\client\\updatesessiontitle',
+        5 => 'app\\livewire\\client\\switchsession',
+        6 => 'app\\livewire\\client\\deletesession',
+        7 => 'app\\livewire\\client\\render',
       ),
       3 => 
       array (

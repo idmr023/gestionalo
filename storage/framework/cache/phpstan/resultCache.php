@@ -2370,7 +2370,7 @@ return [
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\Chat.php' => 
   array (
-    'fileHash' => '534d6c9be0133063e8b534b0039c3e3eefb3353c2891a954cd0fcf2472a0ae67',
+    'fileHash' => '95f29866633c749703f6bb1ba76265cad95bf3f028697a04d6fa68c76865f54a',
     'dependentFiles' => 
     array (
     ),
@@ -7501,6 +7501,37 @@ return [
         )),
         6 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'ask',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'question',
+               'type' => 'string',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        7 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'sendMessage',
            'phpDoc' => NULL,
            'byRef' => false,
@@ -7517,7 +7548,7 @@ return [
           array (
           ),
         )),
-        7 => 
+        8 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'switchSession',
            'phpDoc' => NULL,
@@ -7548,7 +7579,7 @@ return [
           array (
           ),
         )),
-        8 => 
+        9 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'deleteSession',
            'phpDoc' => NULL,
@@ -7579,7 +7610,7 @@ return [
           array (
           ),
         )),
-        9 => 
+        10 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'render',
            'phpDoc' => NULL,

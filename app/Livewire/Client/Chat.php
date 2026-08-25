@@ -35,6 +35,12 @@ class Chat extends Component
         $this->activeSessionId = $session->id;
     }
 
+    public function ask(string $question): void
+    {
+        $this->message = $question;
+        $this->sendMessage();
+    }
+
     public function sendMessage(): void
     {
         $this->validate([

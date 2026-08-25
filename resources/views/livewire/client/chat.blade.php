@@ -89,15 +89,15 @@
 
                     <div class="flex flex-wrap justify-center gap-2 mt-6 max-w-md">
                         <button
-                            wire:click="$set('message', '¿Qué necesito para obtener una licencia de funcionamiento?'); $nextTick(() => $refs.chatForm.requestSubmit())"
+                            wire:click="ask('¿Qué necesito para obtener una licencia de funcionamiento?')"
                             class="text-xs border border-[rgba(15,23,42,0.1)] text-primary/60 hover:border-accent/30 hover:text-accent px-3 py-1.5 transition"
                         >Licencia de funcionamiento</button>
                         <button
-                            wire:click="$set('message', '¿Qué es la ITSE y cuándo es obligatoria?'); $nextTick(() => $refs.chatForm.requestSubmit())"
+                            wire:click="ask('¿Qué es la ITSE y cuándo es obligatoria?')"
                             class="text-xs border border-[rgba(15,23,42,0.1)] text-primary/60 hover:border-accent/30 hover:text-accent px-3 py-1.5 transition"
                         >¿Qué es la ITSE?</button>
                         <button
-                            wire:click="$set('message', '¿Cómo puedo regularizar mi propiedad ante SUNARP?'); $nextTick(() => $refs.chatForm.requestSubmit())"
+                            wire:click="ask('¿Cómo puedo regularizar mi propiedad ante SUNARP?')"
                             class="text-xs border border-[rgba(15,23,42,0.1)] text-primary/60 hover:border-accent/30 hover:text-accent px-3 py-1.5 transition"
                         >Saneamiento predial</button>
                     </div>
