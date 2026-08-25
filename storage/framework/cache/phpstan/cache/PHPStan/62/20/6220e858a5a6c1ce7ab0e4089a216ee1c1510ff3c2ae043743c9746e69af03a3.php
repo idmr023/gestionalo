@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\idmr_\OneDrive\Escritorio\gestionalo\app\Models\User.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Models\User
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.5.8-9b7a60da499e0a188c85f029e2b08772b46c719021dfe9c5016d132ba78bfb9f',
+   'variableKey' => 'v2-6.70.0.3-8.5.8-8925f9c199f1018ed9c914425e98fc0e64d01b4b63fc2b39a92852845be63298',
    'data' => 
   array (
     'locatedSource' => 
@@ -27,7 +27,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     array (
     ),
     'startLine' => 10,
-    'endLine' => 48,
+    'endLine' => 56,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Illuminate\\Foundation\\Auth\\User',
@@ -53,15 +53,15 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'type' => NULL,
         'default' => 
         array (
-          'code' => '[\'name\', \'email\', \'role\', \'password\']',
+          'code' => '[\'name\', \'email\', \'role\', \'password\', \'dni\', \'phone\', \'address\']',
           'attributes' => 
           array (
             'startLine' => 14,
-            'endLine' => 19,
+            'endLine' => 22,
             'startTokenPos' => 55,
             'startFilePos' => 331,
-            'endTokenPos' => 69,
-            'endFilePos' => 406,
+            'endTokenPos' => 78,
+            'endFilePos' => 457,
           ),
         ),
         'docComment' => NULL,
@@ -69,7 +69,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'startLine' => 14,
-        'endLine' => 19,
+        'endLine' => 22,
         'startColumn' => 5,
         'endColumn' => 6,
         'isPromoted' => false,
@@ -91,20 +91,20 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '[\'password\', \'remember_token\']',
           'attributes' => 
           array (
-            'startLine' => 21,
-            'endLine' => 24,
-            'startTokenPos' => 78,
-            'startFilePos' => 434,
-            'endTokenPos' => 86,
-            'endFilePos' => 486,
+            'startLine' => 24,
+            'endLine' => 27,
+            'startTokenPos' => 87,
+            'startFilePos' => 485,
+            'endTokenPos' => 95,
+            'endFilePos' => 537,
           ),
         ),
         'docComment' => NULL,
         'attributes' => 
         array (
         ),
-        'startLine' => 21,
-        'endLine' => 24,
+        'startLine' => 24,
+        'endLine' => 27,
         'startColumn' => 5,
         'endColumn' => 6,
         'isPromoted' => false,
@@ -137,8 +137,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 26,
-        'endLine' => 32,
+        'startLine' => 29,
+        'endLine' => 35,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -172,8 +172,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 34,
-        'endLine' => 37,
+        'startLine' => 37,
+        'endLine' => 40,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -207,8 +207,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 39,
-        'endLine' => 42,
+        'startLine' => 42,
+        'endLine' => 45,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -242,8 +242,43 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 44,
-        'endLine' => 47,
+        'startLine' => 47,
+        'endLine' => 50,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Models',
+        'declaringClassName' => 'App\\Models\\User',
+        'implementingClassName' => 'App\\Models\\User',
+        'currentClassName' => 'App\\Models\\User',
+        'aliasName' => NULL,
+      ),
+      'chatSessions' => 
+      array (
+        'name' => 'chatSessions',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+            'isIdentifier' => false,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => NULL,
+        'startLine' => 52,
+        'endLine' => 55,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\idmr_\OneDrive\Escritorio\gestionalo\database\seeders\ProjectSeeder.php-PHPStan\BetterReflection\Reflection\ReflectionClass-Database\Seeders\ProjectSeeder
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.5.8-b53f24aaa9d587f97bff6fa91348a654ce8fb3179f28836714757c72052ce6ae',
+   'variableKey' => 'v2-6.70.0.3-8.5.8-41c4c008cdfe11f27406f382167eb4665231881d3a2d8ac8a181a2885e8fd42d',
    'data' => 
   array (
     'locatedSource' => 
@@ -27,7 +27,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     array (
     ),
     'startLine' => 8,
-    'endLine' => 24,
+    'endLine' => 149,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Illuminate\\Database\\Seeder',
@@ -66,7 +66,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         ),
         'docComment' => NULL,
         'startLine' => 10,
-        'endLine' => 23,
+        'endLine' => 148,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

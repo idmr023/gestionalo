@@ -7,6 +7,7 @@ use Illuminate\Console\Command;
 class MonitorSystem extends Command
 {
     protected $signature = 'monitor:system';
+
     protected $description = 'Report system health, performance, and status';
 
     public function handle(): int

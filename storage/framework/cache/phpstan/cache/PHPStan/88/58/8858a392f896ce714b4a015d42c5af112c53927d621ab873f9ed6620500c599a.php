@@ -7,7 +7,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
   array (
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\admin-menu.php' => 
     array (
-      0 => '797ce3f4fa473e263872af04a169c4d15a07a2ed980b0793bd4c159b67d93f2d',
+      0 => '2f39140bf4b41ca7403dd624c2f9e57f3eaaa210fb0964b97100d66231c9682f',
       1 => 
       array (
       ),
@@ -46,7 +46,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\cache.php' => 
     array (
-      0 => '8f665fdc26ee9f998cace385e7dd650bea75641af47704a9cbe6e7284fe81545',
+      0 => 'c69fb85f520b146ad6af5d3018de3e04b97f2a608e50f6ada41f5c2e7d2537cb',
       1 => 
       array (
       ),
@@ -59,7 +59,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\database.php' => 
     array (
-      0 => '80b9efb6edfb13f2b1eb31d9e320d06ba63d152567a3123f6150bd24b54f22cf',
+      0 => '1f5a65fd86435d90bdc97b5e228a76772581e7c833edb8a14db54e86742780e6',
       1 => 
       array (
       ),
@@ -124,7 +124,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\site.php' => 
     array (
-      0 => 'a841346c1ad3c713b1441fe613a21c4f137f1b5c115904dbf4b9f295851d4855',
+      0 => 'feb3113e23c0b812e8b1edcd387b1695be866d3a4501997dbd3792048926f4ea',
       1 => 
       array (
       ),
@@ -151,6 +151,19 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\telescope.php' => 
     array (
       0 => '67828d13854414ca2c7c4bfdabcd6d6c8cf70365cc99b7e811818c476fff46ef',
+      1 => 
+      array (
+      ),
+      2 => 
+      array (
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\ai.php' => 
+    array (
+      0 => '3a040254a571ac0ff0c3a9f9cfe734a03473e07e7565af407262f4f6298268ef',
       1 => 
       array (
       ),

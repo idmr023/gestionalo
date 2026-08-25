@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\FrontController;
+use App\Http\Controllers\HealthController;
+use App\Http\Controllers\SummaryController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [FrontController::class, 'index'])->name('home');
@@ -20,13 +22,13 @@ Route::get('/citas', [FrontController::class, 'bookAppointment'])->name('appoint
 Route::get('/terminos', [FrontController::class, 'terms'])->name('terms');
 Route::get('/privacidad', [FrontController::class, 'privacy'])->name('privacy');
 
-Route::get('/api/blog/{post:slug}/{type}', App\Http\Controllers\SummaryController::class)
+Route::get('/api/blog/{post:slug}/{type}', SummaryController::class)
     ->whereIn('type', ['summary', 'highlights'])
     ->middleware('throttle:10,1')
     ->name('blog.summary');
 
 Route::get('/buscar', [FrontController::class, 'search'])->name('search');
-Route::get('/health', App\Http\Controllers\HealthController::class)->name('health');
+Route::get('/health', HealthController::class)->name('health');
 
 Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
 Route::post('/login', [AuthController::class, 'login'])->middleware('throttle:login');
@@ -36,4 +38,5 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout')->middl
 
 Route::middleware('auth')->group(function () {
     Route::get('/mi-cuenta', [AuthController::class, 'clientDashboard'])->name('client.dashboard');
+    Route::get('/mi-cuenta/asesoria', fn () => view('pages.asesoria-ia'))->name('client.chat');
 });

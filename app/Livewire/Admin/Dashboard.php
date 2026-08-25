@@ -3,6 +3,8 @@
 namespace App\Livewire\Admin;
 
 use App\Models\Appointment;
+use App\Models\ChatMessage;
+use App\Models\ChatSession;
 use App\Models\Contact;
 use App\Models\Post;
 use App\Models\Project;
@@ -15,7 +17,7 @@ class Dashboard extends Component
 {
     public function render()
     {
-        $counts = Cache::remember('admin.dashboard.counts.v2', 3600, fn () => [
+        $counts = Cache::remember('admin.dashboard.counts.v3', 3600, fn () => [
             'services' => Service::count(),
             'projects' => Project::count(),
             'posts' => Post::count(),
@@ -24,6 +26,9 @@ class Dashboard extends Component
             'appointments' => Appointment::count(),
             'pending_appointments' => Appointment::where('status', 'pending')->count(),
             'users' => User::count(),
+            'chat_sessions' => ChatSession::count(),
+            'chat_messages' => ChatMessage::count(),
+            'chat_users' => ChatSession::distinct('user_id')->count('user_id'),
         ]);
 
         $recentContacts = Contact::latest()->take(5)->get();

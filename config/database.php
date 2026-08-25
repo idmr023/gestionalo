@@ -7,7 +7,7 @@ return [
             'driver' => 'pgsql',
             'url' => env('DB_URL'),
             'options' => [
-                \PDO::ATTR_EMULATE_PREPARES => true,
+                PDO::ATTR_EMULATE_PREPARES => true,
             ],
             'charset' => 'utf8',
             'prefix' => '',

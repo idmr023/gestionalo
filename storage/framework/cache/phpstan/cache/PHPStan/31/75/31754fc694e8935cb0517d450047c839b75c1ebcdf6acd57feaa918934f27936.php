@@ -37,7 +37,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Database\\NeonPostgresConnector.php' => 
     array (
-      0 => '6400df384e3bd7a59fc10f1be20ca7d191381d6cb04b1f9248f1d838f78ee98e',
+      0 => 'f4de8144937a9ea33e04113076143bd414ebed2247f0e8cd5b20876de055eacb',
       1 => 
       array (
         0 => 'app\\database\\neonpostgresconnector',
@@ -86,7 +86,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Controllers\\FrontController.php' => 
     array (
-      0 => '77e1be49ba7bcea7ab85dc9ea4b1be8bd6348398bb9808dc0bf3ef8cd12461be',
+      0 => 'c8e014dd66ceb5f8538eb5f4288455e0d7aede629d7d09eb121c9425b82b00d6',
       1 => 
       array (
         0 => 'app\\http\\controllers\\frontcontroller',
@@ -102,9 +102,10 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         6 => 'app\\http\\controllers\\post',
         7 => 'app\\http\\controllers\\contact',
         8 => 'app\\http\\controllers\\sendcontact',
-        9 => 'app\\http\\controllers\\terms',
-        10 => 'app\\http\\controllers\\privacy',
-        11 => 'app\\http\\controllers\\search',
+        9 => 'app\\http\\controllers\\bookappointment',
+        10 => 'app\\http\\controllers\\terms',
+        11 => 'app\\http\\controllers\\privacy',
+        12 => 'app\\http\\controllers\\search',
       ),
       3 => 
       array (
@@ -296,7 +297,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Project.php' => 
     array (
-      0 => '2d8580b9c565e54cff5e98a47d8b33444d5d0b00296b274103420f0eeabc53ab',
+      0 => '4e3ca52f690e8ee2443f191e939f6ce353fa9b7ec1f7cd3737054954bde918ab',
       1 => 
       array (
         0 => 'app\\models\\project',
@@ -333,7 +334,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\User.php' => 
     array (
-      0 => '9b7a60da499e0a188c85f029e2b08772b46c719021dfe9c5016d132ba78bfb9f',
+      0 => '8925f9c199f1018ed9c914425e98fc0e64d01b4b63fc2b39a92852845be63298',
       1 => 
       array (
         0 => 'app\\models\\user',
@@ -344,6 +345,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         1 => 'app\\models\\isadmin',
         2 => 'app\\models\\isclient',
         3 => 'app\\models\\appointments',
+        4 => 'app\\models\\chatsessions',
       ),
       3 => 
       array (
@@ -351,7 +353,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\DatabaseServiceProvider.php' => 
     array (
-      0 => 'c118696ce4b3f44db4485574546f04000644b5104c2dffab3a67aaccc07b2531',
+      0 => '99320313e3c7af0fa6bd7bb58234b95759a8ca704af70fa7a0381757cb5a4892',
       1 => 
       array (
         0 => 'app\\providers\\databaseserviceprovider',
@@ -446,16 +448,15 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\AppointmentList.php' => 
     array (
-      0 => 'fe0d43deacc9ed9045acc40d35d129c28016be37c07ea120aa30329104cb0982',
+      0 => '51c74750c3028c7402d997e87f151e4bbd59ce8f5b10aa22b2115b78d75667fc',
       1 => 
       array (
         0 => 'app\\livewire\\client\\appointmentlist',
       ),
       2 => 
       array (
-        0 => 'app\\livewire\\client\\create',
-        1 => 'app\\livewire\\client\\cancel',
-        2 => 'app\\livewire\\client\\render',
+        0 => 'app\\livewire\\client\\cancel',
+        1 => 'app\\livewire\\client\\render',
       ),
       3 => 
       array (
@@ -495,14 +496,15 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\AppServiceProvider.php' => 
     array (
-      0 => '7dc9723571a073485e907e6d9202f8effa6d2da4c90a953182665b1a349918c6',
+      0 => 'f1d2d347d81c35a0c1c730a5e02f0d9e4624a4b2ccc205210c6abffc04484872',
       1 => 
       array (
         0 => 'app\\providers\\appserviceprovider',
       ),
       2 => 
       array (
-        0 => 'app\\providers\\boot',
+        0 => 'app\\providers\\register',
+        1 => 'app\\providers\\boot',
       ),
       3 => 
       array (
@@ -722,7 +724,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Dashboard.php' => 
     array (
-      0 => '60ce48055fd674054a39a185ea82ed832c12c20851430edd706e7fc0fbef57aa',
+      0 => 'c0f4725227e983327a00fd532224e96e2c93a0af88ee3fffa25d4d5195214abb',
       1 => 
       array (
         0 => 'app\\livewire\\admin\\dashboard',
@@ -752,7 +754,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Console\\Commands\\MonitorSystem.php' => 
     array (
-      0 => 'c10c8043ec4c1d11b1be4c5975171967794d7ffa28f6ae7808d0404241f16768',
+      0 => '91da9177a7f36d948aedb7f610126bc66bcce08da2b0a27ba7b91a116b8d179e',
       1 => 
       array (
         0 => 'app\\console\\commands\\monitorsystem',
@@ -767,7 +769,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Controllers\\HealthController.php' => 
     array (
-      0 => '776c6cc9c75c4964810b6bef18552a6c7844a2bc0ab074c6b826839028aa2e8d',
+      0 => '1944e6c03927b9d88100cfc8b08073f822f6f82bdf63ee507a1547cd8b8f93ee',
       1 => 
       array (
         0 => 'app\\http\\controllers\\healthcontroller',
@@ -795,6 +797,178 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         0 => 'app\\providers\\register',
         1 => 'app\\providers\\hidesensitiverequestdetails',
         2 => 'app\\providers\\gate',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Database\\NeonPostgresConnection.php' => 
+    array (
+      0 => '3c35390e0180e0ffb38d4054095489a741ba6d311b9489f96c4b6c409c00a51f',
+      1 => 
+      array (
+        0 => 'app\\database\\neonpostgresconnection',
+      ),
+      2 => 
+      array (
+        0 => 'app\\database\\preparebindings',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Controllers\\SummaryController.php' => 
+    array (
+      0 => 'efa8f4086693abd7fd1a2472741e926d348cf3b0e9fc6275c03a8223cdde779c',
+      1 => 
+      array (
+        0 => 'app\\http\\controllers\\summarycontroller',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\controllers\\__invoke',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\AppointmentBooking.php' => 
+    array (
+      0 => 'b8c2d15c4b5ef78d11de2499efa7b57ca7c9730e9078528547b0dc8134767baf',
+      1 => 
+      array (
+        0 => 'app\\livewire\\client\\appointmentbooking',
+      ),
+      2 => 
+      array (
+        0 => 'app\\livewire\\client\\mount',
+        1 => 'app\\livewire\\client\\submit',
+        2 => 'app\\livewire\\client\\render',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\Chat.php' => 
+    array (
+      0 => '31cdd66b05daaa28e6985d0f7d77aa76c778d413eede2465749f3cf96d785fee',
+      1 => 
+      array (
+        0 => 'app\\livewire\\client\\chat',
+      ),
+      2 => 
+      array (
+        0 => 'app\\livewire\\client\\mount',
+        1 => 'app\\livewire\\client\\createsession',
+        2 => 'app\\livewire\\client\\sendmessage',
+        3 => 'app\\livewire\\client\\updatesessiontitle',
+        4 => 'app\\livewire\\client\\switchsession',
+        5 => 'app\\livewire\\client\\deletesession',
+        6 => 'app\\livewire\\client\\render',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\ProfileForm.php' => 
+    array (
+      0 => '8a37760a6c8df0ef16a32bb21a3cfaec7cd89195145e6394ef7f0e9235e8e256',
+      1 => 
+      array (
+        0 => 'app\\livewire\\client\\profileform',
+      ),
+      2 => 
+      array (
+        0 => 'app\\livewire\\client\\mount',
+        1 => 'app\\livewire\\client\\save',
+        2 => 'app\\livewire\\client\\render',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\ChatMessage.php' => 
+    array (
+      0 => '8e88dd057bcea50ebd0e5f3b19290f504c27702048d2f8092cd6265c85f60f58',
+      1 => 
+      array (
+        0 => 'app\\models\\chatmessage',
+      ),
+      2 => 
+      array (
+        0 => 'app\\models\\casts',
+        1 => 'app\\models\\user',
+        2 => 'app\\models\\session',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\ChatSession.php' => 
+    array (
+      0 => 'de6c985e8f72d3c8ace73ab52bd5bc4be9b2087332782aa1daa163d2f6f374e2',
+      1 => 
+      array (
+        0 => 'app\\models\\chatsession',
+      ),
+      2 => 
+      array (
+        0 => 'app\\models\\user',
+        1 => 'app\\models\\messages',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\NeonDbServiceProvider.php' => 
+    array (
+      0 => 'cb56720f264ab68c089fde37cb194f4379df6506940373382b3c0876f1c92f12',
+      1 => 
+      array (
+        0 => 'app\\providers\\neondbserviceprovider',
+      ),
+      2 => 
+      array (
+        0 => 'app\\providers\\register',
+        1 => 'app\\providers\\boot',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Services\\GeminiService.php' => 
+    array (
+      0 => '769cffc01e3850e0be7543d99a83c20c1a48663b5b15ac39649dfaf94c565800',
+      1 => 
+      array (
+        0 => 'app\\services\\geminiservice',
+      ),
+      2 => 
+      array (
+        0 => 'app\\services\\__construct',
+        1 => 'app\\services\\chat',
+        2 => 'app\\services\\generatesummary',
+        3 => 'app\\services\\generatehighlights',
+        4 => 'app\\services\\stripcodeblock',
+        5 => 'app\\services\\generate',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\ChatList.php' => 
+    array (
+      0 => 'b738e0bf678b1e63c619899b15a40919df0ede8a96bb08b7efe749bcff7a4b9c',
+      1 => 
+      array (
+        0 => 'app\\livewire\\admin\\chatlist',
+      ),
+      2 => 
+      array (
+        0 => 'app\\livewire\\admin\\updatedsearch',
+        1 => 'app\\livewire\\admin\\selectsession',
+        2 => 'app\\livewire\\admin\\closesessionview',
+        3 => 'app\\livewire\\admin\\render',
       ),
       3 => 
       array (

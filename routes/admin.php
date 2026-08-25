@@ -6,6 +6,7 @@ use App\Livewire\Admin\Blog\CategoryList;
 use App\Livewire\Admin\Blog\PostForm;
 use App\Livewire\Admin\Blog\PostList;
 use App\Livewire\Admin\ChangeHistory;
+use App\Livewire\Admin\ChatList;
 use App\Livewire\Admin\ContactList;
 use App\Livewire\Admin\Dashboard;
 use App\Livewire\Admin\Projects\ProjectForm;
@@ -37,6 +38,7 @@ Route::middleware(['auth', 'is_admin'])->prefix('admin')->name('admin.')->group(
 
     Route::get('/appointments', AppointmentList::class)->name('appointments');
     Route::get('/contacts', ContactList::class)->name('contacts');
+    Route::get('/chats-ia', ChatList::class)->name('chats-ia.index');
     Route::get('/users', UserList::class)->name('users');
 
     Route::get('/recycle-bin', RecycleBin::class)->name('recycle-bin');

@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\idmr_\OneDrive\Escritorio\gestionalo\app\Database\NeonPostgresConnector.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Database\NeonPostgresConnector
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.5.8-6400df384e3bd7a59fc10f1be20ca7d191381d6cb04b1f9248f1d838f78ee98e',
+   'variableKey' => 'v2-6.70.0.3-8.5.8-f4de8144937a9ea33e04113076143bd414ebed2247f0e8cd5b20876de055eacb',
    'data' => 
   array (
     'locatedSource' => 
@@ -27,7 +27,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     array (
     ),
     'startLine' => 8,
-    'endLine' => 35,
+    'endLine' => 29,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Illuminate\\Database\\Connectors\\PostgresConnector',
@@ -84,7 +84,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         ),
         'docComment' => NULL,
         'startLine' => 10,
-        'endLine' => 34,
+        'endLine' => 28,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

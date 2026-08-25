@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\idmr_\OneDrive\Escritorio\gestionalo\app\Providers\DatabaseServiceProvider.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Providers\DatabaseServiceProvider
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.5.8-c118696ce4b3f44db4485574546f04000644b5104c2dffab3a67aaccc07b2531',
+   'variableKey' => 'v2-6.70.0.3-8.5.8-99320313e3c7af0fa6bd7bb58234b95759a8ca704af70fa7a0381757cb5a4892',
    'data' => 
   array (
     'locatedSource' => 
@@ -26,8 +26,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'attributes' => 
     array (
     ),
-    'startLine' => 8,
-    'endLine' => 16,
+    'startLine' => 9,
+    'endLine' => 17,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Illuminate\\Support\\ServiceProvider',
@@ -65,8 +65,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 10,
-        'endLine' => 15,
+        'startLine' => 11,
+        'endLine' => 16,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

@@ -1,7 +1,7 @@
 <?php declare(strict_types = 1);
 
 return [
-	'lastFullAnalysisTime' => 1784913843,
+	'lastFullAnalysisTime' => 1787113731,
 	'meta' => array (
   'cacheVersion' => 'v13-packageDependencies',
   'phpstanVersion' => '2.2.5',
@@ -1991,9 +1991,10 @@ return [
       5 => 'pages.blog',
       6 => 'pages.post',
       7 => 'pages.contacto',
-      8 => 'pages.terminos',
-      9 => 'pages.privacidad',
-      10 => 'pages.buscar',
+      8 => 'pages.citas',
+      9 => 'pages.terminos',
+      10 => 'pages.privacidad',
+      11 => 'pages.buscar',
     ),
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\AppointmentList.php' => 
@@ -2036,6 +2037,13 @@ return [
     'Larastan\\Larastan\\Collectors\\UsedViewFunctionCollector' => 
     array (
       0 => 'livewire.admin.change-history',
+    ),
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\ChatList.php' => 
+  array (
+    'Larastan\\Larastan\\Collectors\\UsedViewFunctionCollector' => 
+    array (
+      0 => 'livewire.admin.chat-list',
     ),
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\ContactList.php' => 
@@ -2094,6 +2102,13 @@ return [
       0 => 'livewire.admin.user-list',
     ),
   ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\AppointmentBooking.php' => 
+  array (
+    'Larastan\\Larastan\\Collectors\\UsedViewFunctionCollector' => 
+    array (
+      0 => 'livewire.client.appointment-booking',
+    ),
+  ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\AppointmentList.php' => 
   array (
     'Larastan\\Larastan\\Collectors\\UsedViewFunctionCollector' => 
@@ -2101,11 +2116,32 @@ return [
       0 => 'livewire.client.appointment-list',
     ),
   ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\Chat.php' => 
+  array (
+    'Larastan\\Larastan\\Collectors\\UsedViewFunctionCollector' => 
+    array (
+      0 => 'livewire.client.chat',
+    ),
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\ProfileForm.php' => 
+  array (
+    'Larastan\\Larastan\\Collectors\\UsedViewFunctionCollector' => 
+    array (
+      0 => 'livewire.client.profile-form',
+    ),
+  ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\GlobalSearch.php' => 
   array (
     'Larastan\\Larastan\\Collectors\\UsedViewFunctionCollector' => 
     array (
       0 => 'livewire.global-search',
+    ),
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\web.php' => 
+  array (
+    'Larastan\\Larastan\\Collectors\\UsedViewFunctionCollector' => 
+    array (
+      0 => 'pages.asesoria-ia',
     ),
   ),
 ); },
@@ -2119,7 +2155,7 @@ return [
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Console\\Commands\\MonitorSystem.php' => 
   array (
-    'fileHash' => 'c10c8043ec4c1d11b1be4c5975171967794d7ffa28f6ae7808d0404241f16768',
+    'fileHash' => '91da9177a7f36d948aedb7f610126bc66bcce08da2b0a27ba7b91a116b8d179e',
     'dependentFiles' => 
     array (
     ),
@@ -2131,12 +2167,20 @@ return [
     array (
     ),
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Database\\NeonPostgresConnector.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Database\\NeonPostgresConnection.php' => 
   array (
-    'fileHash' => '6400df384e3bd7a59fc10f1be20ca7d191381d6cb04b1f9248f1d838f78ee98e',
+    'fileHash' => '3c35390e0180e0ffb38d4054095489a741ba6d311b9489f96c4b6c409c00a51f',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\DatabaseServiceProvider.php',
+    ),
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Database\\NeonPostgresConnector.php' => 
+  array (
+    'fileHash' => 'f4de8144937a9ea33e04113076143bd414ebed2247f0e8cd5b20876de055eacb',
+    'dependentFiles' => 
+    array (
+      0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\AppServiceProvider.php',
     ),
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Controllers\\AuthController.php' => 
@@ -2155,12 +2199,13 @@ return [
       0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Controllers\\AuthController.php',
       1 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Controllers\\FrontController.php',
       2 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Controllers\\HealthController.php',
-      3 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\web.php',
+      3 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Controllers\\SummaryController.php',
+      4 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\web.php',
     ),
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Controllers\\FrontController.php' => 
   array (
-    'fileHash' => '77e1be49ba7bcea7ab85dc9ea4b1be8bd6348398bb9808dc0bf3ef8cd12461be',
+    'fileHash' => 'c8e014dd66ceb5f8538eb5f4288455e0d7aede629d7d09eb121c9425b82b00d6',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\web.php',
@@ -2168,7 +2213,15 @@ return [
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Controllers\\HealthController.php' => 
   array (
-    'fileHash' => '776c6cc9c75c4964810b6bef18552a6c7844a2bc0ab074c6b826839028aa2e8d',
+    'fileHash' => '1944e6c03927b9d88100cfc8b08073f822f6f82bdf63ee507a1547cd8b8f93ee',
+    'dependentFiles' => 
+    array (
+      0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\web.php',
+    ),
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Controllers\\SummaryController.php' => 
+  array (
+    'fileHash' => 'efa8f4086693abd7fd1a2472741e926d348cf3b0e9fc6275c03a8223cdde779c',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\web.php',
@@ -2229,6 +2282,14 @@ return [
       0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\admin.php',
     ),
   ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\ChatList.php' => 
+  array (
+    'fileHash' => 'b738e0bf678b1e63c619899b15a40919df0ede8a96bb08b7efe749bcff7a4b9c',
+    'dependentFiles' => 
+    array (
+      0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\admin.php',
+    ),
+  ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\ContactList.php' => 
   array (
     'fileHash' => '3061b3ace1b2c824445976edbe28650d2d6c0045389de3216ade80eb2b82ab36',
@@ -2239,7 +2300,7 @@ return [
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Dashboard.php' => 
   array (
-    'fileHash' => '60ce48055fd674054a39a185ea82ed832c12c20851430edd706e7fc0fbef57aa',
+    'fileHash' => 'c0f4725227e983327a00fd532224e96e2c93a0af88ee3fffa25d4d5195214abb',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\admin.php',
@@ -2293,9 +2354,30 @@ return [
       0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\admin.php',
     ),
   ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\AppointmentBooking.php' => 
+  array (
+    'fileHash' => 'b8c2d15c4b5ef78d11de2499efa7b57ca7c9730e9078528547b0dc8134767baf',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\AppointmentList.php' => 
   array (
-    'fileHash' => 'fe0d43deacc9ed9045acc40d35d129c28016be37c07ea120aa30329104cb0982',
+    'fileHash' => '51c74750c3028c7402d997e87f151e4bbd59ce8f5b10aa22b2115b78d75667fc',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\Chat.php' => 
+  array (
+    'fileHash' => '31cdd66b05daaa28e6985d0f7d77aa76c778d413eede2465749f3cf96d785fee',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\ProfileForm.php' => 
+  array (
+    'fileHash' => '8a37760a6c8df0ef16a32bb21a3cfaec7cd89195145e6394ef7f0e9235e8e256',
     'dependentFiles' => 
     array (
     ),
@@ -2333,10 +2415,11 @@ return [
     array (
       0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\AppointmentList.php',
       1 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Dashboard.php',
-      2 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\AppointmentList.php',
-      3 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\User.php',
-      4 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\AppointmentPolicy.php',
-      5 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\AuthServiceProvider.php',
+      2 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\AppointmentBooking.php',
+      3 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\AppointmentList.php',
+      4 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\User.php',
+      5 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\AppointmentPolicy.php',
+      6 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\AuthServiceProvider.php',
     ),
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Category.php' => 
@@ -2349,6 +2432,28 @@ return [
       2 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Blog\\CategoryList.php',
       3 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Blog\\PostForm.php',
       4 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Post.php',
+    ),
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\ChatMessage.php' => 
+  array (
+    'fileHash' => '8e88dd057bcea50ebd0e5f3b19290f504c27702048d2f8092cd6265c85f60f58',
+    'dependentFiles' => 
+    array (
+      0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Dashboard.php',
+      1 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\Chat.php',
+      2 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\ChatSession.php',
+    ),
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\ChatSession.php' => 
+  array (
+    'fileHash' => 'de6c985e8f72d3c8ace73ab52bd5bc4be9b2087332782aa1daa163d2f6f374e2',
+    'dependentFiles' => 
+    array (
+      0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\ChatList.php',
+      1 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Dashboard.php',
+      2 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\Chat.php',
+      3 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\ChatMessage.php',
+      4 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\User.php',
     ),
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Contact.php' => 
@@ -2382,21 +2487,22 @@ return [
     array (
       0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Console\\Commands\\PurgeTrashed.php',
       1 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Controllers\\FrontController.php',
-      2 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Blog\\PostForm.php',
-      3 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Blog\\PostList.php',
-      4 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Dashboard.php',
-      5 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Recycle\\RecycleBin.php',
-      6 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\GlobalSearch.php',
-      7 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Category.php',
-      8 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\PostPolicy.php',
-      9 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\AuthServiceProvider.php',
-      10 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\factories\\PostFactory.php',
-      11 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\PostSeeder.php',
+      2 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Controllers\\SummaryController.php',
+      3 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Blog\\PostForm.php',
+      4 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Blog\\PostList.php',
+      5 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Dashboard.php',
+      6 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Recycle\\RecycleBin.php',
+      7 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\GlobalSearch.php',
+      8 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Category.php',
+      9 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\PostPolicy.php',
+      10 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\AuthServiceProvider.php',
+      11 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\factories\\PostFactory.php',
+      12 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\PostSeeder.php',
     ),
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Project.php' => 
   array (
-    'fileHash' => '2d8580b9c565e54cff5e98a47d8b33444d5d0b00296b274103420f0eeabc53ab',
+    'fileHash' => '4e3ca52f690e8ee2443f191e939f6ce353fa9b7ec1f7cd3737054954bde918ab',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Console\\Commands\\PurgeTrashed.php',
@@ -2423,16 +2529,17 @@ return [
       3 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Recycle\\RecycleBin.php',
       4 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Services\\ServiceForm.php',
       5 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Services\\ServiceList.php',
-      6 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\GlobalSearch.php',
-      7 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\ServicePolicy.php',
-      8 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\AuthServiceProvider.php',
-      9 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\factories\\ServiceFactory.php',
-      10 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\ServiceSeeder.php',
+      6 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\AppointmentBooking.php',
+      7 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\GlobalSearch.php',
+      8 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\ServicePolicy.php',
+      9 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\AuthServiceProvider.php',
+      10 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\factories\\ServiceFactory.php',
+      11 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\ServiceSeeder.php',
     ),
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\User.php' => 
   array (
-    'fileHash' => '9b7a60da499e0a188c85f029e2b08772b46c719021dfe9c5016d132ba78bfb9f',
+    'fileHash' => '8925f9c199f1018ed9c914425e98fc0e64d01b4b63fc2b39a92852845be63298',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Controllers\\AuthController.php',
@@ -2440,19 +2547,23 @@ return [
       2 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Dashboard.php',
       3 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\UserList.php',
       4 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\AppointmentList.php',
-      5 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Appointment.php',
-      6 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\ModelAudit.php',
-      7 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\AppointmentPolicy.php',
-      8 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\ContactPolicy.php',
-      9 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\PostPolicy.php',
-      10 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\ProjectPolicy.php',
-      11 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\ServicePolicy.php',
-      12 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\UserPolicy.php',
-      13 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\AuthServiceProvider.php',
-      14 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\TelescopeServiceProvider.php',
-      15 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\auth.php',
-      16 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\factories\\UserFactory.php',
-      17 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\AdminUserSeeder.php',
+      5 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\Chat.php',
+      6 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\ProfileForm.php',
+      7 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Appointment.php',
+      8 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\ChatMessage.php',
+      9 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\ChatSession.php',
+      10 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\ModelAudit.php',
+      11 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\AppointmentPolicy.php',
+      12 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\ContactPolicy.php',
+      13 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\PostPolicy.php',
+      14 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\ProjectPolicy.php',
+      15 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\ServicePolicy.php',
+      16 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\UserPolicy.php',
+      17 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\AuthServiceProvider.php',
+      18 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\TelescopeServiceProvider.php',
+      19 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\auth.php',
+      20 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\factories\\UserFactory.php',
+      21 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\AdminUserSeeder.php',
     ),
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\AppointmentPolicy.php' => 
@@ -2505,7 +2616,7 @@ return [
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\AppServiceProvider.php' => 
   array (
-    'fileHash' => '7dc9723571a073485e907e6d9202f8effa6d2da4c90a953182665b1a349918c6',
+    'fileHash' => 'f1d2d347d81c35a0c1c730a5e02f0d9e4624a4b2ccc205210c6abffc04484872',
     'dependentFiles' => 
     array (
     ),
@@ -2519,10 +2630,17 @@ return [
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\DatabaseServiceProvider.php' => 
   array (
-    'fileHash' => 'c118696ce4b3f44db4485574546f04000644b5104c2dffab3a67aaccc07b2531',
+    'fileHash' => '99320313e3c7af0fa6bd7bb58234b95759a8ca704af70fa7a0381757cb5a4892',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\app.php',
+    ),
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\NeonDbServiceProvider.php' => 
+  array (
+    'fileHash' => 'cb56720f264ab68c089fde37cb194f4379df6506940373382b3c0876f1c92f12',
+    'dependentFiles' => 
+    array (
     ),
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\TelescopeServiceProvider.php' => 
@@ -2547,6 +2665,15 @@ return [
       0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Services\\CalendlyService.php',
     ),
   ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Services\\GeminiService.php' => 
+  array (
+    'fileHash' => '769cffc01e3850e0be7543d99a83c20c1a48663b5b15ac39649dfaf94c565800',
+    'dependentFiles' => 
+    array (
+      0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Controllers\\SummaryController.php',
+      1 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\Chat.php',
+    ),
+  ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Traits\\Auditable.php' => 
   array (
     'fileHash' => 'dfdcb93e82a54ce4dea6cdd77cacf54c3cd08aff5e9712b9c953356990a429e0',
@@ -2554,29 +2681,31 @@ return [
     array (
       0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Console\\Commands\\PurgeTrashed.php',
       1 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Controllers\\FrontController.php',
-      2 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Blog\\PostForm.php',
-      3 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Blog\\PostList.php',
-      4 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Dashboard.php',
-      5 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Projects\\ProjectForm.php',
-      6 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Projects\\ProjectList.php',
-      7 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Recycle\\RecycleBin.php',
-      8 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Services\\ServiceForm.php',
-      9 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Services\\ServiceList.php',
-      10 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\GlobalSearch.php',
-      11 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Category.php',
-      12 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Post.php',
-      13 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Project.php',
-      14 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Service.php',
-      15 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\PostPolicy.php',
-      16 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\ProjectPolicy.php',
-      17 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\ServicePolicy.php',
-      18 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\AuthServiceProvider.php',
-      19 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\factories\\PostFactory.php',
-      20 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\factories\\ProjectFactory.php',
-      21 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\factories\\ServiceFactory.php',
-      22 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\PostSeeder.php',
-      23 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\ProjectSeeder.php',
-      24 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\ServiceSeeder.php',
+      2 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Controllers\\SummaryController.php',
+      3 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Blog\\PostForm.php',
+      4 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Blog\\PostList.php',
+      5 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Dashboard.php',
+      6 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Projects\\ProjectForm.php',
+      7 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Projects\\ProjectList.php',
+      8 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Recycle\\RecycleBin.php',
+      9 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Services\\ServiceForm.php',
+      10 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Services\\ServiceList.php',
+      11 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\AppointmentBooking.php',
+      12 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\GlobalSearch.php',
+      13 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Category.php',
+      14 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Post.php',
+      15 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Project.php',
+      16 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Service.php',
+      17 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\PostPolicy.php',
+      18 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\ProjectPolicy.php',
+      19 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\ServicePolicy.php',
+      20 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\AuthServiceProvider.php',
+      21 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\factories\\PostFactory.php',
+      22 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\factories\\ProjectFactory.php',
+      23 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\factories\\ServiceFactory.php',
+      24 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\PostSeeder.php',
+      25 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\ProjectSeeder.php',
+      26 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\ServiceSeeder.php',
     ),
     'usedTraitDependentFiles' => 
     array (
@@ -2587,7 +2716,14 @@ return [
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\admin-menu.php' => 
   array (
-    'fileHash' => '797ce3f4fa473e263872af04a169c4d15a07a2ed980b0793bd4c159b67d93f2d',
+    'fileHash' => '2f39140bf4b41ca7403dd624c2f9e57f3eaaa210fb0964b97100d66231c9682f',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\ai.php' => 
+  array (
+    'fileHash' => '3a040254a571ac0ff0c3a9f9cfe734a03473e07e7565af407262f4f6298268ef',
     'dependentFiles' => 
     array (
     ),
@@ -2608,14 +2744,14 @@ return [
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\cache.php' => 
   array (
-    'fileHash' => '8f665fdc26ee9f998cace385e7dd650bea75641af47704a9cbe6e7284fe81545',
+    'fileHash' => 'c69fb85f520b146ad6af5d3018de3e04b97f2a608e50f6ada41f5c2e7d2537cb',
     'dependentFiles' => 
     array (
     ),
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\database.php' => 
   array (
-    'fileHash' => '80b9efb6edfb13f2b1eb31d9e320d06ba63d152567a3123f6150bd24b54f22cf',
+    'fileHash' => '1f5a65fd86435d90bdc97b5e228a76772581e7c833edb8a14db54e86742780e6',
     'dependentFiles' => 
     array (
     ),
@@ -2650,7 +2786,7 @@ return [
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\site.php' => 
   array (
-    'fileHash' => 'a841346c1ad3c713b1441fe613a21c4f137f1b5c115904dbf4b9f295851d4855',
+    'fileHash' => 'feb3113e23c0b812e8b1edcd387b1695be866d3a4501997dbd3792048926f4ea',
     'dependentFiles' => 
     array (
     ),
@@ -2720,7 +2856,7 @@ return [
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2024_01_01_000002_create_projects_table.php' => 
   array (
-    'fileHash' => 'ad752ddd1c33c7af4ec9ed698a7cc51f4e91556cdb29877c73901e2c8cc1ee0a',
+    'fileHash' => '40ecdc0176239fd4f9e8ae6d7a15ce72547f189ccf8d9b90c43ed83d86883977',
     'dependentFiles' => 
     array (
     ),
@@ -2734,7 +2870,7 @@ return [
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2024_07_15_000004_add_role_to_users_table.php' => 
   array (
-    'fileHash' => 'b7b171cf8e41e3cbab855dd3423d4f45164cde65cdf76ffd7d26eb64398733f5',
+    'fileHash' => '8adce911a8c78db7674c1de23ac837f3ee0bbe2fbec232f29de8090e3c7fb2c7',
     'dependentFiles' => 
     array (
     ),
@@ -2809,6 +2945,27 @@ return [
     array (
     ),
   ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_07_30_154019_add_dni_phone_address_to_users_table.php' => 
+  array (
+    'fileHash' => '6f65a163e4d29e57c0dd9eb68d5ccd24862b3b316c3414783d9bda7936bfcfab',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_08_18_232411_create_chat_sessions_table.php' => 
+  array (
+    'fileHash' => 'f604fa0ab8a5debdc182f6dca74cc1c49c9c17a14fee4b20177ac0f548b7778e',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_08_18_232415_create_chat_messages_table.php' => 
+  array (
+    'fileHash' => '0dbcfeaed1d1d49f18f46436bdef35cecb9e9832201f88e34fc80cc148e43bcf',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\AdminUserSeeder.php' => 
   array (
     'fileHash' => 'f61defd263029fb9d8ab869907ce52370006c4ed4bfb5f863f0550559f0aeb28',
@@ -2834,7 +2991,7 @@ return [
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\ProjectSeeder.php' => 
   array (
-    'fileHash' => 'b53f24aaa9d587f97bff6fa91348a654ce8fb3179f28836714757c72052ce6ae',
+    'fileHash' => '41c4c008cdfe11f27406f382167eb4665231881d3a2d8ac8a181a2885e8fd42d',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\DatabaseSeeder.php',
@@ -2850,7 +3007,7 @@ return [
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\admin.php' => 
   array (
-    'fileHash' => 'd82a320465f25bd232ca09369a8b16bca195c33d8acc4f0a93f2f8fd4d49d6ab',
+    'fileHash' => '7c93929f6fa86ee71ecbe7ff2604ad1f982eaba73d06029ae2a7d36a213ad26c',
     'dependentFiles' => 
     array (
     ),
@@ -2864,56 +3021,60 @@ return [
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\web.php' => 
   array (
-    'fileHash' => 'd7a9f6792bdf29ce5847e515623afe3cec016e62c4d6c74debd101f60ace34b1',
+    'fileHash' => '60892573fe7b23133318ba2b68838263b7fd95eeaf969a54d89a361db74e131b',
     'dependentFiles' => 
     array (
     ),
   ),
 ),
 	'packageDependencies' => array (
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Blog\\CategoryForm.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Blog\\PostForm.php' => 
+  array (
+    0 => 'livewire/livewire',
+    1 => 'laravel/framework',
+    2 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Recycle\\RecycleBin.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'livewire/livewire',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\ContactList.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Services\\ServiceList.php' => 
   array (
     0 => 'livewire/livewire',
     1 => 'laravel/framework',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Dashboard.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'livewire/livewire',
-    2 => 'nesbot/carbon',
-    3 => 'psr/simple-cache',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\AppointmentPolicy.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Category.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\PostPolicy.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\ProjectPolicy.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\UserPolicy.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\AppServiceProvider.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Post.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\DatabaseServiceProvider.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\NeonDbServiceProvider.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Services\\CalendlyService.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'psr/log',
+    2 => 'monolog/monolog',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\admin-menu.php' => 
+  array (
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\database.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\filesystems.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\session.php' => 
   array (
     0 => 'laravel/framework',
   ),
@@ -2922,17 +3083,23 @@ return [
     0 => 'laravel/framework',
     1 => 'fakerphp/faker',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\factories\\UserFactory.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'fakerphp/faker',
-    2 => 'nesbot/carbon',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_07_16_120000_add_worm_trigger_to_model_audits.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2024_07_15_000006_create_model_audits_table.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_07_16_120001_partition_model_audits.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_07_16_093938_add_performance_indexes.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_07_16_100001_create_categories_tables.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_07_16_110000_create_appointments_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_07_16_130000_widen_encrypted_columns.php' => 
   array (
     0 => 'laravel/framework',
   ),
@@ -2941,30 +3108,31 @@ return [
     0 => 'laravel/framework',
     1 => 'nesbot/carbon',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\ServiceSeeder.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\admin.php' => 
   array (
     0 => 'laravel/framework',
+    1 => 'livewire/livewire',
+    2 => 'symfony/http-foundation',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\web.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\console.php' => 
   array (
     0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
+    1 => 'symfony/console',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Controllers\\AuthController.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Console\\Commands\\CleanAudits.php' => 
   array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\AppointmentList.php' => 
-  array (
-    0 => 'livewire/livewire',
-    1 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Blog\\PostForm.php' => 
-  array (
-    0 => 'livewire/livewire',
+    0 => 'symfony/console',
     1 => 'laravel/framework',
     2 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Console\\Commands\\MonitorSystem.php' => 
+  array (
+    0 => 'symfony/console',
+    1 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Database\\NeonPostgresConnection.php' => 
+  array (
+    0 => 'laravel/framework',
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Blog\\PostList.php' => 
   array (
@@ -2972,40 +3140,160 @@ return [
     1 => 'laravel/framework',
     2 => 'nesbot/carbon',
   ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\UserList.php' => 
+  array (
+    0 => 'livewire/livewire',
+    1 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\Chat.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'livewire/livewire',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\ProfileForm.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'livewire/livewire',
+    2 => 'symfony/http-foundation',
+  ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Concerns\\HasSortableTable.php' => 
   array (
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Category.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Appointment.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\ModelAudit.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Project.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'psr/simple-cache',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Service.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'psr/simple-cache',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\PostPolicy.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\ContactPolicy.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\ServicePolicy.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Traits\\Auditable.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\AppServiceProvider.php' => 
   array (
+    0 => 'laravel/framework',
+    1 => 'psr/container',
+    2 => 'symfony/http-foundation',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\admin-menu.php' => 
-  array (
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\queue.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\ai.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\0001_01_01_000001_create_cache_table.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\logging.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2024_01_01_000002_create_projects_table.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2024_01_01_000001_create_services_table.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_07_16_130000_widen_encrypted_columns.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_07_16_120001_partition_model_audits.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\ProjectSeeder.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\ServiceSeeder.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Database\\NeonPostgresConnector.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Controllers\\AuthController.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Controllers\\HealthController.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'symfony/http-kernel',
+    3 => 'psr/container',
+    4 => 'nesbot/carbon',
+    5 => 'psr/simple-cache',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Blog\\CategoryList.php' => 
+  array (
+    0 => 'livewire/livewire',
+    1 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Projects\\ProjectForm.php' => 
+  array (
+    0 => 'livewire/livewire',
+    1 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Projects\\ProjectList.php' => 
+  array (
+    0 => 'livewire/livewire',
+    1 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\AppointmentBooking.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'livewire/livewire',
+    2 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Contact.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\AuthServiceProvider.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\auth.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\site.php' => 
+  array (
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\telescope.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/telescope',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\view.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\factories\\ServiceFactory.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'fakerphp/faker',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2024_07_15_000005_add_soft_deletes_to_content_tables.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_07_16_120000_add_worm_trigger_to_model_audits.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_07_30_154019_add_dni_phone_address_to_users_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_08_18_232411_create_chat_sessions_table.php' => 
   array (
     0 => 'laravel/framework',
   ),
@@ -3014,7 +3302,7 @@ return [
     0 => 'laravel/framework',
     1 => 'nesbot/carbon',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\ProjectSeeder.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\DatabaseSeeder.php' => 
   array (
     0 => 'laravel/framework',
   ),
@@ -3024,9 +3312,93 @@ return [
     1 => 'laravel/framework',
     2 => 'nesbot/carbon',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Database\\NeonPostgresConnector.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Controllers\\SummaryController.php' => 
   array (
     0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\AppointmentList.php' => 
+  array (
+    0 => 'livewire/livewire',
+    1 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Blog\\CategoryForm.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'livewire/livewire',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Dashboard.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'livewire/livewire',
+    2 => 'nesbot/carbon',
+    3 => 'psr/simple-cache',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\AppointmentList.php' => 
+  array (
+    0 => 'livewire/livewire',
+    1 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\GlobalSearch.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'livewire/livewire',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\AppointmentPolicy.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\UserPolicy.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\TelescopeServiceProvider.php' => 
+  array (
+    0 => 'laravel/telescope',
+    1 => 'laravel/framework',
+    2 => 'psr/container',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Services\\GeminiService.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\filesystems.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\queue.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\factories\\ProjectFactory.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'fakerphp/faker',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\0001_01_01_000001_create_cache_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2024_07_15_000004_add_role_to_users_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_07_16_100000_create_contacts_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_07_24_164256_create_telescope_entries_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_08_18_232415_create_chat_messages_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\web.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Controllers\\Controller.php' => 
   array (
@@ -3048,24 +3420,50 @@ return [
     1 => 'livewire/livewire',
     2 => 'nesbot/carbon',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Recycle\\RecycleBin.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\ContactList.php' => 
+  array (
+    0 => 'livewire/livewire',
+    1 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Services\\ServiceForm.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'livewire/livewire',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Project.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\ChatMessage.php' => 
   array (
     0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'psr/simple-cache',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\ChatSession.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\ModelAudit.php' => 
+  array (
+    0 => 'laravel/framework',
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\User.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\ServicePolicy.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\ContactPolicy.php' => 
   array (
     0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\ProjectPolicy.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Services\\CircuitBreaker.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'nesbot/carbon',
+    2 => 'psr/simple-cache',
+    3 => 'psr/log',
+    4 => 'monolog/monolog',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Traits\\Auditable.php' => 
+  array (
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\app.php' => 
   array (
@@ -3082,151 +3480,17 @@ return [
   array (
     0 => 'laravel/framework',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\logging.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\session.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\factories\\ServiceFactory.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\factories\\UserFactory.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'fakerphp/faker',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2024_07_15_000006_create_model_audits_table.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\admin.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'livewire/livewire',
-    2 => 'symfony/http-foundation',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Console\\Commands\\CleanAudits.php' => 
-  array (
-    0 => 'symfony/console',
-    1 => 'laravel/framework',
     2 => 'nesbot/carbon',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Projects\\ProjectForm.php' => 
-  array (
-    0 => 'livewire/livewire',
-    1 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Services\\ServiceForm.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'livewire/livewire',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Services\\ServiceList.php' => 
-  array (
-    0 => 'livewire/livewire',
-    1 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\UserList.php' => 
-  array (
-    0 => 'livewire/livewire',
-    1 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Service.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'psr/simple-cache',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\DatabaseServiceProvider.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'psr/container',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Services\\CalendlyService.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'psr/log',
-    2 => 'monolog/monolog',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\auth.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\site.php' => 
-  array (
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\factories\\ProjectFactory.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'fakerphp/faker',
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\0001_01_01_000000_create_users_table.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2024_01_01_000001_create_services_table.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2024_07_15_000005_add_soft_deletes_to_content_tables.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_07_16_100001_create_categories_tables.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\console.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/console',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Blog\\CategoryList.php' => 
-  array (
-    0 => 'livewire/livewire',
-    1 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Projects\\ProjectList.php' => 
-  array (
-    0 => 'livewire/livewire',
-    1 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\AppointmentList.php' => 
-  array (
-    0 => 'livewire/livewire',
-    1 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\GlobalSearch.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'livewire/livewire',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Appointment.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Contact.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Post.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\AuthServiceProvider.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Services\\CircuitBreaker.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'nesbot/carbon',
-    2 => 'psr/simple-cache',
-    3 => 'psr/log',
-    4 => 'monolog/monolog',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\view.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2024_01_01_000002_create_projects_table.php' => 
   array (
     0 => 'laravel/framework',
   ),
@@ -3234,54 +3498,10 @@ return [
   array (
     0 => 'laravel/framework',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2024_07_15_000004_add_role_to_users_table.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\ChatList.php' => 
   array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_07_16_093938_add_performance_indexes.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_07_16_100000_create_contacts_table.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_07_16_110000_create_appointments_table.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\DatabaseSeeder.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Console\\Commands\\MonitorSystem.php' => 
-  array (
-    0 => 'symfony/console',
+    0 => 'livewire/livewire',
     1 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Controllers\\HealthController.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'symfony/http-kernel',
-    3 => 'psr/container',
-    4 => 'nesbot/carbon',
-    5 => 'psr/simple-cache',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\TelescopeServiceProvider.php' => 
-  array (
-    0 => 'laravel/telescope',
-    1 => 'laravel/framework',
-    2 => 'psr/container',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\telescope.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/telescope',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_07_24_164256_create_telescope_entries_table.php' => 
-  array (
-    0 => 'laravel/framework',
   ),
 ),
 	'exportedNodesCallback' => static function (): array { return array (
@@ -3556,6 +3776,63 @@ return [
            'returnType' => 'void',
            'parameters' => 
           array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Database\\NeonPostgresConnection.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Database\\NeonPostgresConnection',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Illuminate\\Database\\PostgresConnection',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'prepareBindings',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => NULL,
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'bindings',
+               'type' => 'array',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
           ),
            'attributes' => 
           array (
@@ -4059,6 +4336,24 @@ return [
         )),
         9 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'bookAppointment',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\View\\View',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        10 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'terms',
            'phpDoc' => NULL,
            'byRef' => false,
@@ -4075,7 +4370,7 @@ return [
           array (
           ),
         )),
-        10 => 
+        11 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'privacy',
            'phpDoc' => NULL,
@@ -4093,7 +4388,7 @@ return [
           array (
           ),
         )),
-        11 => 
+        12 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'search',
            'phpDoc' => NULL,
@@ -4150,6 +4445,89 @@ return [
            'returnType' => 'Illuminate\\Http\\JsonResponse',
            'parameters' => 
           array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Controllers\\SummaryController.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Http\\Controllers\\SummaryController',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'App\\Http\\Controllers\\Controller',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => '__invoke',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Http\\JsonResponse',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'request',
+               'type' => 'Illuminate\\Http\\Request',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            1 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'post',
+               'type' => 'App\\Models\\Post',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            2 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'type',
+               'type' => 'string',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
           ),
            'attributes' => 
           array (
@@ -5240,6 +5618,175 @@ return [
           ),
         )),
         1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'render',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\View\\View',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\ChatList.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Livewire\\Admin\\ChatList',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Livewire\\Component',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'Livewire\\WithPagination',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'search',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedAttributeNode::__set_state(array(
+               'name' => 'Livewire\\Attributes\\Url',
+               'args' => 
+              array (
+              ),
+            )),
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'selectedSessionId',
+          ),
+           'phpDoc' => NULL,
+           'type' => '?int',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'updatedSearch',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        3 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'selectSession',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'sessionId',
+               'type' => 'int',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        4 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'closeSessionView',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        5 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'render',
            'phpDoc' => NULL,
@@ -6515,6 +7062,186 @@ return [
       ),
     )),
   ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\AppointmentBooking.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Livewire\\Client\\AppointmentBooking',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Livewire\\Component',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'service_id',
+          ),
+           'phpDoc' => NULL,
+           'type' => NULL,
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'scheduled_at',
+          ),
+           'phpDoc' => NULL,
+           'type' => NULL,
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'description',
+          ),
+           'phpDoc' => NULL,
+           'type' => NULL,
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        3 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'rules',
+          ),
+           'phpDoc' => NULL,
+           'type' => NULL,
+           'public' => false,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        4 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'mount',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => NULL,
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        5 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'submit',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => NULL,
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        6 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'render',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => NULL,
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\AppointmentList.php' => 
   array (
     0 => 
@@ -6540,11 +7267,11 @@ return [
         \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
            'names' => 
           array (
-            0 => 'title',
+            0 => 'listeners',
           ),
            'phpDoc' => NULL,
-           'type' => 'string',
-           'public' => true,
+           'type' => NULL,
+           'public' => false,
            'private' => false,
            'static' => false,
            'readonly' => false,
@@ -6562,74 +7289,6 @@ return [
           ),
         )),
         1 => 
-        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
-           'names' => 
-          array (
-            0 => 'description',
-          ),
-           'phpDoc' => NULL,
-           'type' => 'string',
-           'public' => true,
-           'private' => false,
-           'static' => false,
-           'readonly' => false,
-           'abstract' => false,
-           'final' => false,
-           'publicSet' => false,
-           'protectedSet' => false,
-           'privateSet' => false,
-           'virtual' => false,
-           'attributes' => 
-          array (
-          ),
-           'hooks' => 
-          array (
-          ),
-        )),
-        2 => 
-        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
-           'names' => 
-          array (
-            0 => 'scheduled_at',
-          ),
-           'phpDoc' => NULL,
-           'type' => 'string',
-           'public' => true,
-           'private' => false,
-           'static' => false,
-           'readonly' => false,
-           'abstract' => false,
-           'final' => false,
-           'publicSet' => false,
-           'protectedSet' => false,
-           'privateSet' => false,
-           'virtual' => false,
-           'attributes' => 
-          array (
-          ),
-           'hooks' => 
-          array (
-          ),
-        )),
-        3 => 
-        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
-           'name' => 'create',
-           'phpDoc' => NULL,
-           'byRef' => false,
-           'public' => true,
-           'private' => false,
-           'abstract' => false,
-           'final' => false,
-           'static' => false,
-           'returnType' => 'void',
-           'parameters' => 
-          array (
-          ),
-           'attributes' => 
-          array (
-          ),
-        )),
-        4 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'cancel',
            'phpDoc' => NULL,
@@ -6660,7 +7319,472 @@ return [
           array (
           ),
         )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'render',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\View\\View',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\Chat.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Livewire\\Client\\Chat',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Livewire\\Component',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'message',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'activeSessionId',
+          ),
+           'phpDoc' => NULL,
+           'type' => '?int',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'sending',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'bool',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        3 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'listeners',
+          ),
+           'phpDoc' => NULL,
+           'type' => NULL,
+           'public' => false,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        4 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'mount',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
         5 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'createSession',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        6 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'sendMessage',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        7 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'switchSession',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'sessionId',
+               'type' => 'int',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        8 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'deleteSession',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'sessionId',
+               'type' => 'int',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        9 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'render',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\View\\View',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\ProfileForm.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Livewire\\Client\\ProfileForm',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Livewire\\Component',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'name',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'email',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'dni',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        3 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'phone',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        4 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'address',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        5 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'mount',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        6 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'save',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        7 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'render',
            'phpDoc' => NULL,
@@ -7017,6 +8141,198 @@ return [
            'final' => false,
            'static' => false,
            'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsToMany',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\ChatMessage.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Models\\ChatMessage',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Illuminate\\Database\\Eloquent\\Model',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'fillable',
+          ),
+           'phpDoc' => NULL,
+           'type' => NULL,
+           'public' => false,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'casts',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => false,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'array',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'user',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        3 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'session',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\ChatSession.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Models\\ChatSession',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Illuminate\\Database\\Eloquent\\Model',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'fillable',
+          ),
+           'phpDoc' => NULL,
+           'type' => NULL,
+           'public' => false,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'user',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'messages',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
            'parameters' => 
           array (
           ),
@@ -7838,6 +9154,24 @@ return [
         5 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'appointments',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        6 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'chatSessions',
            'phpDoc' => NULL,
            'byRef' => false,
            'public' => true,
@@ -9064,6 +10398,24 @@ return [
       array (
         0 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'register',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'boot',
            'phpDoc' => NULL,
            'byRef' => false,
@@ -9179,6 +10531,94 @@ return [
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'register',
            'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\NeonDbServiceProvider.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Providers\\NeonDbServiceProvider',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Illuminate\\Support\\ServiceProvider',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'register',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * Register services.
+     */',
+             'namespace' => 'App\\Providers',
+             'uses' => 
+            array (
+              'serviceprovider' => 'Illuminate\\Support\\ServiceProvider',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'boot',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * Bootstrap services.
+     */',
+             'namespace' => 'App\\Providers',
+             'uses' => 
+            array (
+              'serviceprovider' => 'Illuminate\\Support\\ServiceProvider',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
            'byRef' => false,
            'public' => true,
            'private' => false,
@@ -9560,6 +11000,156 @@ return [
             \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
                'name' => 'fn',
                'type' => 'callable',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Services\\GeminiService.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Services\\GeminiService',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => NULL,
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => '__construct',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => NULL,
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'chat',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'string',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'message',
+               'type' => 'string',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            1 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'history',
+               'type' => 'array',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => true,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'generateSummary',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'string',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'text',
+               'type' => 'string',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        3 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'generateHighlights',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'array',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'text',
+               'type' => 'string',
                'byRef' => false,
                'variadic' => false,
                'hasDefault' => false,

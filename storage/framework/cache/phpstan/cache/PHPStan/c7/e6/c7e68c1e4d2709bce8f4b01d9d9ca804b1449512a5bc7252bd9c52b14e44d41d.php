@@ -7,7 +7,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
   array (
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\admin.php' => 
     array (
-      0 => 'd82a320465f25bd232ca09369a8b16bca195c33d8acc4f0a93f2f8fd4d49d6ab',
+      0 => '7c93929f6fa86ee71ecbe7ff2604ad1f982eaba73d06029ae2a7d36a213ad26c',
       1 => 
       array (
       ),
@@ -33,7 +33,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\web.php' => 
     array (
-      0 => 'd7a9f6792bdf29ce5847e515623afe3cec016e62c4d6c74debd101f60ace34b1',
+      0 => '60892573fe7b23133318ba2b68838263b7fd95eeaf969a54d89a361db74e131b',
       1 => 
       array (
       ),

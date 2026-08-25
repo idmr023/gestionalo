@@ -45,14 +45,29 @@
                         @livewire('client.appointment-list')
                     </div>
 
-                    <div class="md:col-span-2 bg-surface border border-[rgba(15,23,42,0.06)] p-6">
-                        <div class="flex items-center gap-3 mb-6">
-                            <div class="w-10 h-10 flex items-center justify-center text-primary/40">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                    <div class="md:col-span-2 space-y-6">
+                        <div class="bg-surface border border-[rgba(15,23,42,0.06)] p-6">
+                            <div class="flex items-center gap-3 mb-6">
+                                <div class="w-10 h-10 flex items-center justify-center text-primary/40">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                                </div>
+                                <h3 class="font-semibold text-primary">Mi perfil</h3>
                             </div>
-                            <h3 class="font-semibold text-primary">Mi perfil</h3>
+                            @livewire('client.profile-form')
                         </div>
-                        @livewire('client.profile-form')
+
+                        <a href="{{ route('client.chat') }}" class="block bg-surface border border-[rgba(15,23,42,0.06)] p-6 hover:border-accent/20 transition group">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 flex items-center justify-center bg-accent/10 text-accent">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-primary group-hover:text-accent transition">Asesoría con IA</h3>
+                                    <p class="text-xs text-primary/50 mt-0.5">Consultas sobre licencias, ITSE, saneamiento y más.</p>
+                                </div>
+                                <svg class="w-4 h-4 text-primary/20 group-hover:text-accent ml-auto transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                            </div>
+                        </a>
                     </div>
                 </div>
 

@@ -1,0 +1,14 @@
+flask
+requests
+geopandas
+shapely
+fiona
+python-docx
+pypdf
+langchain>=0.1.0
+langchain-community>=0.0.32
+langchain-google-genai
+chromadb
+openai
+tokenizers
+unstructured

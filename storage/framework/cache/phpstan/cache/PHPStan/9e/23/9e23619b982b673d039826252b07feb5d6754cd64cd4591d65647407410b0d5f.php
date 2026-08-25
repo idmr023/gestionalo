@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\idmr_\OneDrive\Escritorio\gestionalo\app\Livewire\Client\AppointmentList.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Livewire\Client\AppointmentList
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.5.8-fe0d43deacc9ed9045acc40d35d129c28016be37c07ea120aa30329104cb0982',
+   'variableKey' => 'v2-6.70.0.3-8.5.8-51c74750c3028c7402d997e87f151e4bbd59ce8f5b10aa22b2115b78d75667fc',
    'data' => 
   array (
     'locatedSource' => 
@@ -27,7 +27,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     array (
     ),
     'startLine' => 10,
-    'endLine' => 56,
+    'endLine' => 34,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Livewire\\Component',
@@ -43,32 +43,24 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'immediateProperties' => 
     array (
-      'title' => 
+      'listeners' => 
       array (
         'declaringClassName' => 'App\\Livewire\\Client\\AppointmentList',
         'implementingClassName' => 'App\\Livewire\\Client\\AppointmentList',
-        'name' => 'title',
-        'modifiers' => 1,
-        'type' => 
-        array (
-          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
-          'data' => 
-          array (
-            'name' => 'string',
-            'isIdentifier' => true,
-          ),
-        ),
+        'name' => 'listeners',
+        'modifiers' => 2,
+        'type' => NULL,
         'default' => 
         array (
-          'code' => '\'\'',
+          'code' => '[\'appointmentCreated\' => \'$refresh\']',
           'attributes' => 
           array (
             'startLine' => 14,
             'endLine' => 14,
-            'startTokenPos' => 50,
+            'startTokenPos' => 48,
             'startFilePos' => 241,
-            'endTokenPos' => 50,
-            'endFilePos' => 242,
+            'endTokenPos' => 54,
+            'endFilePos' => 276,
           ),
         ),
         'docComment' => NULL,
@@ -78,93 +70,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'startLine' => 14,
         'endLine' => 14,
         'startColumn' => 5,
-        'endColumn' => 30,
-        'isPromoted' => false,
-        'declaredAtCompileTime' => true,
-        'immediateVirtual' => false,
-        'immediateHooks' => 
-        array (
-        ),
-      ),
-      'description' => 
-      array (
-        'declaringClassName' => 'App\\Livewire\\Client\\AppointmentList',
-        'implementingClassName' => 'App\\Livewire\\Client\\AppointmentList',
-        'name' => 'description',
-        'modifiers' => 1,
-        'type' => 
-        array (
-          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
-          'data' => 
-          array (
-            'name' => 'string',
-            'isIdentifier' => true,
-          ),
-        ),
-        'default' => 
-        array (
-          'code' => '\'\'',
-          'attributes' => 
-          array (
-            'startLine' => 16,
-            'endLine' => 16,
-            'startTokenPos' => 61,
-            'startFilePos' => 279,
-            'endTokenPos' => 61,
-            'endFilePos' => 280,
-          ),
-        ),
-        'docComment' => NULL,
-        'attributes' => 
-        array (
-        ),
-        'startLine' => 16,
-        'endLine' => 16,
-        'startColumn' => 5,
-        'endColumn' => 36,
-        'isPromoted' => false,
-        'declaredAtCompileTime' => true,
-        'immediateVirtual' => false,
-        'immediateHooks' => 
-        array (
-        ),
-      ),
-      'scheduled_at' => 
-      array (
-        'declaringClassName' => 'App\\Livewire\\Client\\AppointmentList',
-        'implementingClassName' => 'App\\Livewire\\Client\\AppointmentList',
-        'name' => 'scheduled_at',
-        'modifiers' => 1,
-        'type' => 
-        array (
-          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
-          'data' => 
-          array (
-            'name' => 'string',
-            'isIdentifier' => true,
-          ),
-        ),
-        'default' => 
-        array (
-          'code' => '\'\'',
-          'attributes' => 
-          array (
-            'startLine' => 18,
-            'endLine' => 18,
-            'startTokenPos' => 72,
-            'startFilePos' => 318,
-            'endTokenPos' => 72,
-            'endFilePos' => 319,
-          ),
-        ),
-        'docComment' => NULL,
-        'attributes' => 
-        array (
-        ),
-        'startLine' => 18,
-        'endLine' => 18,
-        'startColumn' => 5,
-        'endColumn' => 37,
+        'endColumn' => 64,
         'isPromoted' => false,
         'declaredAtCompileTime' => true,
         'immediateVirtual' => false,
@@ -175,41 +81,6 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'immediateMethods' => 
     array (
-      'create' => 
-      array (
-        'name' => 'create',
-        'parameters' => 
-        array (
-        ),
-        'returnsReference' => false,
-        'returnType' => 
-        array (
-          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
-          'data' => 
-          array (
-            'name' => 'void',
-            'isIdentifier' => true,
-          ),
-        ),
-        'attributes' => 
-        array (
-        ),
-        'docComment' => NULL,
-        'startLine' => 20,
-        'endLine' => 36,
-        'startColumn' => 5,
-        'endColumn' => 5,
-        'couldThrow' => false,
-        'isClosure' => false,
-        'isGenerator' => false,
-        'isVariadic' => false,
-        'modifiers' => 1,
-        'namespace' => 'App\\Livewire\\Client',
-        'declaringClassName' => 'App\\Livewire\\Client\\AppointmentList',
-        'implementingClassName' => 'App\\Livewire\\Client\\AppointmentList',
-        'currentClassName' => 'App\\Livewire\\Client\\AppointmentList',
-        'aliasName' => NULL,
-      ),
       'cancel' => 
       array (
         'name' => 'cancel',
@@ -234,8 +105,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 38,
-            'endLine' => 38,
+            'startLine' => 16,
+            'endLine' => 16,
             'startColumn' => 28,
             'endColumn' => 51,
             'parameterIndex' => 0,
@@ -256,8 +127,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 38,
-        'endLine' => 46,
+        'startLine' => 16,
+        'endLine' => 24,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -291,8 +162,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 48,
-        'endLine' => 55,
+        'startLine' => 26,
+        'endLine' => 33,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

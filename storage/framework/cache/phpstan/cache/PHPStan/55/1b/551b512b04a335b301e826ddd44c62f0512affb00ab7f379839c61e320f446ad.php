@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\idmr_\OneDrive\Escritorio\gestionalo\app\Http\Controllers\HealthController.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Http\Controllers\HealthController
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.5.8-776c6cc9c75c4964810b6bef18552a6c7844a2bc0ab074c6b826839028aa2e8d',
+   'variableKey' => 'v2-6.70.0.3-8.5.8-1944e6c03927b9d88100cfc8b08073f822f6f82bdf63ee507a1547cd8b8f93ee',
    'data' => 
   array (
     'locatedSource' => 
@@ -27,7 +27,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     array (
     ),
     'startLine' => 9,
-    'endLine' => 58,
+    'endLine' => 61,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'App\\Http\\Controllers\\Controller',
@@ -101,7 +101,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         ),
         'docComment' => NULL,
         'startLine' => 32,
-        'endLine' => 40,
+        'endLine' => 41,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -135,8 +135,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 42,
-        'endLine' => 50,
+        'startLine' => 43,
+        'endLine' => 52,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -174,8 +174,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 52,
-            'endLine' => 52,
+            'startLine' => 54,
+            'endLine' => 54,
             'startColumn' => 37,
             'endColumn' => 48,
             'parameterIndex' => 0,
@@ -196,8 +196,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 52,
-        'endLine' => 57,
+        'startLine' => 54,
+        'endLine' => 60,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

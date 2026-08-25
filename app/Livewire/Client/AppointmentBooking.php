@@ -9,7 +9,9 @@ use Livewire\Component;
 class AppointmentBooking extends Component
 {
     public $service_id;
+
     public $scheduled_at;
+
     public $description;
 
     protected $rules = [
@@ -32,14 +34,14 @@ class AppointmentBooking extends Component
 
         Appointment::create([
             'user_id' => auth()->id(),
-            'title' => 'Cita: ' . $service->title,
+            'title' => 'Cita: '.$service->title,
             'description' => $this->description,
             'scheduled_at' => $this->scheduled_at,
             'status' => 'pending',
         ]);
 
         $this->reset(['service_id', 'description']);
-        
+
         // Notify the list component
         $this->dispatch('appointmentCreated');
         session()->flash('message', 'Cita agendada correctamente.');

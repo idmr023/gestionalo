@@ -32,8 +32,8 @@ class ProfileForm extends Component
     {
         $this->validate([
             'name' => 'required|string|max:255',
-            'email' => 'required|email|max:255|unique:users,email,' . Auth::id(),
-            'dni' => 'nullable|string|size:8|unique:users,dni,' . Auth::id(),
+            'email' => 'required|email|max:255|unique:users,email,'.Auth::id(),
+            'dni' => 'nullable|string|size:8|unique:users,dni,'.Auth::id(),
             'phone' => 'nullable|string|max:20',
             'address' => 'nullable|string|max:255',
         ]);

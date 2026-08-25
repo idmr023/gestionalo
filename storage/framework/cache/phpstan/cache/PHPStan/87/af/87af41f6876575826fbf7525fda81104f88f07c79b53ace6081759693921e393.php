@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\idmr_\OneDrive\Escritorio\gestionalo\app\Console\Commands\MonitorSystem.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Console\Commands\MonitorSystem
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.5.8-c10c8043ec4c1d11b1be4c5975171967794d7ffa28f6ae7808d0404241f16768',
+   'variableKey' => 'v2-6.70.0.3-8.5.8-91da9177a7f36d948aedb7f610126bc66bcce08da2b0a27ba7b91a116b8d179e',
    'data' => 
   array (
     'locatedSource' => 
@@ -27,7 +27,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     array (
     ),
     'startLine' => 7,
-    'endLine' => 34,
+    'endLine' => 35,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Illuminate\\Console\\Command',
@@ -89,20 +89,20 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '\'Report system health, performance, and status\'',
           'attributes' => 
           array (
-            'startLine' => 10,
-            'endLine' => 10,
+            'startLine' => 11,
+            'endLine' => 11,
             'startTokenPos' => 37,
-            'startFilePos' => 185,
+            'startFilePos' => 186,
             'endTokenPos' => 37,
-            'endFilePos' => 231,
+            'endFilePos' => 232,
           ),
         ),
         'docComment' => NULL,
         'attributes' => 
         array (
         ),
-        'startLine' => 10,
-        'endLine' => 10,
+        'startLine' => 11,
+        'endLine' => 11,
         'startColumn' => 5,
         'endColumn' => 77,
         'isPromoted' => false,
@@ -135,8 +135,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 12,
-        'endLine' => 33,
+        'startLine' => 13,
+        'endLine' => 34,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

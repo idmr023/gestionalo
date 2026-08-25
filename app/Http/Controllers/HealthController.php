@@ -33,6 +33,7 @@ class HealthController extends Controller
     {
         try {
             DB::select('SELECT 1');
+
             return ['status' => 'ok', 'latency_ms' => round($this->measureLatency(fn () => DB::select('SELECT 1')), 1)];
         } catch (\Throwable $e) {
             return ['status' => 'error', 'message' => $e->getMessage()];
@@ -43,6 +44,7 @@ class HealthController extends Controller
     {
         try {
             Cache::store()->set('health_check', true, 1);
+
             return ['status' => 'ok'];
         } catch (\Throwable $e) {
             return ['status' => 'error', 'message' => $e->getMessage()];
@@ -53,6 +55,7 @@ class HealthController extends Controller
     {
         $start = microtime(true);
         $fn();
+
         return (microtime(true) - $start) * 1000;
     }
 }

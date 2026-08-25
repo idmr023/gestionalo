@@ -52,7 +52,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2024_01_01_000002_create_projects_table.php' => 
     array (
-      0 => 'ad752ddd1c33c7af4ec9ed698a7cc51f4e91556cdb29877c73901e2c8cc1ee0a',
+      0 => '40ecdc0176239fd4f9e8ae6d7a15ce72547f189ccf8d9b90c43ed83d86883977',
       1 => 
       array (
       ),
@@ -82,7 +82,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2024_07_15_000004_add_role_to_users_table.php' => 
     array (
-      0 => 'b7b171cf8e41e3cbab855dd3423d4f45164cde65cdf76ffd7d26eb64398733f5',
+      0 => '8adce911a8c78db7674c1de23ac837f3ee0bbe2fbec232f29de8090e3c7fb2c7',
       1 => 
       array (
       ),
@@ -187,7 +187,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\ProjectSeeder.php' => 
     array (
-      0 => 'b53f24aaa9d587f97bff6fa91348a654ce8fb3179f28836714757c72052ce6ae',
+      0 => '41c4c008cdfe11f27406f382167eb4665231881d3a2d8ac8a181a2885e8fd42d',
       1 => 
       array (
         0 => 'database\\seeders\\projectseeder',
@@ -376,6 +376,51 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         0 => 'getconnection',
         1 => 'up',
         2 => 'down',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_07_30_154019_add_dni_phone_address_to_users_table.php' => 
+    array (
+      0 => '6f65a163e4d29e57c0dd9eb68d5ccd24862b3b316c3414783d9bda7936bfcfab',
+      1 => 
+      array (
+      ),
+      2 => 
+      array (
+        0 => 'up',
+        1 => 'down',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_08_18_232411_create_chat_sessions_table.php' => 
+    array (
+      0 => 'f604fa0ab8a5debdc182f6dca74cc1c49c9c17a14fee4b20177ac0f548b7778e',
+      1 => 
+      array (
+      ),
+      2 => 
+      array (
+        0 => 'up',
+        1 => 'down',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_08_18_232415_create_chat_messages_table.php' => 
+    array (
+      0 => '0dbcfeaed1d1d49f18f46436bdef35cecb9e9832201f88e34fc80cc148e43bcf',
+      1 => 
+      array (
+      ),
+      2 => 
+      array (
+        0 => 'up',
+        1 => 'down',
       ),
       3 => 
       array (
