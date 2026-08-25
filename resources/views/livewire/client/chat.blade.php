@@ -12,7 +12,7 @@
             });
         }
     }"
-    class="flex h-[calc(100vh-72px)]"
+    class="flex h-full w-full"
 >
     {{-- Sidebar: sesiones --}}
     <div

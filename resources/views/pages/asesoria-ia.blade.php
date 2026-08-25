@@ -2,8 +2,11 @@
     <x-front.header />
 
     <main class="pt-[72px] min-h-screen bg-surface">
-        <div class="max-w-6xl mx-auto px-6 py-8">
-            <div class="bg-white border border-[rgba(15,23,42,0.06)] overflow-hidden" style="height: calc(100vh - 160px);">
+        <div class="max-w-6xl mx-auto px-6 py-4 md:py-8">
+            <div
+                class="bg-white border border-[rgba(15,23,42,0.06)] overflow-hidden"
+                style="height: calc(100vh - 160px); height: calc(100dvh - 160px);"
+            >
                 @livewire('client.chat')
             </div>
         </div>
