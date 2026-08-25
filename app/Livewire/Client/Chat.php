@@ -131,7 +131,7 @@ class Chat extends Component
             ->latest()
             ->get();
 
-        $messages = [];
+        $messages = collect();
 
         if ($this->activeSessionId) {
             $messages = ChatMessage::where('session_id', $this->activeSessionId)

@@ -851,7 +851,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\Chat.php' => 
     array (
-      0 => '31cdd66b05daaa28e6985d0f7d77aa76c778d413eede2465749f3cf96d785fee',
+      0 => '534d6c9be0133063e8b534b0039c3e3eefb3353c2891a954cd0fcf2472a0ae67',
       1 => 
       array (
         0 => 'app\\livewire\\client\\chat',
