@@ -60,7 +60,7 @@ class ProjectSeeder extends Seeder
                 'title' => 'PROYECTO VISTA INDUSTRIAL',
                 'subtitle' => 'Diseño y Renderizado 3D de Complejo',
                 'description' => 'Desarrollo de vistas 3D avanzadas, volumetría y fachadas para complejos industriales de gran envergadura. Optimización de accesos vehiculares y seguridad perimetral.',
-                'logo_path' => 'assets/images/client-castello.png',
+                'logo_path' => 'assets/images/logo.png',
                 'gallery' => [
                     'assets/images/portafolio/proyvista.jpg',
                     'assets/images/portafolio/proyvista.jpg.jpg',
@@ -72,8 +72,8 @@ class ProjectSeeder extends Seeder
                 'is_active' => true,
             ],
             [
-                'title' => 'ESTRUCTURAS Y LOGÍSTICA X',
-                'subtitle' => 'Infabetructura y Almacenamiento',
+                'title' => 'ESTRUCTURAS Y LOGÍSTICA',
+                'subtitle' => 'Infraestructura y Almacenamiento',
                 'description' => 'Inspección técnica de seguridad en edificaciones (ITSE), cálculo de aforo y adecuación normativa para naves de almacenamiento y distribución.',
                 'logo_path' => 'assets/images/client-logistas.png',
                 'gallery' => [
@@ -87,10 +87,10 @@ class ProjectSeeder extends Seeder
                 'is_active' => true,
             ],
             [
-                'title' => 'CENTRO COMERCIAL Y CORPORATIVO Y',
+                'title' => 'CENTRO COMERCIAL Y CORPORATIVO',
                 'subtitle' => 'Arquitectura Comercial y Oficinas',
                 'description' => 'Habilitación de espacios corporativos y comerciales con enfoque en seguridad contra incendios, evacuación y confort lumínico.',
-                'logo_path' => 'assets/images/client-castello.png',
+                'logo_path' => 'assets/images/logo.png',
                 'gallery' => [
                     'assets/images/portafolio/proyy.jpg',
                     'assets/images/portafolio/proyy.jpg.jpg',
@@ -102,10 +102,10 @@ class ProjectSeeder extends Seeder
                 'is_active' => true,
             ],
             [
-                'title' => 'COMPLEJO MULTIFUNCIONAL U',
+                'title' => 'COMPLEJO MULTIFUNCIONAL',
                 'subtitle' => 'Distribución y Espacios Urbanos',
                 'description' => 'Proyecto de arquitectura y diseño urbano para optimización de flujos de tránsito peatonal y vehicular en zonas comerciales.',
-                'logo_path' => 'assets/images/client-scala.png',
+                'logo_path' => 'assets/images/logo.png',
                 'gallery' => [
                     'assets/images/portafolio/proyu.jpg',
                     'assets/images/portafolio/proyu.jpg.jpg',

@@ -2,7 +2,11 @@
 
 namespace App\Services;
 
+use App\Models\Post;
+use App\Models\Service;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Str;
 
 class GeminiService
 {
@@ -29,6 +33,8 @@ Reglas:
 - Si la consulta no es de tu ámbito, indica amablemente que solo puedes asesorar en temas de arquitectura legal y seguridad.
 - Si necesitas más información para dar una respuesta completa, pregunta al usuario.
 - Nunca inventes información normativa. Si no conoces un dato específico, indica que debe verificarse con la municipalidad correspondiente.
+- Usa el CONTEXTO DE GESTIONALO que se te provee para responder con base en la información real del sitio. No inventes servicios, precios ni datos que no aparezcan en ese contexto.
+- Cuando el usuario muestre interés en contratar, dale la bienvenida a agenda un prediagnóstico gratuito con un especialista.
 PROMPT;
 
     public function __construct()
@@ -66,7 +72,10 @@ PROMPT;
                 ->post($url, [
                     'contents' => $contents,
                     'systemInstruction' => [
-                        'parts' => [['text' => self::SYSTEM_PROMPT]],
+                        'parts' => [
+                            ['text' => self::SYSTEM_PROMPT],
+                            ['text' => "CONTEXTO DE GESTIONALO:\n\n{$this->groundingContext()}"],
+                        ],
                     ],
                     'generationConfig' => [
                         'temperature' => 0.7,
@@ -142,6 +151,36 @@ PROMPT;
         $text = preg_replace('/\s*```$/i', '', $text);
 
         return trim($text);
+    }
+
+    private function groundingContext(): string
+    {
+        return Cache::remember('ai.grounding_context', 3600, function () {
+            $sections = [];
+
+            $services = Service::active()->ordered()->get();
+            if ($services->isNotEmpty()) {
+                $lines = $services->map(function (Service $service) {
+                    $text = strip_tags($service->description);
+
+                    return "- {$service->title}: ".Str::limit($text, 420);
+                })->toArray();
+                $sections[] = "SERVICIOS:\n".implode("\n", $lines);
+            }
+
+            $posts = Post::published()->recent()->limit(10)->get();
+            if ($posts->isNotEmpty()) {
+                $lines = $posts->map(fn (Post $post) => "- {$post->title}: ".Str::limit(strip_tags($post->excerpt ?? $post->body), 220))->toArray();
+                $sections[] = "ARTÍCULOS DEL BLOG:\n".implode("\n", $lines);
+            }
+
+            $faqs = setting('ai.faqs_context');
+            if (! empty($faqs)) {
+                $sections[] = "PREGUNTAS FRECUENTES:\n{$faqs}";
+            }
+
+            return implode("\n\n", $sections) ?: 'No hay información adicional del sitio en este momento.';
+        });
     }
 
     private function generate(string $prompt): string

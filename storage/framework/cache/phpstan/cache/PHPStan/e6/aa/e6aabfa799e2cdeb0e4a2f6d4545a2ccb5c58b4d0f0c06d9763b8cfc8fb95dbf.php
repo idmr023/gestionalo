@@ -1094,5 +1094,21 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
+    'C:/Users/idmr_/OneDrive/Escritorio/gestionalo/app/helpers.php' => 
+    array (
+      0 => 'c9e1a5178a0e30e9d1b1f27682685fa6c4e48515d0c4304d1b71531baad35197',
+      1 => 
+      array (
+      ),
+      2 => 
+      array (
+        0 => 'setting',
+        1 => 'whatsapp_url',
+        2 => 'google_calendar_url',
+      ),
+      3 => 
+      array (
+      ),
+    ),
   ),
 ));

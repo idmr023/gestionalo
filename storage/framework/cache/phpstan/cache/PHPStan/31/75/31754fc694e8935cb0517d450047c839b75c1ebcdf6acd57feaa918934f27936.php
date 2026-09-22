@@ -86,7 +86,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Controllers\\FrontController.php' => 
     array (
-      0 => 'c8e014dd66ceb5f8538eb5f4288455e0d7aede629d7d09eb121c9425b82b00d6',
+      0 => '84d948f658c652edb8872931b490811da9587df23aeab32fd538c38efe5a8af9',
       1 => 
       array (
         0 => 'app\\http\\controllers\\frontcontroller',
@@ -178,7 +178,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Projects\\ProjectForm.php' => 
     array (
-      0 => 'a5833a2309488aba5445078902688b5256a2da6ce19088fd636d91ceee1850eb',
+      0 => '5603f40ca1bdaa593652a306907d736544cc9033eba83df660ba7be95cc0575a',
       1 => 
       array (
         0 => 'app\\livewire\\admin\\projects\\projectform',
@@ -187,7 +187,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
         0 => 'app\\livewire\\admin\\projects\\mount',
         1 => 'app\\livewire\\admin\\projects\\save',
-        2 => 'app\\livewire\\admin\\projects\\render',
+        2 => 'app\\livewire\\admin\\projects\\removegalleryimage',
+        3 => 'app\\livewire\\admin\\projects\\render',
       ),
       3 => 
       array (
@@ -228,7 +229,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Services\\ServiceForm.php' => 
     array (
-      0 => '7fc76c77d992ca668eed2615ddaf2eb9beed7d02f2d8ecefbde4e4063bf24e0e',
+      0 => '44e21601705385553741a3d68af396f60f09bae65aa42cdda0c28aef77267315',
       1 => 
       array (
         0 => 'app\\livewire\\admin\\services\\serviceform',
@@ -297,7 +298,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Project.php' => 
     array (
-      0 => '4e3ca52f690e8ee2443f191e939f6ce353fa9b7ec1f7cd3737054954bde918ab',
+      0 => 'ba5dcf2f66fa76c2e52e842ab92ad3e129d1de77fb415ca40e85f57c2d7eef78',
       1 => 
       array (
         0 => 'app\\models\\project',
@@ -305,10 +306,11 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       2 => 
       array (
         0 => 'app\\models\\casts',
-        1 => 'app\\models\\booted',
-        2 => 'app\\models\\scopeactive',
-        3 => 'app\\models\\scopefeatured',
-        4 => 'app\\models\\scopeordered',
+        1 => 'app\\models\\relatedservice',
+        2 => 'app\\models\\booted',
+        3 => 'app\\models\\scopeactive',
+        4 => 'app\\models\\scopefeatured',
+        5 => 'app\\models\\scopeordered',
       ),
       3 => 
       array (
@@ -316,7 +318,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Service.php' => 
     array (
-      0 => '27df4d36bca45454c4c100b472d033343bd1365ccb4851b8ea7377e61f3387c7',
+      0 => '26227a14246c565719d1de02d4c7a32ac25a83768ee3de819d8db0672a35464c',
       1 => 
       array (
         0 => 'app\\models\\service',
@@ -324,9 +326,12 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       2 => 
       array (
         0 => 'app\\models\\casts',
-        1 => 'app\\models\\booted',
-        2 => 'app\\models\\scopeactive',
-        3 => 'app\\models\\scopeordered',
+        1 => 'app\\models\\scopefeatured',
+        2 => 'app\\models\\scopefeaturedordered',
+        3 => 'app\\models\\projects',
+        4 => 'app\\models\\booted',
+        5 => 'app\\models\\scopeactive',
+        6 => 'app\\models\\scopeordered',
       ),
       3 => 
       array (
@@ -629,7 +634,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\AuthServiceProvider.php' => 
     array (
-      0 => '6b32966eb1eb4bb3c223fdedccd23f19ee9f33a23978b327d64a643ede2236af',
+      0 => '0b763cea566a75149d0720344a36ef0c0121621d1ce2466d57cf4a9224693c51',
       1 => 
       array (
         0 => 'app\\providers\\authserviceprovider',
@@ -851,7 +856,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\Chat.php' => 
     array (
-      0 => '95f29866633c749703f6bb1ba76265cad95bf3f028697a04d6fa68c76865f54a',
+      0 => '14dc8cee4c13e29a4bbd93ec3fa2d325db6107192f4162ef1d6b1679cebf291e',
       1 => 
       array (
         0 => 'app\\livewire\\client\\chat',
@@ -862,10 +867,14 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         1 => 'app\\livewire\\client\\createsession',
         2 => 'app\\livewire\\client\\ask',
         3 => 'app\\livewire\\client\\sendmessage',
-        4 => 'app\\livewire\\client\\updatesessiontitle',
-        5 => 'app\\livewire\\client\\switchsession',
-        6 => 'app\\livewire\\client\\deletesession',
+        4 => 'app\\livewire\\client\\switchsession',
+        5 => 'app\\livewire\\client\\deletesession',
+        6 => 'app\\livewire\\client\\updatesessiontitle',
         7 => 'app\\livewire\\client\\render',
+        8 => 'app\\livewire\\client\\isguest',
+        9 => 'app\\livewire\\client\\guestid',
+        10 => 'app\\livewire\\client\\basesessionquery',
+        11 => 'app\\livewire\\client\\ownssession',
       ),
       3 => 
       array (
@@ -907,7 +916,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\ChatSession.php' => 
     array (
-      0 => 'de6c985e8f72d3c8ace73ab52bd5bc4be9b2087332782aa1daa163d2f6f374e2',
+      0 => 'b976f47630b2f8b0be9820ad5836e72ae18fb6a055af0d531ee8ef1568c86442',
       1 => 
       array (
         0 => 'app\\models\\chatsession',
@@ -939,7 +948,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Services\\GeminiService.php' => 
     array (
-      0 => '769cffc01e3850e0be7543d99a83c20c1a48663b5b15ac39649dfaf94c565800',
+      0 => 'd791605a862e6d12cce4c640d60c68d6016b9521f7fc95b2b502c4c1e7c619a9',
       1 => 
       array (
         0 => 'app\\services\\geminiservice',
@@ -951,7 +960,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         2 => 'app\\services\\generatesummary',
         3 => 'app\\services\\generatehighlights',
         4 => 'app\\services\\stripcodeblock',
-        5 => 'app\\services\\generate',
+        5 => 'app\\services\\groundingcontext',
+        6 => 'app\\services\\generate',
       ),
       3 => 
       array (
@@ -970,6 +980,74 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         1 => 'app\\livewire\\admin\\selectsession',
         2 => 'app\\livewire\\admin\\closesessionview',
         3 => 'app\\livewire\\admin\\render',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Settings\\SiteSettings.php' => 
+    array (
+      0 => '1c33d8519fe4efc4d2887bb144c847c3cec11f74912a3c95d7f7a77ee4fe4236',
+      1 => 
+      array (
+        0 => 'app\\livewire\\admin\\settings\\sitesettings',
+      ),
+      2 => 
+      array (
+        0 => 'app\\livewire\\admin\\settings\\mount',
+        1 => 'app\\livewire\\admin\\settings\\save',
+        2 => 'app\\livewire\\admin\\settings\\render',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Setting.php' => 
+    array (
+      0 => '5d778557691194964360bfa8054702fb140a78fb6c6089f17408df546147f4e5',
+      1 => 
+      array (
+        0 => 'app\\models\\setting',
+      ),
+      2 => 
+      array (
+        0 => 'app\\models\\allcached',
+        1 => 'app\\models\\get',
+        2 => 'app\\models\\set',
+        3 => 'app\\models\\flushcache',
+        4 => 'app\\models\\booted',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\SettingPolicy.php' => 
+    array (
+      0 => 'dda1e334b6c6d285bdd3ba4d4655f9df6e7ff42394025b6e457e44f624a03ac9',
+      1 => 
+      array (
+        0 => 'app\\policies\\settingpolicy',
+      ),
+      2 => 
+      array (
+        0 => 'app\\policies\\viewany',
+        1 => 'app\\policies\\update',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\helpers.php' => 
+    array (
+      0 => 'c9e1a5178a0e30e9d1b1f27682685fa6c4e48515d0c4304d1b71531baad35197',
+      1 => 
+      array (
+      ),
+      2 => 
+      array (
+        0 => 'setting',
+        1 => 'whatsapp_url',
+        2 => 'google_calendar_url',
       ),
       3 => 
       array (

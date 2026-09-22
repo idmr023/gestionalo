@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\idmr_\OneDrive\Escritorio\gestionalo\app\Models\Service.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Models\Service
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.5.8-27df4d36bca45454c4c100b472d033343bd1365ccb4851b8ea7377e61f3387c7',
+   'variableKey' => 'v2-6.70.0.3-8.5.8-26227a14246c565719d1de02d4c7a32ac25a83768ee3de819d8db0672a35464c',
    'data' => 
   array (
     'locatedSource' => 
@@ -26,8 +26,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'attributes' => 
     array (
     ),
-    'startLine' => 11,
-    'endLine' => 66,
+    'startLine' => 12,
+    'endLine' => 90,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Illuminate\\Database\\Eloquent\\Model',
@@ -54,23 +54,23 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'type' => NULL,
         'default' => 
         array (
-          'code' => '[\'title\', \'slug\', \'description\', \'icon_svg\', \'sort_order\', \'is_active\']',
+          'code' => '[\'title\', \'slug\', \'description\', \'icon_svg\', \'sort_order\', \'is_active\', \'is_featured\', \'featured_order\', \'cta_text\', \'cta_url\', \'related_post_url\', \'related_project_url\']',
           'attributes' => 
           array (
-            'startLine' => 15,
-            'endLine' => 22,
-            'startTokenPos' => 59,
-            'startFilePos' => 327,
-            'endTokenPos' => 79,
-            'endFilePos' => 452,
+            'startLine' => 16,
+            'endLine' => 29,
+            'startTokenPos' => 64,
+            'startFilePos' => 379,
+            'endTokenPos' => 102,
+            'endFilePos' => 651,
           ),
         ),
         'docComment' => NULL,
         'attributes' => 
         array (
         ),
-        'startLine' => 15,
-        'endLine' => 22,
+        'startLine' => 16,
+        'endLine' => 29,
         'startColumn' => 5,
         'endColumn' => 6,
         'isPromoted' => false,
@@ -103,8 +103,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 24,
-        'endLine' => 30,
+        'startLine' => 31,
+        'endLine' => 39,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -112,6 +112,131 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'isGenerator' => false,
         'isVariadic' => false,
         'modifiers' => 2,
+        'namespace' => 'App\\Models',
+        'declaringClassName' => 'App\\Models\\Service',
+        'implementingClassName' => 'App\\Models\\Service',
+        'currentClassName' => 'App\\Models\\Service',
+        'aliasName' => NULL,
+      ),
+      'scopeFeatured' => 
+      array (
+        'name' => 'scopeFeatured',
+        'parameters' => 
+        array (
+          'query' => 
+          array (
+            'name' => 'query',
+            'default' => NULL,
+            'type' => NULL,
+            'isVariadic' => false,
+            'byRef' => false,
+            'isPromoted' => false,
+            'attributes' => 
+            array (
+            ),
+            'startLine' => 41,
+            'endLine' => 41,
+            'startColumn' => 35,
+            'endColumn' => 40,
+            'parameterIndex' => 0,
+            'isOptional' => false,
+          ),
+        ),
+        'returnsReference' => false,
+        'returnType' => NULL,
+        'attributes' => 
+        array (
+        ),
+        'docComment' => NULL,
+        'startLine' => 41,
+        'endLine' => 44,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Models',
+        'declaringClassName' => 'App\\Models\\Service',
+        'implementingClassName' => 'App\\Models\\Service',
+        'currentClassName' => 'App\\Models\\Service',
+        'aliasName' => NULL,
+      ),
+      'scopeFeaturedOrdered' => 
+      array (
+        'name' => 'scopeFeaturedOrdered',
+        'parameters' => 
+        array (
+          'query' => 
+          array (
+            'name' => 'query',
+            'default' => NULL,
+            'type' => NULL,
+            'isVariadic' => false,
+            'byRef' => false,
+            'isPromoted' => false,
+            'attributes' => 
+            array (
+            ),
+            'startLine' => 46,
+            'endLine' => 46,
+            'startColumn' => 42,
+            'endColumn' => 47,
+            'parameterIndex' => 0,
+            'isOptional' => false,
+          ),
+        ),
+        'returnsReference' => false,
+        'returnType' => NULL,
+        'attributes' => 
+        array (
+        ),
+        'docComment' => NULL,
+        'startLine' => 46,
+        'endLine' => 49,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Models',
+        'declaringClassName' => 'App\\Models\\Service',
+        'implementingClassName' => 'App\\Models\\Service',
+        'currentClassName' => 'App\\Models\\Service',
+        'aliasName' => NULL,
+      ),
+      'projects' => 
+      array (
+        'name' => 'projects',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+            'isIdentifier' => false,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => NULL,
+        'startLine' => 51,
+        'endLine' => 54,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
         'namespace' => 'App\\Models',
         'declaringClassName' => 'App\\Models\\Service',
         'implementingClassName' => 'App\\Models\\Service',
@@ -138,8 +263,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 32,
-        'endLine' => 55,
+        'startLine' => 56,
+        'endLine' => 79,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -169,8 +294,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 57,
-            'endLine' => 57,
+            'startLine' => 81,
+            'endLine' => 81,
             'startColumn' => 33,
             'endColumn' => 38,
             'parameterIndex' => 0,
@@ -183,8 +308,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 57,
-        'endLine' => 60,
+        'startLine' => 81,
+        'endLine' => 84,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -214,8 +339,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 62,
-            'endLine' => 62,
+            'startLine' => 86,
+            'endLine' => 86,
             'startColumn' => 34,
             'endColumn' => 39,
             'parameterIndex' => 0,
@@ -228,8 +353,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 62,
-        'endLine' => 65,
+        'startLine' => 86,
+        'endLine' => 89,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

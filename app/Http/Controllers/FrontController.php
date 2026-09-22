@@ -16,7 +16,7 @@ class FrontController extends Controller
 {
     public function index()
     {
-        $services = Cache::remember('home.services', 3600, fn () => Service::active()->ordered()->get()
+        $services = Cache::remember('home.services', 3600, fn () => Service::active()->featuredOrdered()->get()
         );
 
         $projects = Cache::remember('home.projects', 3600, fn () => Project::active()->ordered()->get()
@@ -27,7 +27,7 @@ class FrontController extends Controller
 
     public function services()
     {
-        $services = Cache::remember('services.all', 3600, fn () => Service::active()->ordered()->get());
+        $services = Cache::remember('services.all', 3600, fn () => Service::active()->ordered()->with('projects')->get());
 
         return view('pages.servicios', compact('services'));
     }
@@ -42,6 +42,8 @@ class FrontController extends Controller
 
     public function project(Project $project)
     {
+        $project->load('relatedService');
+
         return view('pages.project', compact('project'));
     }
 

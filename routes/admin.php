@@ -14,6 +14,7 @@ use App\Livewire\Admin\Projects\ProjectList;
 use App\Livewire\Admin\Recycle\RecycleBin;
 use App\Livewire\Admin\Services\ServiceForm;
 use App\Livewire\Admin\Services\ServiceList;
+use App\Livewire\Admin\Settings\SiteSettings;
 use App\Livewire\Admin\UserList;
 use Illuminate\Support\Facades\Route;
 
@@ -43,4 +44,6 @@ Route::middleware(['auth', 'is_admin'])->prefix('admin')->name('admin.')->group(
 
     Route::get('/recycle-bin', RecycleBin::class)->name('recycle-bin');
     Route::get('/history', ChangeHistory::class)->name('history');
+
+    Route::get('/settings', SiteSettings::class)->name('settings');
 });

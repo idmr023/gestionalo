@@ -7,7 +7,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
   array (
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\admin-menu.php' => 
     array (
-      0 => '2f39140bf4b41ca7403dd624c2f9e57f3eaaa210fb0964b97100d66231c9682f',
+      0 => '215f8e417ceb810cdaf659b02b438f6ff6f8a47d47c638abaccab7fe33a613a9',
       1 => 
       array (
       ),

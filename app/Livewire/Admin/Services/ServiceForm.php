@@ -20,6 +20,18 @@ class ServiceForm extends Component
 
     public bool $is_active = true;
 
+    public bool $is_featured = false;
+
+    public int $featured_order = 0;
+
+    public string $cta_text = '';
+
+    public string $cta_url = '';
+
+    public string $related_post_url = '';
+
+    public string $related_project_url = '';
+
     public function mount(?Service $service = null): void
     {
         if ($service) {
@@ -29,6 +41,12 @@ class ServiceForm extends Component
             $this->icon_svg = $service->icon_svg;
             $this->sort_order = $service->sort_order;
             $this->is_active = $service->is_active;
+            $this->is_featured = $service->is_featured;
+            $this->featured_order = $service->featured_order;
+            $this->cta_text = $service->cta_text ?? '';
+            $this->cta_url = $service->cta_url ?? '';
+            $this->related_post_url = $service->related_post_url ?? '';
+            $this->related_project_url = $service->related_project_url ?? '';
         }
     }
 
@@ -42,6 +60,12 @@ class ServiceForm extends Component
             'icon_svg' => 'nullable|string',
             'sort_order' => 'integer|min:0',
             'is_active' => 'boolean',
+            'is_featured' => 'boolean',
+            'featured_order' => 'integer|min:0',
+            'cta_text' => 'nullable|max:255',
+            'cta_url' => 'nullable|url|max:500',
+            'related_post_url' => 'nullable|url|max:500',
+            'related_project_url' => 'nullable|url|max:500',
         ]);
 
         Service::updateOrCreate(
@@ -52,6 +76,12 @@ class ServiceForm extends Component
                 'icon_svg' => $this->icon_svg,
                 'sort_order' => $this->sort_order,
                 'is_active' => $this->is_active,
+                'is_featured' => $this->is_featured,
+                'featured_order' => $this->featured_order,
+                'cta_text' => $this->cta_text ?: null,
+                'cta_url' => $this->cta_url ?: null,
+                'related_post_url' => $this->related_post_url ?: null,
+                'related_project_url' => $this->related_project_url ?: null,
             ]
         );
 

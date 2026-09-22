@@ -25,8 +25,8 @@
                     <div class="md:w-2/3">
                         <h3 class="text-2xl md:text-3xl font-bold font-display text-primary leading-tight">{{ $service->title }}</h3>
                         <div class="w-12 h-px bg-accent/40 my-6"></div>
-                        <p class="text-base leading-relaxed text-primary/60 max-w-2xl">{{ $service->description }}</p>
-                        <a href="{{ route('services.index') }}" class="inline-flex items-center gap-2 mt-6 text-xs font-medium text-accent tracking-[0.2em] uppercase transition hover:text-accent-hover group">
+                        <div class="text-base leading-relaxed text-primary/60 max-w-2xl">{!! $service->description !!}</div>
+                        <a href="{{ route('services.index') }}#{{ $service->slug }}" class="inline-flex items-center gap-2 mt-6 text-xs font-medium text-accent tracking-[0.2em] uppercase transition hover:text-accent-hover group">
                             <span class="w-6 h-px bg-accent/60 group-hover:w-8 transition-all"></span>
                             Más información
                         </a>

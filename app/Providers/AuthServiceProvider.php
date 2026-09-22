@@ -7,12 +7,14 @@ use App\Models\Contact;
 use App\Models\Post;
 use App\Models\Project;
 use App\Models\Service;
+use App\Models\Setting;
 use App\Models\User;
 use App\Policies\AppointmentPolicy;
 use App\Policies\ContactPolicy;
 use App\Policies\PostPolicy;
 use App\Policies\ProjectPolicy;
 use App\Policies\ServicePolicy;
+use App\Policies\SettingPolicy;
 use App\Policies\UserPolicy;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 
@@ -24,6 +26,7 @@ class AuthServiceProvider extends ServiceProvider
         Post::class => PostPolicy::class,
         Contact::class => ContactPolicy::class,
         Appointment::class => AppointmentPolicy::class,
+        Setting::class => SettingPolicy::class,
         User::class => UserPolicy::class,
     ];
 

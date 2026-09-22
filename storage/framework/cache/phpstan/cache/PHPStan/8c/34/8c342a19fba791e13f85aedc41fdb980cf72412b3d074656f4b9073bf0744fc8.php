@@ -157,7 +157,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\DatabaseSeeder.php' => 
     array (
-      0 => '3e891c054f983078f250d1f75d4e058f06be63263b8228b08c46d66639e3456f',
+      0 => '5221145909303e2c4499517bbbac224d73b1021e3d7af5349a3730ac9a323b97',
       1 => 
       array (
         0 => 'database\\seeders\\databaseseeder',
@@ -187,7 +187,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\ProjectSeeder.php' => 
     array (
-      0 => '41c4c008cdfe11f27406f382167eb4665231881d3a2d8ac8a181a2885e8fd42d',
+      0 => 'ea8c29418875a8667b7e5a727f4fd4ad6acf63c2b93fa78027e9877dacbd271a',
       1 => 
       array (
         0 => 'database\\seeders\\projectseeder',
@@ -232,7 +232,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\factories\\ProjectFactory.php' => 
     array (
-      0 => '6c1113caa611b7272cebacc85f87cdd568aa5a94f7e25e142eede1b84fb54895',
+      0 => '4afbd18e12ede7ba4df75865d5f3723bfd33cb15bb755596d1dc37145a913e5c',
       1 => 
       array (
         0 => 'database\\factories\\projectfactory',
@@ -247,7 +247,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\factories\\ServiceFactory.php' => 
     array (
-      0 => '08af07f1f041f7baa1fb6f00fd865f2994b581a467bd5a0d2d5ea9b3c53d4c90',
+      0 => 'be07806a48ebf0c9f22ef6a0bc16f331717f8cf2c5ee3d74a76b664016063792',
       1 => 
       array (
         0 => 'database\\factories\\servicefactory',
@@ -414,6 +414,96 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_08_18_232415_create_chat_messages_table.php' => 
     array (
       0 => '0dbcfeaed1d1d49f18f46436bdef35cecb9e9832201f88e34fc80cc148e43bcf',
+      1 => 
+      array (
+      ),
+      2 => 
+      array (
+        0 => 'up',
+        1 => 'down',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_09_20_172948_create_settings_table.php' => 
+    array (
+      0 => 'fb6f6ca6163969d81e086dbfa5485d983458a46d25cf81681d56db4db4d9ffdf',
+      1 => 
+      array (
+      ),
+      2 => 
+      array (
+        0 => 'up',
+        1 => 'down',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_09_21_193444_add_project_fields_to_projects_table.php' => 
+    array (
+      0 => '9021f0eaafe6af9669cc37e2f44e875fc6f6c591ffd770ee9f9b382e8a6d192c',
+      1 => 
+      array (
+      ),
+      2 => 
+      array (
+        0 => 'up',
+        1 => 'down',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_09_21_193450_add_service_fields_to_services_table.php' => 
+    array (
+      0 => 'bfca4ea230fa7f3cacbd7303be54ccd71b10edef083a663ffbbae79beec44b22',
+      1 => 
+      array (
+      ),
+      2 => 
+      array (
+        0 => 'up',
+        1 => 'down',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_09_21_200000_add_guest_id_to_chat_sessions_table.php' => 
+    array (
+      0 => '7d5bc4e75b6ba748d3f7c6c7d4267880d7e3658d7b09d74ea9cb25380df1e940',
+      1 => 
+      array (
+      ),
+      2 => 
+      array (
+        0 => 'up',
+        1 => 'down',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\SettingSeeder.php' => 
+    array (
+      0 => '67352e0ddea9f7a2e08d04720db13ece79f3d98ed5e1e2104b0a6a444082d7d9',
+      1 => 
+      array (
+        0 => 'database\\seeders\\settingseeder',
+      ),
+      2 => 
+      array (
+        0 => 'database\\seeders\\run',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_09_21_210000_fix_project_seed_data.php' => 
+    array (
+      0 => '2f33eaad6d012eb8a2b197232da3efb4b40423df60de759aed4a8e11382e1793',
       1 => 
       array (
       ),

@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\idmr_\OneDrive\Escritorio\gestionalo\app\Models\Project.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Models\Project
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.5.8-4e3ca52f690e8ee2443f191e939f6ce353fa9b7ec1f7cd3737054954bde918ab',
+   'variableKey' => 'v2-6.70.0.3-8.5.8-ba5dcf2f66fa76c2e52e842ab92ad3e129d1de77fb415ca40e85f57c2d7eef78',
    'data' => 
   array (
     'locatedSource' => 
@@ -27,7 +27,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     array (
     ),
     'startLine' => 11,
-    'endLine' => 76,
+    'endLine' => 92,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Illuminate\\Database\\Eloquent\\Model',
@@ -54,15 +54,15 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'type' => NULL,
         'default' => 
         array (
-          'code' => '[\'title\', \'subtitle\', \'slug\', \'description\', \'logo_path\', \'gallery\', \'sort_order\', \'is_featured\', \'is_active\']',
+          'code' => '[\'title\', \'client\', \'location\', \'service_type\', \'subtitle\', \'slug\', \'description\', \'summary\', \'services_performed\', \'result\', \'logo_path\', \'gallery\', \'related_service_id\', \'related_post_url\', \'related_project_url\', \'whatsapp_message\', \'sort_order\', \'is_featured\', \'is_active\']',
           'attributes' => 
           array (
             'startLine' => 15,
-            'endLine' => 25,
+            'endLine' => 35,
             'startTokenPos' => 59,
             'startFilePos' => 327,
-            'endTokenPos' => 88,
-            'endFilePos' => 515,
+            'endTokenPos' => 118,
+            'endFilePos' => 761,
           ),
         ),
         'docComment' => NULL,
@@ -70,7 +70,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'startLine' => 15,
-        'endLine' => 25,
+        'endLine' => 35,
         'startColumn' => 5,
         'endColumn' => 6,
         'isPromoted' => false,
@@ -103,8 +103,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 27,
-        'endLine' => 35,
+        'startLine' => 37,
+        'endLine' => 46,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -112,6 +112,33 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'isGenerator' => false,
         'isVariadic' => false,
         'modifiers' => 2,
+        'namespace' => 'App\\Models',
+        'declaringClassName' => 'App\\Models\\Project',
+        'implementingClassName' => 'App\\Models\\Project',
+        'currentClassName' => 'App\\Models\\Project',
+        'aliasName' => NULL,
+      ),
+      'relatedService' => 
+      array (
+        'name' => 'relatedService',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => NULL,
+        'attributes' => 
+        array (
+        ),
+        'docComment' => NULL,
+        'startLine' => 48,
+        'endLine' => 51,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
         'namespace' => 'App\\Models',
         'declaringClassName' => 'App\\Models\\Project',
         'implementingClassName' => 'App\\Models\\Project',
@@ -138,8 +165,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 37,
-        'endLine' => 60,
+        'startLine' => 53,
+        'endLine' => 76,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -169,8 +196,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 62,
-            'endLine' => 62,
+            'startLine' => 78,
+            'endLine' => 78,
             'startColumn' => 33,
             'endColumn' => 38,
             'parameterIndex' => 0,
@@ -183,8 +210,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 62,
-        'endLine' => 65,
+        'startLine' => 78,
+        'endLine' => 81,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -214,8 +241,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 67,
-            'endLine' => 67,
+            'startLine' => 83,
+            'endLine' => 83,
             'startColumn' => 35,
             'endColumn' => 40,
             'parameterIndex' => 0,
@@ -228,8 +255,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 67,
-        'endLine' => 70,
+        'startLine' => 83,
+        'endLine' => 86,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -259,8 +286,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 72,
-            'endLine' => 72,
+            'startLine' => 88,
+            'endLine' => 88,
             'startColumn' => 34,
             'endColumn' => 39,
             'parameterIndex' => 0,
@@ -273,8 +300,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 72,
-        'endLine' => 75,
+        'startLine' => 88,
+        'endLine' => 91,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\idmr_\OneDrive\Escritorio\gestionalo\app\Livewire\Admin\Services\ServiceForm.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Livewire\Admin\Services\ServiceForm
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.5.8-7fc76c77d992ca668eed2615ddaf2eb9beed7d02f2d8ecefbde4e4063bf24e0e',
+   'variableKey' => 'v2-6.70.0.3-8.5.8-44e21601705385553741a3d68af396f60f09bae65aa42cdda0c28aef77267315',
    'data' => 
   array (
     'locatedSource' => 
@@ -27,7 +27,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     array (
     ),
     'startLine' => 9,
-    'endLine' => 66,
+    'endLine' => 96,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Livewire\\Component',
@@ -319,6 +319,264 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
       ),
+      'is_featured' => 
+      array (
+        'declaringClassName' => 'App\\Livewire\\Admin\\Services\\ServiceForm',
+        'implementingClassName' => 'App\\Livewire\\Admin\\Services\\ServiceForm',
+        'name' => 'is_featured',
+        'modifiers' => 1,
+        'type' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'bool',
+            'isIdentifier' => true,
+          ),
+        ),
+        'default' => 
+        array (
+          'code' => 'false',
+          'attributes' => 
+          array (
+            'startLine' => 23,
+            'endLine' => 23,
+            'startTokenPos' => 107,
+            'startFilePos' => 403,
+            'endTokenPos' => 107,
+            'endFilePos' => 407,
+          ),
+        ),
+        'docComment' => NULL,
+        'attributes' => 
+        array (
+        ),
+        'startLine' => 23,
+        'endLine' => 23,
+        'startColumn' => 5,
+        'endColumn' => 37,
+        'isPromoted' => false,
+        'declaredAtCompileTime' => true,
+        'immediateVirtual' => false,
+        'immediateHooks' => 
+        array (
+        ),
+      ),
+      'featured_order' => 
+      array (
+        'declaringClassName' => 'App\\Livewire\\Admin\\Services\\ServiceForm',
+        'implementingClassName' => 'App\\Livewire\\Admin\\Services\\ServiceForm',
+        'name' => 'featured_order',
+        'modifiers' => 1,
+        'type' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'int',
+            'isIdentifier' => true,
+          ),
+        ),
+        'default' => 
+        array (
+          'code' => '0',
+          'attributes' => 
+          array (
+            'startLine' => 25,
+            'endLine' => 25,
+            'startTokenPos' => 118,
+            'startFilePos' => 444,
+            'endTokenPos' => 118,
+            'endFilePos' => 444,
+          ),
+        ),
+        'docComment' => NULL,
+        'attributes' => 
+        array (
+        ),
+        'startLine' => 25,
+        'endLine' => 25,
+        'startColumn' => 5,
+        'endColumn' => 35,
+        'isPromoted' => false,
+        'declaredAtCompileTime' => true,
+        'immediateVirtual' => false,
+        'immediateHooks' => 
+        array (
+        ),
+      ),
+      'cta_text' => 
+      array (
+        'declaringClassName' => 'App\\Livewire\\Admin\\Services\\ServiceForm',
+        'implementingClassName' => 'App\\Livewire\\Admin\\Services\\ServiceForm',
+        'name' => 'cta_text',
+        'modifiers' => 1,
+        'type' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'string',
+            'isIdentifier' => true,
+          ),
+        ),
+        'default' => 
+        array (
+          'code' => '\'\'',
+          'attributes' => 
+          array (
+            'startLine' => 27,
+            'endLine' => 27,
+            'startTokenPos' => 129,
+            'startFilePos' => 478,
+            'endTokenPos' => 129,
+            'endFilePos' => 479,
+          ),
+        ),
+        'docComment' => NULL,
+        'attributes' => 
+        array (
+        ),
+        'startLine' => 27,
+        'endLine' => 27,
+        'startColumn' => 5,
+        'endColumn' => 33,
+        'isPromoted' => false,
+        'declaredAtCompileTime' => true,
+        'immediateVirtual' => false,
+        'immediateHooks' => 
+        array (
+        ),
+      ),
+      'cta_url' => 
+      array (
+        'declaringClassName' => 'App\\Livewire\\Admin\\Services\\ServiceForm',
+        'implementingClassName' => 'App\\Livewire\\Admin\\Services\\ServiceForm',
+        'name' => 'cta_url',
+        'modifiers' => 1,
+        'type' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'string',
+            'isIdentifier' => true,
+          ),
+        ),
+        'default' => 
+        array (
+          'code' => '\'\'',
+          'attributes' => 
+          array (
+            'startLine' => 29,
+            'endLine' => 29,
+            'startTokenPos' => 140,
+            'startFilePos' => 512,
+            'endTokenPos' => 140,
+            'endFilePos' => 513,
+          ),
+        ),
+        'docComment' => NULL,
+        'attributes' => 
+        array (
+        ),
+        'startLine' => 29,
+        'endLine' => 29,
+        'startColumn' => 5,
+        'endColumn' => 32,
+        'isPromoted' => false,
+        'declaredAtCompileTime' => true,
+        'immediateVirtual' => false,
+        'immediateHooks' => 
+        array (
+        ),
+      ),
+      'related_post_url' => 
+      array (
+        'declaringClassName' => 'App\\Livewire\\Admin\\Services\\ServiceForm',
+        'implementingClassName' => 'App\\Livewire\\Admin\\Services\\ServiceForm',
+        'name' => 'related_post_url',
+        'modifiers' => 1,
+        'type' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'string',
+            'isIdentifier' => true,
+          ),
+        ),
+        'default' => 
+        array (
+          'code' => '\'\'',
+          'attributes' => 
+          array (
+            'startLine' => 31,
+            'endLine' => 31,
+            'startTokenPos' => 151,
+            'startFilePos' => 555,
+            'endTokenPos' => 151,
+            'endFilePos' => 556,
+          ),
+        ),
+        'docComment' => NULL,
+        'attributes' => 
+        array (
+        ),
+        'startLine' => 31,
+        'endLine' => 31,
+        'startColumn' => 5,
+        'endColumn' => 41,
+        'isPromoted' => false,
+        'declaredAtCompileTime' => true,
+        'immediateVirtual' => false,
+        'immediateHooks' => 
+        array (
+        ),
+      ),
+      'related_project_url' => 
+      array (
+        'declaringClassName' => 'App\\Livewire\\Admin\\Services\\ServiceForm',
+        'implementingClassName' => 'App\\Livewire\\Admin\\Services\\ServiceForm',
+        'name' => 'related_project_url',
+        'modifiers' => 1,
+        'type' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'string',
+            'isIdentifier' => true,
+          ),
+        ),
+        'default' => 
+        array (
+          'code' => '\'\'',
+          'attributes' => 
+          array (
+            'startLine' => 33,
+            'endLine' => 33,
+            'startTokenPos' => 162,
+            'startFilePos' => 601,
+            'endTokenPos' => 162,
+            'endFilePos' => 602,
+          ),
+        ),
+        'docComment' => NULL,
+        'attributes' => 
+        array (
+        ),
+        'startLine' => 33,
+        'endLine' => 33,
+        'startColumn' => 5,
+        'endColumn' => 44,
+        'isPromoted' => false,
+        'declaredAtCompileTime' => true,
+        'immediateVirtual' => false,
+        'immediateHooks' => 
+        array (
+        ),
+      ),
     ),
     'immediateMethods' => 
     array (
@@ -335,12 +593,12 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
               'code' => 'null',
               'attributes' => 
               array (
-                'startLine' => 23,
-                'endLine' => 23,
-                'startTokenPos' => 112,
-                'startFilePos' => 418,
-                'endTokenPos' => 112,
-                'endFilePos' => 421,
+                'startLine' => 35,
+                'endLine' => 35,
+                'startTokenPos' => 178,
+                'startFilePos' => 652,
+                'endTokenPos' => 178,
+                'endFilePos' => 655,
               ),
             ),
             'type' => 
@@ -377,8 +635,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 23,
-            'endLine' => 23,
+            'startLine' => 35,
+            'endLine' => 35,
             'startColumn' => 27,
             'endColumn' => 50,
             'parameterIndex' => 0,
@@ -399,8 +657,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 23,
-        'endLine' => 33,
+        'startLine' => 35,
+        'endLine' => 51,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -434,8 +692,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 35,
-        'endLine' => 60,
+        'startLine' => 53,
+        'endLine' => 90,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -469,8 +727,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 62,
-        'endLine' => 65,
+        'startLine' => 92,
+        'endLine' => 95,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

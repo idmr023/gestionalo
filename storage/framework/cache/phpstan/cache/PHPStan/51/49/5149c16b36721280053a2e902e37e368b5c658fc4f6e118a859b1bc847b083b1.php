@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\idmr_\OneDrive\Escritorio\gestionalo\app\Livewire\Admin\Projects\ProjectForm.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Livewire\Admin\Projects\ProjectForm
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.5.8-a5833a2309488aba5445078902688b5256a2da6ce19088fd636d91ceee1850eb',
+   'variableKey' => 'v2-6.70.0.3-8.5.8-5603f40ca1bdaa593652a306907d736544cc9033eba83df660ba7be95cc0575a',
    'data' => 
   array (
     'locatedSource' => 
@@ -26,8 +26,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'attributes' => 
     array (
     ),
-    'startLine' => 10,
-    'endLine' => 84,
+    'startLine' => 11,
+    'endLine' => 164,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Livewire\\Component',
@@ -82,20 +82,20 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => 'null',
           'attributes' => 
           array (
-            'startLine' => 14,
-            'endLine' => 14,
-            'startTokenPos' => 51,
-            'startFilePos' => 247,
-            'endTokenPos' => 51,
-            'endFilePos' => 250,
+            'startLine' => 15,
+            'endLine' => 15,
+            'startTokenPos' => 56,
+            'startFilePos' => 271,
+            'endTokenPos' => 56,
+            'endFilePos' => 274,
           ),
         ),
         'docComment' => NULL,
         'attributes' => 
         array (
         ),
-        'startLine' => 14,
-        'endLine' => 14,
+        'startLine' => 15,
+        'endLine' => 15,
         'startColumn' => 5,
         'endColumn' => 36,
         'isPromoted' => false,
@@ -125,20 +125,20 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '\'\'',
           'attributes' => 
           array (
-            'startLine' => 16,
-            'endLine' => 16,
-            'startTokenPos' => 62,
-            'startFilePos' => 281,
-            'endTokenPos' => 62,
-            'endFilePos' => 282,
+            'startLine' => 17,
+            'endLine' => 17,
+            'startTokenPos' => 67,
+            'startFilePos' => 305,
+            'endTokenPos' => 67,
+            'endFilePos' => 306,
           ),
         ),
         'docComment' => NULL,
         'attributes' => 
         array (
         ),
-        'startLine' => 16,
-        'endLine' => 16,
+        'startLine' => 17,
+        'endLine' => 17,
         'startColumn' => 5,
         'endColumn' => 30,
         'isPromoted' => false,
@@ -168,22 +168,194 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '\'\'',
           'attributes' => 
           array (
-            'startLine' => 18,
-            'endLine' => 18,
-            'startTokenPos' => 73,
-            'startFilePos' => 316,
-            'endTokenPos' => 73,
-            'endFilePos' => 317,
+            'startLine' => 19,
+            'endLine' => 19,
+            'startTokenPos' => 78,
+            'startFilePos' => 340,
+            'endTokenPos' => 78,
+            'endFilePos' => 341,
           ),
         ),
         'docComment' => NULL,
         'attributes' => 
         array (
         ),
-        'startLine' => 18,
-        'endLine' => 18,
+        'startLine' => 19,
+        'endLine' => 19,
         'startColumn' => 5,
         'endColumn' => 33,
+        'isPromoted' => false,
+        'declaredAtCompileTime' => true,
+        'immediateVirtual' => false,
+        'immediateHooks' => 
+        array (
+        ),
+      ),
+      'client' => 
+      array (
+        'declaringClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
+        'implementingClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
+        'name' => 'client',
+        'modifiers' => 1,
+        'type' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'string',
+            'isIdentifier' => true,
+          ),
+        ),
+        'default' => 
+        array (
+          'code' => '\'\'',
+          'attributes' => 
+          array (
+            'startLine' => 21,
+            'endLine' => 21,
+            'startTokenPos' => 89,
+            'startFilePos' => 373,
+            'endTokenPos' => 89,
+            'endFilePos' => 374,
+          ),
+        ),
+        'docComment' => NULL,
+        'attributes' => 
+        array (
+        ),
+        'startLine' => 21,
+        'endLine' => 21,
+        'startColumn' => 5,
+        'endColumn' => 31,
+        'isPromoted' => false,
+        'declaredAtCompileTime' => true,
+        'immediateVirtual' => false,
+        'immediateHooks' => 
+        array (
+        ),
+      ),
+      'location' => 
+      array (
+        'declaringClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
+        'implementingClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
+        'name' => 'location',
+        'modifiers' => 1,
+        'type' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'string',
+            'isIdentifier' => true,
+          ),
+        ),
+        'default' => 
+        array (
+          'code' => '\'\'',
+          'attributes' => 
+          array (
+            'startLine' => 23,
+            'endLine' => 23,
+            'startTokenPos' => 100,
+            'startFilePos' => 408,
+            'endTokenPos' => 100,
+            'endFilePos' => 409,
+          ),
+        ),
+        'docComment' => NULL,
+        'attributes' => 
+        array (
+        ),
+        'startLine' => 23,
+        'endLine' => 23,
+        'startColumn' => 5,
+        'endColumn' => 33,
+        'isPromoted' => false,
+        'declaredAtCompileTime' => true,
+        'immediateVirtual' => false,
+        'immediateHooks' => 
+        array (
+        ),
+      ),
+      'service_type' => 
+      array (
+        'declaringClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
+        'implementingClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
+        'name' => 'service_type',
+        'modifiers' => 1,
+        'type' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'string',
+            'isIdentifier' => true,
+          ),
+        ),
+        'default' => 
+        array (
+          'code' => '\'\'',
+          'attributes' => 
+          array (
+            'startLine' => 25,
+            'endLine' => 25,
+            'startTokenPos' => 111,
+            'startFilePos' => 447,
+            'endTokenPos' => 111,
+            'endFilePos' => 448,
+          ),
+        ),
+        'docComment' => NULL,
+        'attributes' => 
+        array (
+        ),
+        'startLine' => 25,
+        'endLine' => 25,
+        'startColumn' => 5,
+        'endColumn' => 37,
+        'isPromoted' => false,
+        'declaredAtCompileTime' => true,
+        'immediateVirtual' => false,
+        'immediateHooks' => 
+        array (
+        ),
+      ),
+      'summary' => 
+      array (
+        'declaringClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
+        'implementingClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
+        'name' => 'summary',
+        'modifiers' => 1,
+        'type' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'string',
+            'isIdentifier' => true,
+          ),
+        ),
+        'default' => 
+        array (
+          'code' => '\'\'',
+          'attributes' => 
+          array (
+            'startLine' => 27,
+            'endLine' => 27,
+            'startTokenPos' => 122,
+            'startFilePos' => 481,
+            'endTokenPos' => 122,
+            'endFilePos' => 482,
+          ),
+        ),
+        'docComment' => NULL,
+        'attributes' => 
+        array (
+        ),
+        'startLine' => 27,
+        'endLine' => 27,
+        'startColumn' => 5,
+        'endColumn' => 32,
         'isPromoted' => false,
         'declaredAtCompileTime' => true,
         'immediateVirtual' => false,
@@ -211,22 +383,108 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '\'\'',
           'attributes' => 
           array (
-            'startLine' => 20,
-            'endLine' => 20,
-            'startTokenPos' => 84,
-            'startFilePos' => 354,
-            'endTokenPos' => 84,
-            'endFilePos' => 355,
+            'startLine' => 29,
+            'endLine' => 29,
+            'startTokenPos' => 133,
+            'startFilePos' => 519,
+            'endTokenPos' => 133,
+            'endFilePos' => 520,
           ),
         ),
         'docComment' => NULL,
         'attributes' => 
         array (
         ),
-        'startLine' => 20,
-        'endLine' => 20,
+        'startLine' => 29,
+        'endLine' => 29,
         'startColumn' => 5,
         'endColumn' => 36,
+        'isPromoted' => false,
+        'declaredAtCompileTime' => true,
+        'immediateVirtual' => false,
+        'immediateHooks' => 
+        array (
+        ),
+      ),
+      'services_performed' => 
+      array (
+        'declaringClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
+        'implementingClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
+        'name' => 'services_performed',
+        'modifiers' => 1,
+        'type' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'string',
+            'isIdentifier' => true,
+          ),
+        ),
+        'default' => 
+        array (
+          'code' => '\'\'',
+          'attributes' => 
+          array (
+            'startLine' => 31,
+            'endLine' => 31,
+            'startTokenPos' => 144,
+            'startFilePos' => 564,
+            'endTokenPos' => 144,
+            'endFilePos' => 565,
+          ),
+        ),
+        'docComment' => NULL,
+        'attributes' => 
+        array (
+        ),
+        'startLine' => 31,
+        'endLine' => 31,
+        'startColumn' => 5,
+        'endColumn' => 43,
+        'isPromoted' => false,
+        'declaredAtCompileTime' => true,
+        'immediateVirtual' => false,
+        'immediateHooks' => 
+        array (
+        ),
+      ),
+      'result' => 
+      array (
+        'declaringClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
+        'implementingClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
+        'name' => 'result',
+        'modifiers' => 1,
+        'type' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'string',
+            'isIdentifier' => true,
+          ),
+        ),
+        'default' => 
+        array (
+          'code' => '\'\'',
+          'attributes' => 
+          array (
+            'startLine' => 33,
+            'endLine' => 33,
+            'startTokenPos' => 155,
+            'startFilePos' => 597,
+            'endTokenPos' => 155,
+            'endFilePos' => 598,
+          ),
+        ),
+        'docComment' => NULL,
+        'attributes' => 
+        array (
+        ),
+        'startLine' => 33,
+        'endLine' => 33,
+        'startColumn' => 5,
+        'endColumn' => 31,
         'isPromoted' => false,
         'declaredAtCompileTime' => true,
         'immediateVirtual' => false,
@@ -246,20 +504,20 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => 'null',
           'attributes' => 
           array (
-            'startLine' => 22,
-            'endLine' => 22,
-            'startTokenPos' => 93,
-            'startFilePos' => 378,
-            'endTokenPos' => 93,
-            'endFilePos' => 381,
+            'startLine' => 35,
+            'endLine' => 35,
+            'startTokenPos' => 164,
+            'startFilePos' => 621,
+            'endTokenPos' => 164,
+            'endFilePos' => 624,
           ),
         ),
         'docComment' => NULL,
         'attributes' => 
         array (
         ),
-        'startLine' => 22,
-        'endLine' => 22,
+        'startLine' => 35,
+        'endLine' => 35,
         'startColumn' => 5,
         'endColumn' => 24,
         'isPromoted' => false,
@@ -289,22 +547,334 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '\'\'',
           'attributes' => 
           array (
-            'startLine' => 24,
-            'endLine' => 24,
-            'startTokenPos' => 104,
-            'startFilePos' => 416,
-            'endTokenPos' => 104,
-            'endFilePos' => 417,
+            'startLine' => 37,
+            'endLine' => 37,
+            'startTokenPos' => 175,
+            'startFilePos' => 659,
+            'endTokenPos' => 175,
+            'endFilePos' => 660,
           ),
         ),
         'docComment' => NULL,
         'attributes' => 
         array (
         ),
-        'startLine' => 24,
-        'endLine' => 24,
+        'startLine' => 37,
+        'endLine' => 37,
         'startColumn' => 5,
         'endColumn' => 34,
+        'isPromoted' => false,
+        'declaredAtCompileTime' => true,
+        'immediateVirtual' => false,
+        'immediateHooks' => 
+        array (
+        ),
+      ),
+      'galleryUploads' => 
+      array (
+        'declaringClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
+        'implementingClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
+        'name' => 'galleryUploads',
+        'modifiers' => 1,
+        'type' => NULL,
+        'default' => 
+        array (
+          'code' => '[]',
+          'attributes' => 
+          array (
+            'startLine' => 39,
+            'endLine' => 39,
+            'startTokenPos' => 184,
+            'startFilePos' => 693,
+            'endTokenPos' => 185,
+            'endFilePos' => 694,
+          ),
+        ),
+        'docComment' => NULL,
+        'attributes' => 
+        array (
+        ),
+        'startLine' => 39,
+        'endLine' => 39,
+        'startColumn' => 5,
+        'endColumn' => 32,
+        'isPromoted' => false,
+        'declaredAtCompileTime' => true,
+        'immediateVirtual' => false,
+        'immediateHooks' => 
+        array (
+        ),
+      ),
+      'gallery' => 
+      array (
+        'declaringClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
+        'implementingClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
+        'name' => 'gallery',
+        'modifiers' => 1,
+        'type' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'array',
+            'isIdentifier' => true,
+          ),
+        ),
+        'default' => 
+        array (
+          'code' => '[]',
+          'attributes' => 
+          array (
+            'startLine' => 41,
+            'endLine' => 41,
+            'startTokenPos' => 196,
+            'startFilePos' => 726,
+            'endTokenPos' => 197,
+            'endFilePos' => 727,
+          ),
+        ),
+        'docComment' => NULL,
+        'attributes' => 
+        array (
+        ),
+        'startLine' => 41,
+        'endLine' => 41,
+        'startColumn' => 5,
+        'endColumn' => 31,
+        'isPromoted' => false,
+        'declaredAtCompileTime' => true,
+        'immediateVirtual' => false,
+        'immediateHooks' => 
+        array (
+        ),
+      ),
+      'gallerySources' => 
+      array (
+        'declaringClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
+        'implementingClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
+        'name' => 'gallerySources',
+        'modifiers' => 1,
+        'type' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'array',
+            'isIdentifier' => true,
+          ),
+        ),
+        'default' => 
+        array (
+          'code' => '[]',
+          'attributes' => 
+          array (
+            'startLine' => 43,
+            'endLine' => 43,
+            'startTokenPos' => 208,
+            'startFilePos' => 766,
+            'endTokenPos' => 209,
+            'endFilePos' => 767,
+          ),
+        ),
+        'docComment' => NULL,
+        'attributes' => 
+        array (
+        ),
+        'startLine' => 43,
+        'endLine' => 43,
+        'startColumn' => 5,
+        'endColumn' => 38,
+        'isPromoted' => false,
+        'declaredAtCompileTime' => true,
+        'immediateVirtual' => false,
+        'immediateHooks' => 
+        array (
+        ),
+      ),
+      'related_service_id' => 
+      array (
+        'declaringClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
+        'implementingClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
+        'name' => 'related_service_id',
+        'modifiers' => 1,
+        'type' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionUnionType',
+          'data' => 
+          array (
+            'types' => 
+            array (
+              0 => 
+              array (
+                'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+                'data' => 
+                array (
+                  'name' => 'int',
+                  'isIdentifier' => true,
+                ),
+              ),
+              1 => 
+              array (
+                'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+                'data' => 
+                array (
+                  'name' => 'null',
+                  'isIdentifier' => true,
+                ),
+              ),
+            ),
+          ),
+        ),
+        'default' => 
+        array (
+          'code' => 'null',
+          'attributes' => 
+          array (
+            'startLine' => 45,
+            'endLine' => 45,
+            'startTokenPos' => 221,
+            'startFilePos' => 809,
+            'endTokenPos' => 221,
+            'endFilePos' => 812,
+          ),
+        ),
+        'docComment' => NULL,
+        'attributes' => 
+        array (
+        ),
+        'startLine' => 45,
+        'endLine' => 45,
+        'startColumn' => 5,
+        'endColumn' => 43,
+        'isPromoted' => false,
+        'declaredAtCompileTime' => true,
+        'immediateVirtual' => false,
+        'immediateHooks' => 
+        array (
+        ),
+      ),
+      'related_post_url' => 
+      array (
+        'declaringClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
+        'implementingClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
+        'name' => 'related_post_url',
+        'modifiers' => 1,
+        'type' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'string',
+            'isIdentifier' => true,
+          ),
+        ),
+        'default' => 
+        array (
+          'code' => '\'\'',
+          'attributes' => 
+          array (
+            'startLine' => 47,
+            'endLine' => 47,
+            'startTokenPos' => 232,
+            'startFilePos' => 854,
+            'endTokenPos' => 232,
+            'endFilePos' => 855,
+          ),
+        ),
+        'docComment' => NULL,
+        'attributes' => 
+        array (
+        ),
+        'startLine' => 47,
+        'endLine' => 47,
+        'startColumn' => 5,
+        'endColumn' => 41,
+        'isPromoted' => false,
+        'declaredAtCompileTime' => true,
+        'immediateVirtual' => false,
+        'immediateHooks' => 
+        array (
+        ),
+      ),
+      'related_project_url' => 
+      array (
+        'declaringClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
+        'implementingClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
+        'name' => 'related_project_url',
+        'modifiers' => 1,
+        'type' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'string',
+            'isIdentifier' => true,
+          ),
+        ),
+        'default' => 
+        array (
+          'code' => '\'\'',
+          'attributes' => 
+          array (
+            'startLine' => 49,
+            'endLine' => 49,
+            'startTokenPos' => 243,
+            'startFilePos' => 900,
+            'endTokenPos' => 243,
+            'endFilePos' => 901,
+          ),
+        ),
+        'docComment' => NULL,
+        'attributes' => 
+        array (
+        ),
+        'startLine' => 49,
+        'endLine' => 49,
+        'startColumn' => 5,
+        'endColumn' => 44,
+        'isPromoted' => false,
+        'declaredAtCompileTime' => true,
+        'immediateVirtual' => false,
+        'immediateHooks' => 
+        array (
+        ),
+      ),
+      'whatsapp_message' => 
+      array (
+        'declaringClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
+        'implementingClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
+        'name' => 'whatsapp_message',
+        'modifiers' => 1,
+        'type' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'string',
+            'isIdentifier' => true,
+          ),
+        ),
+        'default' => 
+        array (
+          'code' => '\'\'',
+          'attributes' => 
+          array (
+            'startLine' => 51,
+            'endLine' => 51,
+            'startTokenPos' => 254,
+            'startFilePos' => 943,
+            'endTokenPos' => 254,
+            'endFilePos' => 944,
+          ),
+        ),
+        'docComment' => NULL,
+        'attributes' => 
+        array (
+        ),
+        'startLine' => 51,
+        'endLine' => 51,
+        'startColumn' => 5,
+        'endColumn' => 41,
         'isPromoted' => false,
         'declaredAtCompileTime' => true,
         'immediateVirtual' => false,
@@ -332,20 +902,20 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '0',
           'attributes' => 
           array (
-            'startLine' => 26,
-            'endLine' => 26,
-            'startTokenPos' => 115,
-            'startFilePos' => 450,
-            'endTokenPos' => 115,
-            'endFilePos' => 450,
+            'startLine' => 53,
+            'endLine' => 53,
+            'startTokenPos' => 265,
+            'startFilePos' => 977,
+            'endTokenPos' => 265,
+            'endFilePos' => 977,
           ),
         ),
         'docComment' => NULL,
         'attributes' => 
         array (
         ),
-        'startLine' => 26,
-        'endLine' => 26,
+        'startLine' => 53,
+        'endLine' => 53,
         'startColumn' => 5,
         'endColumn' => 31,
         'isPromoted' => false,
@@ -375,20 +945,20 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => 'false',
           'attributes' => 
           array (
-            'startLine' => 28,
-            'endLine' => 28,
-            'startTokenPos' => 126,
-            'startFilePos' => 485,
-            'endTokenPos' => 126,
-            'endFilePos' => 489,
+            'startLine' => 55,
+            'endLine' => 55,
+            'startTokenPos' => 276,
+            'startFilePos' => 1012,
+            'endTokenPos' => 276,
+            'endFilePos' => 1016,
           ),
         ),
         'docComment' => NULL,
         'attributes' => 
         array (
         ),
-        'startLine' => 28,
-        'endLine' => 28,
+        'startLine' => 55,
+        'endLine' => 55,
         'startColumn' => 5,
         'endColumn' => 37,
         'isPromoted' => false,
@@ -418,22 +988,65 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => 'true',
           'attributes' => 
           array (
-            'startLine' => 30,
-            'endLine' => 30,
-            'startTokenPos' => 137,
-            'startFilePos' => 522,
-            'endTokenPos' => 137,
-            'endFilePos' => 525,
+            'startLine' => 57,
+            'endLine' => 57,
+            'startTokenPos' => 287,
+            'startFilePos' => 1049,
+            'endTokenPos' => 287,
+            'endFilePos' => 1052,
           ),
         ),
         'docComment' => NULL,
         'attributes' => 
         array (
         ),
-        'startLine' => 30,
-        'endLine' => 30,
+        'startLine' => 57,
+        'endLine' => 57,
         'startColumn' => 5,
         'endColumn' => 34,
+        'isPromoted' => false,
+        'declaredAtCompileTime' => true,
+        'immediateVirtual' => false,
+        'immediateHooks' => 
+        array (
+        ),
+      ),
+      'services' => 
+      array (
+        'declaringClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
+        'implementingClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
+        'name' => 'services',
+        'modifiers' => 1,
+        'type' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'array',
+            'isIdentifier' => true,
+          ),
+        ),
+        'default' => 
+        array (
+          'code' => '[]',
+          'attributes' => 
+          array (
+            'startLine' => 59,
+            'endLine' => 59,
+            'startTokenPos' => 298,
+            'startFilePos' => 1085,
+            'endTokenPos' => 299,
+            'endFilePos' => 1086,
+          ),
+        ),
+        'docComment' => NULL,
+        'attributes' => 
+        array (
+        ),
+        'startLine' => 59,
+        'endLine' => 59,
+        'startColumn' => 5,
+        'endColumn' => 32,
         'isPromoted' => false,
         'declaredAtCompileTime' => true,
         'immediateVirtual' => false,
@@ -457,12 +1070,12 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
               'code' => 'null',
               'attributes' => 
               array (
-                'startLine' => 32,
-                'endLine' => 32,
-                'startTokenPos' => 153,
-                'startFilePos' => 575,
-                'endTokenPos' => 153,
-                'endFilePos' => 578,
+                'startLine' => 61,
+                'endLine' => 61,
+                'startTokenPos' => 315,
+                'startFilePos' => 1136,
+                'endTokenPos' => 315,
+                'endFilePos' => 1139,
               ),
             ),
             'type' => 
@@ -499,8 +1112,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 32,
-            'endLine' => 32,
+            'startLine' => 61,
+            'endLine' => 61,
             'startColumn' => 27,
             'endColumn' => 50,
             'parameterIndex' => 0,
@@ -521,8 +1134,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 32,
-        'endLine' => 44,
+        'startLine' => 61,
+        'endLine' => 87,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -556,8 +1169,69 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 46,
-        'endLine' => 78,
+        'startLine' => 89,
+        'endLine' => 151,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Livewire\\Admin\\Projects',
+        'declaringClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
+        'implementingClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
+        'currentClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
+        'aliasName' => NULL,
+      ),
+      'removeGalleryImage' => 
+      array (
+        'name' => 'removeGalleryImage',
+        'parameters' => 
+        array (
+          'index' => 
+          array (
+            'name' => 'index',
+            'default' => NULL,
+            'type' => 
+            array (
+              'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+              'data' => 
+              array (
+                'name' => 'int',
+                'isIdentifier' => true,
+              ),
+            ),
+            'isVariadic' => false,
+            'byRef' => false,
+            'isPromoted' => false,
+            'attributes' => 
+            array (
+            ),
+            'startLine' => 153,
+            'endLine' => 153,
+            'startColumn' => 40,
+            'endColumn' => 49,
+            'parameterIndex' => 0,
+            'isOptional' => false,
+          ),
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'void',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => NULL,
+        'startLine' => 153,
+        'endLine' => 158,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -591,8 +1265,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 80,
-        'endLine' => 83,
+        'startLine' => 160,
+        'endLine' => 163,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

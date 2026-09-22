@@ -47,7 +47,7 @@
                                     $coverImage = !empty($project->gallery) && is_array($project->gallery) ? $project->gallery[0] : $project->logo_path;
                                 ?>
                                 <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if($coverImage): ?>
-                                    <img src="<?php echo e(asset($coverImage)); ?>" alt="<?php echo e($project->title); ?>" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                                    <img src="<?php echo e(Str::startsWith($coverImage, 'storage') ? Storage::url($coverImage) : asset($coverImage)); ?>" alt="<?php echo e($project->title); ?>" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
                                 <?php else: ?>
                                     <span class="text-6xl font-bold font-display text-[rgba(15,23,42,0.06)]"><?php echo e(strtoupper(substr($project->title, 0, 1))); ?></span>
                                 <?php endif; ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php endif; ?>
@@ -61,8 +61,17 @@
                             <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if($project->subtitle): ?>
                                 <p class="text-sm text-primary/50 mt-2"><?php echo e($project->subtitle); ?></p>
                             <?php endif; ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php endif; ?>
+                            <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if($project->client || $project->location): ?>
+                                <p class="text-xs text-primary/40 mt-3 uppercase tracking-[0.15em]">
+                                    <?php echo e(trim(implode(' · ', array_filter([$project->client, $project->location])))); ?>
+
+                                </p>
+                            <?php endif; ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php endif; ?>
+                            <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if($project->summary): ?>
+                                <p class="text-sm text-primary/60 mt-3 leading-relaxed line-clamp-3"><?php echo e($project->summary); ?></p>
+                            <?php endif; ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php endif; ?>
                             <div class="flex items-center gap-2 mt-6 text-xs font-medium text-accent tracking-[0.2em] uppercase">
-                                <span>Ver galería completa</span>
+                                <span>Ver detalle del proyecto</span>
                                 <span class="w-6 h-px bg-accent/60 group-hover:w-10 transition-all"></span>
                             </div>
                         </a>

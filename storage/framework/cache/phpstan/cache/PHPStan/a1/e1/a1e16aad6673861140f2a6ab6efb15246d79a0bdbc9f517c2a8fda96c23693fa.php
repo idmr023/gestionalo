@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\idmr_\OneDrive\Escritorio\gestionalo\app\Providers\AuthServiceProvider.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Providers\AuthServiceProvider
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.5.8-6b32966eb1eb4bb3c223fdedccd23f19ee9f33a23978b327d64a643ede2236af',
+   'variableKey' => 'v2-6.70.0.3-8.5.8-0b763cea566a75149d0720344a36ef0c0121621d1ce2466d57cf4a9224693c51',
    'data' => 
   array (
     'locatedSource' => 
@@ -26,8 +26,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'attributes' => 
     array (
     ),
-    'startLine' => 19,
-    'endLine' => 34,
+    'startLine' => 21,
+    'endLine' => 37,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Illuminate\\Foundation\\Support\\Providers\\AuthServiceProvider',
@@ -51,23 +51,23 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'type' => NULL,
         'default' => 
         array (
-          'code' => '[\\App\\Models\\Service::class => \\App\\Policies\\ServicePolicy::class, \\App\\Models\\Project::class => \\App\\Policies\\ProjectPolicy::class, \\App\\Models\\Post::class => \\App\\Policies\\PostPolicy::class, \\App\\Models\\Contact::class => \\App\\Policies\\ContactPolicy::class, \\App\\Models\\Appointment::class => \\App\\Policies\\AppointmentPolicy::class, \\App\\Models\\User::class => \\App\\Policies\\UserPolicy::class]',
+          'code' => '[\\App\\Models\\Service::class => \\App\\Policies\\ServicePolicy::class, \\App\\Models\\Project::class => \\App\\Policies\\ProjectPolicy::class, \\App\\Models\\Post::class => \\App\\Policies\\PostPolicy::class, \\App\\Models\\Contact::class => \\App\\Policies\\ContactPolicy::class, \\App\\Models\\Appointment::class => \\App\\Policies\\AppointmentPolicy::class, \\App\\Models\\Setting::class => \\App\\Policies\\SettingPolicy::class, \\App\\Models\\User::class => \\App\\Policies\\UserPolicy::class]',
           'attributes' => 
           array (
-            'startLine' => 21,
-            'endLine' => 28,
-            'startTokenPos' => 92,
-            'startFilePos' => 528,
-            'endTokenPos' => 160,
-            'endFilePos' => 818,
+            'startLine' => 23,
+            'endLine' => 31,
+            'startTokenPos' => 102,
+            'startFilePos' => 584,
+            'endTokenPos' => 181,
+            'endFilePos' => 922,
           ),
         ),
         'docComment' => NULL,
         'attributes' => 
         array (
         ),
-        'startLine' => 21,
-        'endLine' => 28,
+        'startLine' => 23,
+        'endLine' => 31,
         'startColumn' => 5,
         'endColumn' => 6,
         'isPromoted' => false,
@@ -100,8 +100,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 30,
-        'endLine' => 33,
+        'startLine' => 33,
+        'endLine' => 36,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

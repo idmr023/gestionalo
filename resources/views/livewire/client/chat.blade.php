@@ -117,7 +117,24 @@
                                     <span class="text-xs font-medium text-accent/70">Gestionalo</span>
                                 </div>
                             @endif
-                            <p class="text-sm leading-relaxed">{{ $msg->content }}</p>
+                            <p class="text-sm leading-relaxed whitespace-pre-line">{{ $msg->content }}</p>
+                            @if ($msg->role === 'assistant')
+                                <div class="flex flex-wrap gap-2 mt-3 pt-3 border-t border-[rgba(15,23,42,0.06)]">
+                                    <a href="{{ google_calendar_url('prediagnostico') }}" target="_blank" rel="noopener noreferrer"
+                                       class="inline-flex items-center gap-1.5 text-xs bg-accent/10 text-accent hover:bg-accent/20 px-3 py-1.5 font-medium transition">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                                        Agendar prediagnóstico gratis
+                                    </a>
+                                    <a href="{{ whatsapp_url('Hola, deseo una cotización por los servicios de Gestionalo.') }}" target="_blank" rel="noopener noreferrer"
+                                       class="inline-flex items-center gap-1.5 text-xs text-primary/60 hover:text-accent px-3 py-1.5 font-medium transition">
+                                        Solicitar cotización
+                                    </a>
+                                    <a href="{{ whatsapp_url() }}" target="_blank" rel="noopener noreferrer"
+                                       class="inline-flex items-center gap-1.5 text-xs text-primary/60 hover:text-accent px-3 py-1.5 font-medium transition">
+                                        Escribir por WhatsApp
+                                    </a>
+                                </div>
+                            @endif
                         </div>
                     </div>
                 @endforeach

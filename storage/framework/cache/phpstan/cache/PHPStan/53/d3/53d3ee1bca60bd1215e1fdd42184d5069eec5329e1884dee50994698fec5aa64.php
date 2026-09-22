@@ -1443,6 +1443,33 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'typeAliasClassName' => NULL,
          'traitData' => NULL,
       )),
+      'e8a558bab88f2e4e3995035d34ad9a4c' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Models',
+         'uses' => 
+        array (
+          'auditable' => 'App\\Traits\\Auditable',
+          'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'softdeletes' => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
+          'str' => 'Illuminate\\Support\\Str',
+        ),
+         'className' => 'App\\Models\\Project',
+         'functionName' => 'relatedService',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => NULL,
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => NULL,
+         'traitData' => NULL,
+      )),
       '06a61b96f8c4877ad2bdfba5203cb564' => 
       \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
          'namespace' => 'App\\Models',
@@ -1554,7 +1581,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Project.php' => '4e3ca52f690e8ee2443f191e939f6ce353fa9b7ec1f7cd3737054954bde918ab',
+      'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Project.php' => 'ba5dcf2f66fa76c2e52e842ab92ad3e129d1de77fb415ca40e85f57c2d7eef78',
       'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Traits\\Auditable.php' => 'dfdcb93e82a54ce4dea6cdd77cacf54c3cd08aff5e9712b9c953356990a429e0',
       'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\vendor\\composer\\..\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Factories\\HasFactory.php' => 'f656f22af602c0c7a3b73524ece133d391640c8c78d29da5ddc48a235e583431',
       'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\vendor\\composer\\..\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\SoftDeletes.php' => '088774910033ee16d93400eb71c4befe82edb195c45e9cb4579093e91e9fe2df',

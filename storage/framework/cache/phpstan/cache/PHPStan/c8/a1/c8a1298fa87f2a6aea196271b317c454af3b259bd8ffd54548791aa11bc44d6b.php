@@ -15,6 +15,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'auditable' => 'App\\Traits\\Auditable',
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
           'softdeletes' => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
           'str' => 'Illuminate\\Support\\Str',
         ),
@@ -1424,11 +1425,96 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'auditable' => 'App\\Traits\\Auditable',
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
           'softdeletes' => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
           'str' => 'Illuminate\\Support\\Str',
         ),
          'className' => 'App\\Models\\Service',
          'functionName' => 'casts',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => NULL,
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => NULL,
+         'traitData' => NULL,
+      )),
+      'bb7c7af545a2b42f185ed9b93352a0c8' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Models',
+         'uses' => 
+        array (
+          'auditable' => 'App\\Traits\\Auditable',
+          'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+          'softdeletes' => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
+          'str' => 'Illuminate\\Support\\Str',
+        ),
+         'className' => 'App\\Models\\Service',
+         'functionName' => 'scopeFeatured',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => NULL,
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => NULL,
+         'traitData' => NULL,
+      )),
+      'cd3b0f3cf22c1c03b7bec872b70ab8ee' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Models',
+         'uses' => 
+        array (
+          'auditable' => 'App\\Traits\\Auditable',
+          'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+          'softdeletes' => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
+          'str' => 'Illuminate\\Support\\Str',
+        ),
+         'className' => 'App\\Models\\Service',
+         'functionName' => 'scopeFeaturedOrdered',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => NULL,
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => NULL,
+         'traitData' => NULL,
+      )),
+      'e21b0570be1915f69f48e36082b7983b' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Models',
+         'uses' => 
+        array (
+          'auditable' => 'App\\Traits\\Auditable',
+          'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+          'softdeletes' => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
+          'str' => 'Illuminate\\Support\\Str',
+        ),
+         'className' => 'App\\Models\\Service',
+         'functionName' => 'projects',
          'templatePhpDocNodes' => 
         array (
         ),
@@ -1451,6 +1537,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'auditable' => 'App\\Traits\\Auditable',
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
           'softdeletes' => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
           'str' => 'Illuminate\\Support\\Str',
         ),
@@ -1478,6 +1565,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'auditable' => 'App\\Traits\\Auditable',
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
           'softdeletes' => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
           'str' => 'Illuminate\\Support\\Str',
         ),
@@ -1505,6 +1593,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'auditable' => 'App\\Traits\\Auditable',
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
           'softdeletes' => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
           'str' => 'Illuminate\\Support\\Str',
         ),
@@ -1527,7 +1616,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Service.php' => '27df4d36bca45454c4c100b472d033343bd1365ccb4851b8ea7377e61f3387c7',
+      'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Service.php' => '26227a14246c565719d1de02d4c7a32ac25a83768ee3de819d8db0672a35464c',
       'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Traits\\Auditable.php' => 'dfdcb93e82a54ce4dea6cdd77cacf54c3cd08aff5e9712b9c953356990a429e0',
       'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\vendor\\composer\\..\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Factories\\HasFactory.php' => 'f656f22af602c0c7a3b73524ece133d391640c8c78d29da5ddc48a235e583431',
       'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\vendor\\composer\\..\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\SoftDeletes.php' => '088774910033ee16d93400eb71c4befe82edb195c45e9cb4579093e91e9fe2df',

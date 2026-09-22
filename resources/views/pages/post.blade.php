@@ -144,6 +144,15 @@
             <article id="blog-content" class="prose prose-gray max-w-none leading-relaxed text-primary/70">
                 {!! $post->body !!}
             </article>
+
+            <div class="mt-16 pt-12 border-t border-[rgba(15,23,42,0.06)]">
+                <h3 class="text-lg font-bold font-display text-primary mb-4">¿Te gustaría aplicar esto a tu caso?</h3>
+                <x-front.cta-buttons
+                    :whatsapp-label="'Consultar por WhatsApp'"
+                    :whatsapp-message="'Hola, he leído el artículo de Gestionalo sobre ' . $post->title . ' y deseo más información.'"
+                    show-agendas
+                />
+            </div>
         </div>
     </main>
 

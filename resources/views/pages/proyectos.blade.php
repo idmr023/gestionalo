@@ -19,7 +19,7 @@
                                     $coverImage = !empty($project->gallery) && is_array($project->gallery) ? $project->gallery[0] : $project->logo_path;
                                 @endphp
                                 @if ($coverImage)
-                                    <img src="{{ asset($coverImage) }}" alt="{{ $project->title }}" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                                    <img src="{{ Str::startsWith($coverImage, 'storage') ? Storage::url($coverImage) : asset($coverImage) }}" alt="{{ $project->title }}" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
                                 @else
                                     <span class="text-6xl font-bold font-display text-[rgba(15,23,42,0.06)]">{{ strtoupper(substr($project->title, 0, 1)) }}</span>
                                 @endif
@@ -33,8 +33,16 @@
                             @if ($project->subtitle)
                                 <p class="text-sm text-primary/50 mt-2">{{ $project->subtitle }}</p>
                             @endif
+                            @if ($project->client || $project->location)
+                                <p class="text-xs text-primary/40 mt-3 uppercase tracking-[0.15em]">
+                                    {{ trim(implode(' · ', array_filter([$project->client, $project->location]))) }}
+                                </p>
+                            @endif
+                            @if ($project->summary)
+                                <p class="text-sm text-primary/60 mt-3 leading-relaxed line-clamp-3">{{ $project->summary }}</p>
+                            @endif
                             <div class="flex items-center gap-2 mt-6 text-xs font-medium text-accent tracking-[0.2em] uppercase">
-                                <span>Ver galería completa</span>
+                                <span>Ver detalle del proyecto</span>
                                 <span class="w-6 h-px bg-accent/60 group-hover:w-10 transition-all"></span>
                             </div>
                         </a>

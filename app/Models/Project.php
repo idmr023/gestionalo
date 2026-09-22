@@ -14,11 +14,21 @@ class Project extends Model
 
     protected $fillable = [
         'title',
+        'client',
+        'location',
+        'service_type',
         'subtitle',
         'slug',
         'description',
+        'summary',
+        'services_performed',
+        'result',
         'logo_path',
         'gallery',
+        'related_service_id',
+        'related_post_url',
+        'related_project_url',
+        'whatsapp_message',
         'sort_order',
         'is_featured',
         'is_active',
@@ -31,7 +41,13 @@ class Project extends Model
             'is_active' => 'boolean',
             'is_featured' => 'boolean',
             'sort_order' => 'integer',
+            'related_service_id' => 'integer',
         ];
+    }
+
+    public function relatedService()
+    {
+        return $this->belongsTo(Service::class, 'related_service_id');
     }
 
     protected static function booted(): void

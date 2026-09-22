@@ -36,6 +36,8 @@ Route::get('/register', [AuthController::class, 'showRegister'])->name('register
 Route::post('/register', [AuthController::class, 'register'])->middleware('throttle:register');
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout')->middleware('auth');
 
+Route::get('/asesoria-ia', fn () => view('pages.asesoria-ia'))->name('ai.chat');
+
 Route::middleware('auth')->group(function () {
     Route::get('/mi-cuenta', [AuthController::class, 'clientDashboard'])->name('client.dashboard');
     Route::get('/mi-cuenta/asesoria', fn () => view('pages.asesoria-ia'))->name('client.chat');

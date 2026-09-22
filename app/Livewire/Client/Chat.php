@@ -5,6 +5,7 @@ namespace App\Livewire\Client;
 use App\Models\ChatMessage;
 use App\Models\ChatSession;
 use App\Services\GeminiService;
+use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Str;
 use Illuminate\View\View;
 use Livewire\Component;
@@ -17,20 +18,29 @@ class Chat extends Component
 
     public bool $sending = false;
 
+    private ?string $guestId = null;
+
     protected $listeners = ['newSession' => 'createSession'];
 
     public function mount(): void
     {
-        $this->activeSessionId = auth()->user()->chatSessions()
+        $this->activeSessionId = $this->baseSessionQuery()
             ->latest()
             ->value('id');
     }
 
     public function createSession(): void
     {
-        $session = auth()->user()->chatSessions()->create([
-            'title' => 'Nueva consulta',
-        ]);
+        if ($this->isGuest()) {
+            $session = ChatSession::create([
+                'guest_id' => $this->guestId(),
+                'title' => 'Nueva consulta',
+            ]);
+        } else {
+            $session = auth()->user()->chatSessions()->create([
+                'title' => 'Nueva consulta',
+            ]);
+        }
 
         $this->activeSessionId = $session->id;
     }
@@ -53,12 +63,13 @@ class Chat extends Component
 
         $session = ChatSession::findOrFail($this->activeSessionId);
 
-        if ($session->user_id !== auth()->id()) {
+        if (! $this->ownsSession($session)) {
             return;
         }
 
         $session->messages()->create([
             'user_id' => auth()->id(),
+            'guest_id' => $this->isGuest() ? $this->guestId() : null,
             'role' => 'user',
             'content' => $this->message,
         ]);
@@ -84,6 +95,7 @@ class Chat extends Component
 
         $session->messages()->create([
             'user_id' => auth()->id(),
+            'guest_id' => $this->isGuest() ? $this->guestId() : null,
             'role' => 'assistant',
             'content' => $reply,
         ]);
@@ -92,6 +104,30 @@ class Chat extends Component
         $this->sending = false;
 
         $this->dispatch('scrollChat');
+    }
+
+    public function switchSession(int $sessionId): void
+    {
+        $session = ChatSession::find($sessionId);
+
+        if ($session && $this->ownsSession($session)) {
+            $this->activeSessionId = $sessionId;
+        }
+    }
+
+    public function deleteSession(int $sessionId): void
+    {
+        $session = ChatSession::find($sessionId);
+
+        if ($session && $this->ownsSession($session)) {
+            $session->delete();
+
+            if ($this->activeSessionId === $sessionId) {
+                $this->activeSessionId = $this->baseSessionQuery()
+                    ->latest()
+                    ->value('id');
+            }
+        }
     }
 
     private function updateSessionTitle(ChatSession $session): void
@@ -107,33 +143,9 @@ class Chat extends Component
         }
     }
 
-    public function switchSession(int $sessionId): void
-    {
-        $session = ChatSession::find($sessionId);
-
-        if ($session && $session->user_id === auth()->id()) {
-            $this->activeSessionId = $sessionId;
-        }
-    }
-
-    public function deleteSession(int $sessionId): void
-    {
-        $session = ChatSession::find($sessionId);
-
-        if ($session && $session->user_id === auth()->id()) {
-            $session->delete();
-
-            if ($this->activeSessionId === $sessionId) {
-                $this->activeSessionId = auth()->user()->chatSessions()
-                    ->latest()
-                    ->value('id');
-            }
-        }
-    }
-
     public function render(): View
     {
-        $sessions = auth()->user()->chatSessions()
+        $sessions = $this->baseSessionQuery()
             ->latest()
             ->get();
 
@@ -149,5 +161,44 @@ class Chat extends Component
             'sessions' => $sessions,
             'messages' => $messages,
         ]);
+    }
+
+    private function isGuest(): bool
+    {
+        return ! auth()->check();
+    }
+
+    private function guestId(): string
+    {
+        if ($this->guestId) {
+            return $this->guestId;
+        }
+
+        $id = (string) request()->cookie('chat_guest');
+
+        if ($id === '') {
+            $id = (string) Str::uuid();
+            Cookie::queue('chat_guest', $id, 60 * 24 * 30);
+        }
+
+        return $this->guestId = $id;
+    }
+
+    private function baseSessionQuery()
+    {
+        if ($this->isGuest()) {
+            return ChatSession::where('guest_id', $this->guestId());
+        }
+
+        return auth()->user()->chatSessions();
+    }
+
+    private function ownsSession(ChatSession $session): bool
+    {
+        if ($this->isGuest()) {
+            return $session->guest_id === $this->guestId();
+        }
+
+        return $session->user_id === auth()->id();
     }
 }

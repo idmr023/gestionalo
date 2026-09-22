@@ -17,6 +17,10 @@ class ServiceFactory extends Factory
             'icon_svg' => '<svg></svg>',
             'sort_order' => fake()->numberBetween(1, 10),
             'is_active' => true,
+            'is_featured' => false,
+            'featured_order' => 0,
+            'cta_text' => 'Solicitar cotización',
+            'cta_url' => null,
         ];
     }
 }
