@@ -1,4 +1,3 @@
-<x-layouts.admin :title="$service ? 'Editar Servicio' : 'Nuevo Servicio'">
     <div class="max-w-3xl mx-auto">
         <div class="mb-6">
             <a href="{{ route('admin.services.index') }}" class="inline-flex items-center gap-2 text-sm text-primary/50 hover:text-accent">
@@ -108,4 +107,3 @@
             </div>
         </form>
     </div>
-</x-layouts.admin>

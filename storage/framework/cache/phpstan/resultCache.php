@@ -2252,7 +2252,7 @@ return [
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Blog\\CategoryForm.php' => 
   array (
-    'fileHash' => '8a67cbce288106760b374b87cc65bcdaaa7bd93827d52540a36c4a769b3f7acb',
+    'fileHash' => '7496b8b85b149f4c36ed2909eb4f6e45ff5415ec8d25c373db3b9bbe269c13ed',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\admin.php',
@@ -2268,7 +2268,7 @@ return [
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Blog\\PostForm.php' => 
   array (
-    'fileHash' => 'bd771f979839a2d45a303c83b93e7ce93a26daae6299a7da7827801de7c59fa5',
+    'fileHash' => 'c0c626b5750cef4b3ec6250df1278c09c49f75896efd421d05c5a2647a39ee84',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\admin.php',
@@ -2316,7 +2316,7 @@ return [
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Projects\\ProjectForm.php' => 
   array (
-    'fileHash' => '5603f40ca1bdaa593652a306907d736544cc9033eba83df660ba7be95cc0575a',
+    'fileHash' => '523f13ef6020ff4459b19f9ca35fb1b20cdadd4803418378dab03132e2067c6c',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\admin.php',
@@ -2340,7 +2340,7 @@ return [
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Services\\ServiceForm.php' => 
   array (
-    'fileHash' => '44e21601705385553741a3d68af396f60f09bae65aa42cdda0c28aef77267315',
+    'fileHash' => '52f5798b3c23e2a0f9867b09ac939ef47a29a55229aef68da4ff4845b8e24eac',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\admin.php',
@@ -2356,7 +2356,7 @@ return [
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Settings\\SiteSettings.php' => 
   array (
-    'fileHash' => '1c33d8519fe4efc4d2887bb144c847c3cec11f74912a3c95d7f7a77ee4fe4236',
+    'fileHash' => '970f289b7e0d149548f31ecbe888c4cc982cd477e22e2f8bdaf56cecde85a503',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\admin.php',
@@ -2556,12 +2556,13 @@ return [
       11 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\AuthServiceProvider.php',
       12 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Services\\GeminiService.php',
       13 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\factories\\ServiceFactory.php',
-      14 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\ServiceSeeder.php',
+      14 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_09_22_060000_feature_default_services.php',
+      15 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\ServiceSeeder.php',
     ),
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Setting.php' => 
   array (
-    'fileHash' => '5d778557691194964360bfa8054702fb140a78fb6c6089f17408df546147f4e5',
+    'fileHash' => 'e4939c53eea32c115b40b7921fb4b9207207096c92350f45f84d635468492a0d',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Settings\\SiteSettings.php',
@@ -2748,9 +2749,10 @@ return [
       23 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\factories\\ProjectFactory.php',
       24 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\factories\\ServiceFactory.php',
       25 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_09_21_210000_fix_project_seed_data.php',
-      26 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\PostSeeder.php',
-      27 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\ProjectSeeder.php',
-      28 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\ServiceSeeder.php',
+      26 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_09_22_060000_feature_default_services.php',
+      27 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\PostSeeder.php',
+      28 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\ProjectSeeder.php',
+      29 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\ServiceSeeder.php',
     ),
     'usedTraitDependentFiles' => 
     array (
@@ -3054,6 +3056,13 @@ return [
     array (
     ),
   ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_09_22_060000_feature_default_services.php' => 
+  array (
+    'fileHash' => 'eb3267368cc30f01d35fee594668c4b228d9359729e2f576eef5244c345f6a87',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\AdminUserSeeder.php' => 
   array (
     'fileHash' => 'f61defd263029fb9d8ab869907ce52370006c4ed4bfb5f863f0550559f0aeb28',
@@ -3087,7 +3096,7 @@ return [
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\ServiceSeeder.php' => 
   array (
-    'fileHash' => 'f88b4d1aa7b6dde84e7eb1c589fda4944c8bf8c1eba7e1b1e97dab2a1cdce0c8',
+    'fileHash' => 'e46094e59342724cd47a1784bf98f1a9cf9f74ca769f46ded858cbb857ef35d4',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\DatabaseSeeder.php',
@@ -3095,7 +3104,7 @@ return [
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\SettingSeeder.php' => 
   array (
-    'fileHash' => '67352e0ddea9f7a2e08d04720db13ece79f3d98ed5e1e2104b0a6a444082d7d9',
+    'fileHash' => 'daa6efaf143518158542a226484099b8312b6f05131954efe7c3d93ad7462b55',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\DatabaseSeeder.php',
@@ -3641,6 +3650,10 @@ return [
     2 => 'symfony/http-foundation',
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_09_21_210000_fix_project_seed_data.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_09_22_060000_feature_default_services.php' => 
   array (
     0 => 'laravel/framework',
   ),

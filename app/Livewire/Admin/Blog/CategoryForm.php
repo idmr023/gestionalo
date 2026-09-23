@@ -37,6 +37,7 @@ class CategoryForm extends Component
 
     public function render(): View
     {
-        return view('livewire.admin.blog.category-form');
+        return view('livewire.admin.blog.category-form')
+            ->layout('components.layouts.admin', ['title' => $this->category ? 'Editar Categoría' : 'Nueva Categoría']);
     }
 }

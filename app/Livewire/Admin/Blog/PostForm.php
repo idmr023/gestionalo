@@ -85,6 +85,6 @@ class PostForm extends Component
     {
         return view('livewire.admin.blog.post-form', [
             'categories' => Category::orderBy('name')->get(),
-        ]);
+        ])->layout('components.layouts.admin', ['title' => $this->post ? 'Editar Artículo' : 'Nuevo Artículo']);
     }
 }

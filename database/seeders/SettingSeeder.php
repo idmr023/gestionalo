@@ -13,19 +13,19 @@ class SettingSeeder extends Seeder
             // Hero
             [
                 'key' => 'hero.title',
-                'value' => 'Regulariza, protege y revaloriza tu inmueble o negocio',
+                'value' => 'Blindamos la Continuidad de tu Negocio: Cero Clausuras y Cero Multas Municipales.',
                 'group' => 'hero',
                 'type' => 'string',
             ],
             [
                 'key' => 'hero.subtitle',
-                'value' => 'Especialistas en ITSE, licencias, saneamiento físico-legal, Ley 27157 y soluciones técnicas para inmuebles comerciales y residenciales.',
+                'value' => 'Arquitectura Legal, Regularización de Licencias e Inspecciones Técnicas de Seguridad (ITSE) Multisede en el Perú.',
                 'group' => 'hero',
                 'type' => 'text',
             ],
             [
                 'key' => 'hero.cta_primary_text',
-                'value' => 'Solicitar orientación gratuita',
+                'value' => 'Agendar Diagnóstico Técnico Preventivo Gratis',
                 'group' => 'hero',
                 'type' => 'string',
             ],

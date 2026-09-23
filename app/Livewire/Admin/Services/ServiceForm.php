@@ -91,6 +91,7 @@ class ServiceForm extends Component
 
     public function render(): View
     {
-        return view('livewire.admin.services.service-form');
+        return view('livewire.admin.services.service-form')
+            ->layout('components.layouts.admin', ['title' => $this->service ? 'Editar Servicio' : 'Nuevo Servicio']);
     }
 }

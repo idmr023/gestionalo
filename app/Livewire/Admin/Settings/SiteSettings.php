@@ -107,7 +107,7 @@ class SiteSettings extends Component
 
     public function save(): void
     {
-        $this->authorize('update', Setting::class);
+        $this->authorize('update', new Setting);
 
         $this->validate([
             'hero_title' => 'required',
@@ -177,6 +177,7 @@ class SiteSettings extends Component
 
     public function render(): View
     {
-        return view('livewire.admin.settings.site-settings');
+        return view('livewire.admin.settings.site-settings')
+            ->layout('components.layouts.admin', ['title' => 'Configuración del sitio']);
     }
 }

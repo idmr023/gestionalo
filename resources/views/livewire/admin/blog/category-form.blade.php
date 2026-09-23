@@ -1,4 +1,3 @@
-<x-layouts.admin :title="$category ? 'Editar Categoría' : 'Nueva Categoría'">
     <div class="max-w-xl mx-auto">
         <div class="mb-6">
             <a href="{{ route('admin.blog.categories.index') }}" class="inline-flex items-center gap-2 text-sm text-primary/50 hover:text-accent">
@@ -22,4 +21,3 @@
             </div>
         </form>
     </div>
-</x-layouts.admin>

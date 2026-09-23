@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\idmr_\OneDrive\Escritorio\gestionalo\app\Livewire\Admin\Blog\CategoryForm.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Livewire\Admin\Blog\CategoryForm
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.5.8-8a67cbce288106760b374b87cc65bcdaaa7bd93827d52540a36c4a769b3f7acb',
+   'variableKey' => 'v2-6.70.0.3-8.5.8-7496b8b85b149f4c36ed2909eb4f6e45ff5415ec8d25c373db3b9bbe269c13ed',
    'data' => 
   array (
     'locatedSource' => 
@@ -27,7 +27,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     array (
     ),
     'startLine' => 9,
-    'endLine' => 42,
+    'endLine' => 43,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Livewire\\Component',
@@ -298,7 +298,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         ),
         'docComment' => NULL,
         'startLine' => 38,
-        'endLine' => 41,
+        'endLine' => 42,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

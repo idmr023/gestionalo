@@ -21,13 +21,22 @@ class Setting extends Model
 
     public static function allCached(): array
     {
-        return Cache::rememberForever(self::CACHE_KEY, function () {
-            try {
-                return self::query()->pluck('value', 'key')->toArray();
-            } catch (\Throwable $e) {
-                return [];
-            }
-        });
+        $cached = Cache::get(self::CACHE_KEY);
+
+        if (is_array($cached) && $cached !== []) {
+            return $cached;
+        }
+
+        // Never cache an empty/failed result, otherwise a single transient
+        // DB error would poison the cache forever and every setting would
+        // silently fall back to config('site.*').
+        $fresh = self::query()->pluck('value', 'key')->toArray();
+
+        if ($fresh !== []) {
+            Cache::forever(self::CACHE_KEY, $fresh);
+        }
+
+        return $fresh;
     }
 
     public static function get(string $key, mixed $default = null): mixed

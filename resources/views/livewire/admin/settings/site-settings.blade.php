@@ -1,4 +1,3 @@
-<x-layouts.admin :title="'Configuración del sitio'">
     <div class="max-w-3xl mx-auto">
         <div class="mb-6">
             <a href="{{ route('admin.dashboard') }}" class="inline-flex items-center gap-2 text-sm text-primary/50 hover:text-accent">
@@ -194,4 +193,3 @@
             </div>
         </form>
     </div>
-</x-layouts.admin>

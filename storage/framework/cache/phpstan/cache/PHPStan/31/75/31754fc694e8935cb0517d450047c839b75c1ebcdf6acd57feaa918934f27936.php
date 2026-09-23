@@ -128,7 +128,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Blog\\PostForm.php' => 
     array (
-      0 => 'bd771f979839a2d45a303c83b93e7ce93a26daae6299a7da7827801de7c59fa5',
+      0 => 'c0c626b5750cef4b3ec6250df1278c09c49f75896efd421d05c5a2647a39ee84',
       1 => 
       array (
         0 => 'app\\livewire\\admin\\blog\\postform',
@@ -178,7 +178,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Projects\\ProjectForm.php' => 
     array (
-      0 => '5603f40ca1bdaa593652a306907d736544cc9033eba83df660ba7be95cc0575a',
+      0 => '523f13ef6020ff4459b19f9ca35fb1b20cdadd4803418378dab03132e2067c6c',
       1 => 
       array (
         0 => 'app\\livewire\\admin\\projects\\projectform',
@@ -229,7 +229,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Services\\ServiceForm.php' => 
     array (
-      0 => '44e21601705385553741a3d68af396f60f09bae65aa42cdda0c28aef77267315',
+      0 => '52f5798b3c23e2a0f9867b09ac939ef47a29a55229aef68da4ff4845b8e24eac',
       1 => 
       array (
         0 => 'app\\livewire\\admin\\services\\serviceform',
@@ -389,7 +389,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Blog\\CategoryForm.php' => 
     array (
-      0 => '8a67cbce288106760b374b87cc65bcdaaa7bd93827d52540a36c4a769b3f7acb',
+      0 => '7496b8b85b149f4c36ed2909eb4f6e45ff5415ec8d25c373db3b9bbe269c13ed',
       1 => 
       array (
         0 => 'app\\livewire\\admin\\blog\\categoryform',
@@ -987,7 +987,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Settings\\SiteSettings.php' => 
     array (
-      0 => '1c33d8519fe4efc4d2887bb144c847c3cec11f74912a3c95d7f7a77ee4fe4236',
+      0 => '970f289b7e0d149548f31ecbe888c4cc982cd477e22e2f8bdaf56cecde85a503',
       1 => 
       array (
         0 => 'app\\livewire\\admin\\settings\\sitesettings',
@@ -1004,7 +1004,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Setting.php' => 
     array (
-      0 => '5d778557691194964360bfa8054702fb140a78fb6c6089f17408df546147f4e5',
+      0 => 'e4939c53eea32c115b40b7921fb4b9207207096c92350f45f84d635468492a0d',
       1 => 
       array (
         0 => 'app\\models\\setting',

@@ -159,6 +159,7 @@ class ProjectForm extends Component
 
     public function render(): View
     {
-        return view('livewire.admin.projects.project-form');
+        return view('livewire.admin.projects.project-form')
+            ->layout('components.layouts.admin', ['title' => $this->project ? 'Editar Proyecto' : 'Nuevo Proyecto']);
     }
 }

@@ -202,7 +202,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\ServiceSeeder.php' => 
     array (
-      0 => 'f88b4d1aa7b6dde84e7eb1c589fda4944c8bf8c1eba7e1b1e97dab2a1cdce0c8',
+      0 => 'e46094e59342724cd47a1784bf98f1a9cf9f74ca769f46ded858cbb857ef35d4',
       1 => 
       array (
         0 => 'database\\seeders\\serviceseeder',
@@ -488,7 +488,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\SettingSeeder.php' => 
     array (
-      0 => '67352e0ddea9f7a2e08d04720db13ece79f3d98ed5e1e2104b0a6a444082d7d9',
+      0 => 'daa6efaf143518158542a226484099b8312b6f05131954efe7c3d93ad7462b55',
       1 => 
       array (
         0 => 'database\\seeders\\settingseeder',
@@ -504,6 +504,21 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_09_21_210000_fix_project_seed_data.php' => 
     array (
       0 => '2f33eaad6d012eb8a2b197232da3efb4b40423df60de759aed4a8e11382e1793',
+      1 => 
+      array (
+      ),
+      2 => 
+      array (
+        0 => 'up',
+        1 => 'down',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_09_22_060000_feature_default_services.php' => 
+    array (
+      0 => 'eb3267368cc30f01d35fee594668c4b228d9359729e2f576eef5244c345f6a87',
       1 => 
       array (
       ),
