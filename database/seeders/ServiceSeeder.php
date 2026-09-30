@@ -9,6 +9,10 @@ class ServiceSeeder extends Seeder
 {
     public function run(): void
     {
+        if (Service::withTrashed()->exists()) {
+            return;
+        }
+
         $services = [
             [
                 'title' => 'Saneamiento Legal y Licencias de Funcionamiento',

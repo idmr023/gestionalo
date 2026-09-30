@@ -9,8 +9,6 @@
         </div>
 
         <div class="relative">
-            <span class="absolute -top-40 -right-20 text-[500px] font-display font-bold text-[rgba(234,88,12,0.03)] leading-none select-none pointer-events-none hidden md:block">02</span>
-
             @foreach ($services->take(3) as $i => $service)
                 @php $isEven = $i % 2 === 0; @endphp
                 <div class="flex flex-col md:flex-row {{ $isEven ? '' : 'md:flex-row-reverse' }} gap-8 md:gap-16 {{ !$loop->first ? 'mt-16 md:mt-24 pt-16 md:pt-24 border-t border-[rgba(15,23,42,0.04)]' : '' }}">

@@ -9,6 +9,10 @@ class PostSeeder extends Seeder
 {
     public function run(): void
     {
+        if (Post::withTrashed()->exists()) {
+            return;
+        }
+
         $posts = [
             [
                 'title' => '¿Qué es la Licencia de Funcionamiento y por qué tu negocio la necesita?',

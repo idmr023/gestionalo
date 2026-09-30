@@ -9,6 +9,10 @@ class ProjectSeeder extends Seeder
 {
     public function run(): void
     {
+        if (Project::withTrashed()->exists()) {
+            return;
+        }
+
         $projects = [
             [
                 'title' => 'RESITER',
