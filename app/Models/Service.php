@@ -18,6 +18,7 @@ class Service extends Model
         'slug',
         'description',
         'icon_svg',
+        'image_path',
         'sort_order',
         'is_active',
         'is_featured',

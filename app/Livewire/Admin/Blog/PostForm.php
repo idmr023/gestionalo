@@ -47,7 +47,7 @@ class PostForm extends Component
             'title' => 'required|max:255',
             'excerpt' => 'nullable',
             'body' => 'required',
-            'featured_image' => 'nullable|image|max:2048',
+            'featured_image' => 'nullable|image|max:10240',
             'is_published' => 'boolean',
         ]);
 

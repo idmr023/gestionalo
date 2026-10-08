@@ -37,7 +37,7 @@
                 <label for="featured_image" class="block text-sm font-medium text-primary/70 mb-2">Imagen destacada</label>
                 @if ($featured_image_path)
                     <div class="mb-3">
-                        <img src="{{ Storage::url($featured_image_path) }}" alt="Imagen actual" class="h-32">
+                        <img src="{{ image_url($featured_image_path) }}" alt="Imagen actual" class="h-32">
                     </div>
                 @endif
                 <input id="featured_image" type="file" wire:model="featured_image" accept="image/*" class="block w-full text-sm text-primary/60">

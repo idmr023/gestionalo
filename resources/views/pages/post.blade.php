@@ -133,7 +133,7 @@
             </div>
 
             @if($post->featured_image)
-                <img src="{{ Storage::url($post->featured_image) }}" alt="{{ $post->title }}" class="w-full h-72 object-cover mb-12">
+                <img src="{{ image_url($post->featured_image) }}" alt="{{ $post->title }}" class="w-full h-72 object-cover mb-12">
             @endif
 
             @if($post->excerpt)

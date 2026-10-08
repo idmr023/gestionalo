@@ -124,7 +124,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\site.php' => 
     array (
-      0 => 'feb3113e23c0b812e8b1edcd387b1695be866d3a4501997dbd3792048926f4ea',
+      0 => 'a2aa2af3237196f4dc9f1eba4644c129a817ca7cd0959e0c5758ecb9c75db753',
       1 => 
       array (
       ),

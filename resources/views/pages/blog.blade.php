@@ -29,7 +29,7 @@
                     @foreach($posts as $post)
                         <a href="{{ route('blog.show', $post) }}" class="group bg-white p-8 hover:bg-surface transition-colors">
                             @if($post->featured_image)
-                                <img src="{{ Storage::url($post->featured_image) }}" alt="{{ $post->title }}" class="w-full h-48 object-cover mb-6 grayscale group-hover:grayscale-0 transition duration-700">
+                                <img src="{{ image_url($post->featured_image) }}" alt="{{ $post->title }}" class="w-full h-48 object-cover mb-6 grayscale group-hover:grayscale-0 transition duration-700">
                             @else
                                 <div class="w-full h-48 bg-surface flex items-center justify-center mb-6">
                                     <span class="text-6xl font-bold font-display text-[rgba(15,23,42,0.06)]">{{ strtoupper(substr($post->title, 0, 1)) }}</span>

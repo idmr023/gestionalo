@@ -1,7 +1,7 @@
 <?php declare(strict_types = 1);
 
 return [
-	'lastFullAnalysisTime' => 1790037660,
+	'lastFullAnalysisTime' => 1791484878,
 	'meta' => array (
   'cacheVersion' => 'v13-packageDependencies',
   'phpstanVersion' => '2.2.5',
@@ -2161,6 +2161,13 @@ return [
     array (
     ),
   ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Console\\Commands\\KeepAliveDb.php' => 
+  array (
+    'fileHash' => '68c85def1466f50ecd79108b01dbd9041fa637681ae1245d7a9262ec0ecdd82d',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Console\\Commands\\MonitorSystem.php' => 
   array (
     'fileHash' => '91da9177a7f36d948aedb7f610126bc66bcce08da2b0a27ba7b91a116b8d179e',
@@ -2268,7 +2275,7 @@ return [
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Blog\\PostForm.php' => 
   array (
-    'fileHash' => 'c0c626b5750cef4b3ec6250df1278c09c49f75896efd421d05c5a2647a39ee84',
+    'fileHash' => '71369bdef7703dc83fc3cd9c391085c824d0979c592710bbc28df4ab6855b78f',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\admin.php',
@@ -2316,7 +2323,7 @@ return [
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Projects\\ProjectForm.php' => 
   array (
-    'fileHash' => '523f13ef6020ff4459b19f9ca35fb1b20cdadd4803418378dab03132e2067c6c',
+    'fileHash' => 'a3b727d4ca62778634242f18c17b2863e3bd8da94f6ef29c7fa97e1ed8b85992',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\admin.php',
@@ -2340,7 +2347,7 @@ return [
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Services\\ServiceForm.php' => 
   array (
-    'fileHash' => '52f5798b3c23e2a0f9867b09ac939ef47a29a55229aef68da4ff4845b8e24eac',
+    'fileHash' => 'cb850d62430231b1f095a1ac08e8a02b6de2474a13965c30bff69a7b8e532c1f',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\admin.php',
@@ -2356,7 +2363,7 @@ return [
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Settings\\SiteSettings.php' => 
   array (
-    'fileHash' => '970f289b7e0d149548f31ecbe888c4cc982cd477e22e2f8bdaf56cecde85a503',
+    'fileHash' => '013e3534ffe8aee0c2b21ba6539ae65e12a56152fc9e02e31a101f274f4699e0',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\admin.php',
@@ -2539,7 +2546,7 @@ return [
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Service.php' => 
   array (
-    'fileHash' => '26227a14246c565719d1de02d4c7a32ac25a83768ee3de819d8db0672a35464c',
+    'fileHash' => '297a8a4297da27fa82519ce3280ac80a655831bacb107f5a434c56e8ed51cdd8',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Console\\Commands\\PurgeTrashed.php',
@@ -2562,14 +2569,15 @@ return [
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Setting.php' => 
   array (
-    'fileHash' => 'e4939c53eea32c115b40b7921fb4b9207207096c92350f45f84d635468492a0d',
+    'fileHash' => '4134c9c9e6a24b6fce8c67b23e7f528b4cf3a7d8dbbadfc8a9ba2c5947dec13d',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Settings\\SiteSettings.php',
       1 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\SettingPolicy.php',
       2 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\AuthServiceProvider.php',
       3 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\helpers.php',
-      4 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\SettingSeeder.php',
+      4 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_10_08_120000_normalize_image_paths_and_urls.php',
+      5 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\SettingSeeder.php',
     ),
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\User.php' => 
@@ -2763,10 +2771,11 @@ return [
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\helpers.php' => 
   array (
-    'fileHash' => 'c9e1a5178a0e30e9d1b1f27682685fa6c4e48515d0c4304d1b71531baad35197',
+    'fileHash' => 'c476478f378ffa5d951436ddc3b58d39e71cf771c7bde62b35dabd7f1e5bc492',
     'dependentFiles' => 
     array (
-      0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Services\\GeminiService.php',
+      0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Settings\\SiteSettings.php',
+      1 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Services\\GeminiService.php',
     ),
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\admin-menu.php' => 
@@ -2841,7 +2850,7 @@ return [
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\site.php' => 
   array (
-    'fileHash' => 'feb3113e23c0b812e8b1edcd387b1695be866d3a4501997dbd3792048926f4ea',
+    'fileHash' => 'a2aa2af3237196f4dc9f1eba4644c129a817ca7cd0959e0c5758ecb9c75db753',
     'dependentFiles' => 
     array (
     ),
@@ -3058,7 +3067,21 @@ return [
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_09_22_060000_feature_default_services.php' => 
   array (
-    'fileHash' => 'eb3267368cc30f01d35fee594668c4b228d9359729e2f576eef5244c345f6a87',
+    'fileHash' => '5c5971a886f671fb29a4b5d1b00df13544695dde6fcc13441faae38350aada95',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_10_08_120000_normalize_image_paths_and_urls.php' => 
+  array (
+    'fileHash' => '117211ecc9f5ed70cd293dcf4ef8d3b1b6c59d20f85e1ca4240a8f6593337271',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_10_08_120100_add_image_path_to_services.php' => 
+  array (
+    'fileHash' => 'c7f9089cd225bcd625f3f0ae1c76a2bc5dd1021697e7ea1c76b948349f0c141d',
     'dependentFiles' => 
     array (
     ),
@@ -3080,7 +3103,7 @@ return [
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\PostSeeder.php' => 
   array (
-    'fileHash' => '1c48347179938c0f4e7bbf421a954e0b62ce4b1c83d5aac73b49e620ce9345d6',
+    'fileHash' => '025e13a772739b5f6585f61de8ebfbf81d6bbc11b809311d15d4ba335858bf19',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\DatabaseSeeder.php',
@@ -3088,7 +3111,7 @@ return [
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\ProjectSeeder.php' => 
   array (
-    'fileHash' => 'ea8c29418875a8667b7e5a727f4fd4ad6acf63c2b93fa78027e9877dacbd271a',
+    'fileHash' => 'dfc23ce70df1198d7aaeac47eec3e326eae67a819ba2491a20100bf2685f10b4',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\DatabaseSeeder.php',
@@ -3096,7 +3119,7 @@ return [
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\ServiceSeeder.php' => 
   array (
-    'fileHash' => 'e46094e59342724cd47a1784bf98f1a9cf9f74ca769f46ded858cbb857ef35d4',
+    'fileHash' => 'fb13a31b08e794ffed05e486e9d6f84265b3a85ffb8472f933c75f8ffd96c6c4',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\DatabaseSeeder.php',
@@ -3104,7 +3127,7 @@ return [
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\SettingSeeder.php' => 
   array (
-    'fileHash' => 'daa6efaf143518158542a226484099b8312b6f05131954efe7c3d93ad7462b55',
+    'fileHash' => 'd5e41ff5e21548f6b3adcef63ec3d9b229c8a2c6834d213c02f5a82f2dc31383',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\DatabaseSeeder.php',
@@ -3119,7 +3142,7 @@ return [
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\console.php' => 
   array (
-    'fileHash' => '9adccc33e7dd400683e434774077c7fdb2f299c5712cedf16a43fdf56f2850fa',
+    'fileHash' => '7db4802a2dbe7bddfd7ed50efda733ced78c55a33132460c945abff6272edf86',
     'dependentFiles' => 
     array (
     ),
@@ -3133,100 +3156,6 @@ return [
   ),
 ),
 	'packageDependencies' => array (
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Database\\NeonPostgresConnector.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Projects\\ProjectForm.php' => 
-  array (
-    0 => 'livewire/livewire',
-    1 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Services\\ServiceList.php' => 
-  array (
-    0 => 'livewire/livewire',
-    1 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\GlobalSearch.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'livewire/livewire',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Appointment.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Contact.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Project.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'psr/simple-cache',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Setting.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'psr/simple-cache',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\AppointmentPolicy.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\UserPolicy.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Services\\CalendlyService.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'psr/log',
-    2 => 'monolog/monolog',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Services\\GeminiService.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'psr/simple-cache',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Traits\\Auditable.php' => 
-  array (
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\factories\\ProjectFactory.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'fakerphp/faker',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\0001_01_01_000000_create_users_table.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2024_07_15_000004_add_role_to_users_table.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2024_07_15_000005_add_soft_deletes_to_content_tables.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_07_16_100000_create_contacts_table.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_07_30_154019_add_dni_phone_address_to_users_table.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Console\\Commands\\MonitorSystem.php' => 
-  array (
-    0 => 'symfony/console',
-    1 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Database\\NeonPostgresConnection.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Middleware\\IsAdmin.php' => 
   array (
     0 => 'laravel/framework',
@@ -3237,173 +3166,21 @@ return [
     0 => 'laravel/framework',
     1 => 'livewire/livewire',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Projects\\ProjectList.php' => 
-  array (
-    0 => 'livewire/livewire',
-    1 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Recycle\\RecycleBin.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'livewire/livewire',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\AppointmentList.php' => 
-  array (
-    0 => 'livewire/livewire',
-    1 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\Chat.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'livewire/livewire',
-    2 => 'symfony/http-foundation',
-    3 => 'ramsey/uuid',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\ModelAudit.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Post.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\SettingPolicy.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\helpers.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\logging.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\queue.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\0001_01_01_000001_create_cache_table.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_07_16_120001_partition_model_audits.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\PostSeeder.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'nesbot/carbon',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\ServiceSeeder.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Console\\Commands\\PurgeTrashed.php' => 
-  array (
-    0 => 'symfony/console',
-    1 => 'laravel/framework',
-    2 => 'nesbot/carbon',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Controllers\\Controller.php' => 
-  array (
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Controllers\\FrontController.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'psr/simple-cache',
-    2 => 'symfony/http-foundation',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Blog\\CategoryList.php' => 
-  array (
-    0 => 'livewire/livewire',
-    1 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\ContactList.php' => 
-  array (
-    0 => 'livewire/livewire',
-    1 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Dashboard.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'livewire/livewire',
-    2 => 'nesbot/carbon',
-    3 => 'psr/simple-cache',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\ProfileForm.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'livewire/livewire',
-    2 => 'symfony/http-foundation',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Service.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'psr/simple-cache',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\ContactPolicy.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\app.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'livewire/livewire',
-    2 => 'symfony/http-foundation',
-    3 => 'symfony/console',
-    4 => 'symfony/finder',
-    5 => 'symfony/mailer',
-    6 => 'psr/http-message',
-    7 => 'league/flysystem',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\filesystems.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\factories\\PostFactory.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'fakerphp/faker',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\factories\\UserFactory.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'fakerphp/faker',
-    2 => 'nesbot/carbon',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_07_16_093938_add_performance_indexes.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_08_18_232415_create_chat_messages_table.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_09_20_172948_create_settings_table.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_09_21_193450_add_service_fields_to_services_table.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_09_21_200000_add_guest_id_to_chat_sessions_table.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\ProjectSeeder.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Blog\\PostForm.php' => 
   array (
     0 => 'livewire/livewire',
     1 => 'laravel/framework',
     2 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Projects\\ProjectForm.php' => 
+  array (
+    0 => 'livewire/livewire',
+    1 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Settings\\SiteSettings.php' => 
+  array (
+    0 => 'livewire/livewire',
+    1 => 'laravel/framework',
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\UserList.php' => 
   array (
@@ -3416,30 +3193,17 @@ return [
     1 => 'livewire/livewire',
     2 => 'nesbot/carbon',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Concerns\\HasSortableTable.php' => 
-  array (
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\ChatSession.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\User.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\ProjectPolicy.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\SettingPolicy.php' => 
   array (
     0 => 'laravel/framework',
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\AuthServiceProvider.php' => 
   array (
     0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\TelescopeServiceProvider.php' => 
-  array (
-    0 => 'laravel/telescope',
-    1 => 'laravel/framework',
-    2 => 'psr/container',
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Services\\CircuitBreaker.php' => 
   array (
@@ -3449,25 +3213,17 @@ return [
     3 => 'psr/log',
     4 => 'monolog/monolog',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\admin-menu.php' => 
-  array (
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\ai.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\cache.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\cache.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\queue.php' => 
   array (
     0 => 'laravel/framework',
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\session.php' => 
   array (
     0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\telescope.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/telescope',
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\factories\\ServiceFactory.php' => 
   array (
@@ -3482,27 +3238,104 @@ return [
   array (
     0 => 'laravel/framework',
   ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_09_21_193444_add_project_fields_to_projects_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_10_08_120000_normalize_image_paths_and_urls.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Console\\Commands\\CleanAudits.php' => 
   array (
     0 => 'symfony/console',
     1 => 'laravel/framework',
     2 => 'nesbot/carbon',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Controllers\\AuthController.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Controllers\\HealthController.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'symfony/http-kernel',
-    3 => 'psr/container',
-    4 => 'nesbot/carbon',
-    5 => 'psr/simple-cache',
-  ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Controllers\\SummaryController.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\AppointmentList.php' => 
+  array (
+    0 => 'livewire/livewire',
+    1 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Blog\\PostList.php' => 
+  array (
+    0 => 'livewire/livewire',
+    1 => 'laravel/framework',
+    2 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\Chat.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'livewire/livewire',
+    2 => 'symfony/http-foundation',
+    3 => 'ramsey/uuid',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Category.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Setting.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'psr/simple-cache',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\auth.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2024_07_15_000006_create_model_audits_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_07_16_100001_create_categories_tables.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_07_16_110000_create_appointments_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_07_24_164256_create_telescope_entries_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_08_18_232411_create_chat_sessions_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_09_21_210000_fix_project_seed_data.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_10_08_120100_add_image_path_to_services.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\DatabaseSeeder.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\ProjectSeeder.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\admin.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'livewire/livewire',
+    2 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\console.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/console',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Controllers\\AuthController.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
@@ -3518,10 +3351,16 @@ return [
     0 => 'livewire/livewire',
     1 => 'laravel/framework',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Settings\\SiteSettings.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Concerns\\HasSortableTable.php' => 
   array (
-    0 => 'livewire/livewire',
-    1 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\ChatSession.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\User.php' => 
+  array (
+    0 => 'laravel/framework',
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\PostPolicy.php' => 
   array (
@@ -3530,6 +3369,29 @@ return [
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\ServicePolicy.php' => 
   array (
     0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Services\\GeminiService.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'psr/simple-cache',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Traits\\Auditable.php' => 
+  array (
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\ai.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\app.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'livewire/livewire',
+    2 => 'symfony/http-foundation',
+    3 => 'symfony/console',
+    4 => 'symfony/finder',
+    5 => 'symfony/mailer',
+    6 => 'psr/http-message',
+    7 => 'league/flysystem',
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\database.php' => 
   array (
@@ -3555,43 +3417,31 @@ return [
     0 => 'laravel/framework',
     1 => 'nesbot/carbon',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\DatabaseSeeder.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\console.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/console',
-  ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\web.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\AppointmentList.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Database\\NeonPostgresConnector.php' => 
   array (
-    0 => 'livewire/livewire',
-    1 => 'laravel/framework',
+    0 => 'laravel/framework',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Blog\\PostList.php' => 
-  array (
-    0 => 'livewire/livewire',
-    1 => 'laravel/framework',
-    2 => 'nesbot/carbon',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Services\\ServiceForm.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Dashboard.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'livewire/livewire',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Category.php' => 
-  array (
-    0 => 'laravel/framework',
+    2 => 'nesbot/carbon',
+    3 => 'psr/simple-cache',
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\ChatMessage.php' => 
   array (
     0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Service.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'psr/simple-cache',
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\AppServiceProvider.php' => 
   array (
@@ -3607,35 +3457,233 @@ return [
   array (
     0 => 'laravel/framework',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\auth.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Services\\CalendlyService.php' => 
   array (
     0 => 'laravel/framework',
+    1 => 'psr/log',
+    2 => 'monolog/monolog',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\admin-menu.php' => 
+  array (
   ),
   'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\view.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2024_07_15_000006_create_model_audits_table.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\factories\\ProjectFactory.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'fakerphp/faker',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\0001_01_01_000000_create_users_table.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_07_16_100001_create_categories_tables.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2024_07_15_000004_add_role_to_users_table.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_07_16_110000_create_appointments_table.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2024_07_15_000005_add_soft_deletes_to_content_tables.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_07_24_164256_create_telescope_entries_table.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_07_16_093938_add_performance_indexes.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_08_18_232411_create_chat_sessions_table.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_07_16_100000_create_contacts_table.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_09_21_193444_add_project_fields_to_projects_table.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_07_30_154019_add_dni_phone_address_to_users_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\PostSeeder.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\ServiceSeeder.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Console\\Commands\\PurgeTrashed.php' => 
+  array (
+    0 => 'symfony/console',
+    1 => 'laravel/framework',
+    2 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\ContactList.php' => 
+  array (
+    0 => 'livewire/livewire',
+    1 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Services\\ServiceForm.php' => 
+  array (
+    0 => 'livewire/livewire',
+    1 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Services\\ServiceList.php' => 
+  array (
+    0 => 'livewire/livewire',
+    1 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\ProfileForm.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'livewire/livewire',
+    2 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\GlobalSearch.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'livewire/livewire',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Appointment.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Contact.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Post.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Project.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'psr/simple-cache',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\AppointmentPolicy.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\UserPolicy.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Providers\\TelescopeServiceProvider.php' => 
+  array (
+    0 => 'laravel/telescope',
+    1 => 'laravel/framework',
+    2 => 'psr/container',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\telescope.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/telescope',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\factories\\UserFactory.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'fakerphp/faker',
+    2 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_08_18_232415_create_chat_messages_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_09_20_172948_create_settings_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_09_21_193450_add_service_fields_to_services_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_09_21_200000_add_guest_id_to_chat_sessions_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Console\\Commands\\MonitorSystem.php' => 
+  array (
+    0 => 'symfony/console',
+    1 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Database\\NeonPostgresConnection.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Controllers\\Controller.php' => 
+  array (
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Controllers\\FrontController.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'psr/simple-cache',
+    2 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Controllers\\HealthController.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'symfony/http-kernel',
+    3 => 'psr/container',
+    4 => 'nesbot/carbon',
+    5 => 'psr/simple-cache',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Blog\\CategoryList.php' => 
+  array (
+    0 => 'livewire/livewire',
+    1 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Projects\\ProjectList.php' => 
+  array (
+    0 => 'livewire/livewire',
+    1 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Recycle\\RecycleBin.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'livewire/livewire',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Client\\AppointmentList.php' => 
+  array (
+    0 => 'livewire/livewire',
+    1 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\ModelAudit.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Policies\\ContactPolicy.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\helpers.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'psr/http-message',
+    2 => 'symfony/http-foundation',
+    3 => 'league/flysystem',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\filesystems.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\config\\logging.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\factories\\PostFactory.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'fakerphp/faker',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\0001_01_01_000001_create_cache_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_07_16_120001_partition_model_audits.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_09_22_060000_feature_default_services.php' => 
   array (
     0 => 'laravel/framework',
   ),
@@ -3643,19 +3691,11 @@ return [
   array (
     0 => 'laravel/framework',
   ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\admin.php' => 
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Console\\Commands\\KeepAliveDb.php' => 
   array (
-    0 => 'laravel/framework',
-    1 => 'livewire/livewire',
-    2 => 'symfony/http-foundation',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_09_21_210000_fix_project_seed_data.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_09_22_060000_feature_default_services.php' => 
-  array (
-    0 => 'laravel/framework',
+    0 => 'symfony/console',
+    1 => 'laravel/framework',
+    2 => 'nesbot/carbon',
   ),
 ),
 	'exportedNodesCallback' => static function (): array { return array (
@@ -3740,6 +3780,100 @@ return [
            'final' => false,
            'static' => false,
            'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Console\\Commands\\KeepAliveDb.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Console\\Commands\\KeepAliveDb',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Illuminate\\Console\\Command',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'signature',
+          ),
+           'phpDoc' => NULL,
+           'type' => NULL,
+           'public' => false,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'description',
+          ),
+           'phpDoc' => NULL,
+           'type' => NULL,
+           'public' => false,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'handle',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'int',
            'parameters' => 
           array (
           ),
@@ -6762,6 +6896,37 @@ return [
         )),
         25 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'normalizePath',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => false,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'string',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'path',
+               'type' => '?string',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        26 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'removeGalleryImage',
            'phpDoc' => NULL,
            'byRef' => false,
@@ -6791,7 +6956,7 @@ return [
           array (
           ),
         )),
-        26 => 
+        27 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'render',
            'phpDoc' => NULL,
@@ -7132,6 +7297,7 @@ return [
       ),
        'usedTraits' => 
       array (
+        0 => 'Livewire\\WithFileUploads',
       ),
        'traitUseAdaptations' => 
       array (
@@ -7242,6 +7408,56 @@ return [
         \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
            'names' => 
           array (
+            0 => 'image',
+          ),
+           'phpDoc' => NULL,
+           'type' => NULL,
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        5 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'image_path',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        6 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
             0 => 'sort_order',
           ),
            'phpDoc' => NULL,
@@ -7263,7 +7479,7 @@ return [
           array (
           ),
         )),
-        5 => 
+        7 => 
         \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
            'names' => 
           array (
@@ -7288,7 +7504,7 @@ return [
           array (
           ),
         )),
-        6 => 
+        8 => 
         \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
            'names' => 
           array (
@@ -7313,7 +7529,7 @@ return [
           array (
           ),
         )),
-        7 => 
+        9 => 
         \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
            'names' => 
           array (
@@ -7338,7 +7554,7 @@ return [
           array (
           ),
         )),
-        8 => 
+        10 => 
         \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
            'names' => 
           array (
@@ -7363,7 +7579,7 @@ return [
           array (
           ),
         )),
-        9 => 
+        11 => 
         \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
            'names' => 
           array (
@@ -7388,7 +7604,7 @@ return [
           array (
           ),
         )),
-        10 => 
+        12 => 
         \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
            'names' => 
           array (
@@ -7413,7 +7629,7 @@ return [
           array (
           ),
         )),
-        11 => 
+        13 => 
         \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
            'names' => 
           array (
@@ -7438,7 +7654,7 @@ return [
           array (
           ),
         )),
-        12 => 
+        14 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'mount',
            'phpDoc' => NULL,
@@ -7469,7 +7685,7 @@ return [
           array (
           ),
         )),
-        13 => 
+        15 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'save',
            'phpDoc' => NULL,
@@ -7487,7 +7703,7 @@ return [
           array (
           ),
         )),
-        14 => 
+        16 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'render',
            'phpDoc' => NULL,
@@ -13191,6 +13407,95 @@ return [
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedFunctionNode::__set_state(array(
+       'name' => 'image_url',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+     * Normalize any stored image/file path into a public URL.
+     *
+     * Handles every legacy format in DB:
+     *  - http(s)://...        → returned as is
+     *  - storage/projects/x   → /storage/projects/x   (bad prefix from old code)
+     *  - /storage/brochure/x  → /storage/brochure/x
+     *  - projects/x           → /storage/projects/x   (fresh store() value)
+     *  - assets/images/logo   → /assets/images/logo   (static public file)
+     *  - /BROCHURE_2026.pdf   → /BROCHURE_2026.pdf    (public root file)
+     */',
+         'namespace' => NULL,
+         'uses' => 
+        array (
+          'setting' => 'App\\Models\\Setting',
+          'storage' => 'Illuminate\\Support\\Facades\\Storage',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'byRef' => false,
+       'returnType' => '?string',
+       'parameters' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+           'name' => 'path',
+           'type' => '?string',
+           'byRef' => false,
+           'variadic' => false,
+           'hasDefault' => false,
+           'attributes' => 
+          array (
+          ),
+           'phpDoc' => NULL,
+           'flags' => 0,
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+    1 => 
+    \PHPStan\Dependency\ExportedNode\ExportedFunctionNode::__set_state(array(
+       'name' => 'normalize_url',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+     * Make user typed URLs valid: prepends https:// when scheme is missing.
+     * Returns null/empty string untouched.
+     */',
+         'namespace' => NULL,
+         'uses' => 
+        array (
+          'setting' => 'App\\Models\\Setting',
+          'storage' => 'Illuminate\\Support\\Facades\\Storage',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'byRef' => false,
+       'returnType' => '?string',
+       'parameters' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+           'name' => 'url',
+           'type' => '?string',
+           'byRef' => false,
+           'variadic' => false,
+           'hasDefault' => false,
+           'attributes' => 
+          array (
+          ),
+           'phpDoc' => NULL,
+           'flags' => 0,
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+    2 => 
+    \PHPStan\Dependency\ExportedNode\ExportedFunctionNode::__set_state(array(
        'name' => 'setting',
        'phpDoc' => 
       \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
@@ -13201,6 +13506,7 @@ return [
          'uses' => 
         array (
           'setting' => 'App\\Models\\Setting',
+          'storage' => 'Illuminate\\Support\\Facades\\Storage',
         ),
          'constUses' => 
         array (
@@ -13241,7 +13547,7 @@ return [
       array (
       ),
     )),
-    1 => 
+    3 => 
     \PHPStan\Dependency\ExportedNode\ExportedFunctionNode::__set_state(array(
        'name' => 'whatsapp_url',
        'phpDoc' => 
@@ -13253,6 +13559,7 @@ return [
          'uses' => 
         array (
           'setting' => 'App\\Models\\Setting',
+          'storage' => 'Illuminate\\Support\\Facades\\Storage',
         ),
          'constUses' => 
         array (
@@ -13293,7 +13600,7 @@ return [
       array (
       ),
     )),
-    2 => 
+    4 => 
     \PHPStan\Dependency\ExportedNode\ExportedFunctionNode::__set_state(array(
        'name' => 'google_calendar_url',
        'phpDoc' => 
@@ -13306,6 +13613,7 @@ return [
          'uses' => 
         array (
           'setting' => 'App\\Models\\Setting',
+          'storage' => 'Illuminate\\Support\\Facades\\Storage',
         ),
          'constUses' => 
         array (

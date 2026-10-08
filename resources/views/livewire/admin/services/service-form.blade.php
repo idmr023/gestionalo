@@ -38,6 +38,19 @@
                 @endif
             </div>
 
+            <div>
+                <label for="image" class="block text-sm font-medium text-primary/70 mb-2">Imagen del servicio (opcional)</label>
+                @if ($image_path)
+                    <div class="mb-3 inline-block p-3 bg-surface border border-primary/10">
+                        <img src="{{ image_url($image_path) }}" alt="Imagen actual" class="h-32 w-auto object-contain">
+                    </div>
+                @endif
+                <input id="image" type="file" wire:model="image" accept="image/*" class="block w-full text-sm text-primary/60">
+                @error('image') <p class="text-accent text-sm mt-1">{{ $message }}</p> @enderror
+                <div wire:loading class="text-sm text-primary/50 mt-2">Subiendo imagen...</div>
+                <p class="text-xs text-primary/40 mt-1">JPG, PNG o WebP de hasta 10 MB. Si no subes imagen se usará el ícono SVG.</p>
+            </div>
+
             <div class="grid grid-cols-2 gap-4">
                 <div>
                     <label for="sort_order" class="block text-sm font-medium text-primary/70 mb-2">Orden general</label>

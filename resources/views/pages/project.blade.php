@@ -18,7 +18,7 @@
                 <div class="lg:col-span-5">
                     @if($project->logo_path)
                         <div class="mb-8 p-6 bg-surface border border-[rgba(15,23,42,0.06)]">
-                            <img src="{{ Str::startsWith($project->logo_path, 'storage') ? Storage::url($project->logo_path) : asset($project->logo_path) }}" alt="{{ $project->title }}" class="h-20 w-auto object-contain">
+                            <img src="{{ image_url($project->logo_path) }}" alt="{{ $project->title }}" class="h-20 w-auto object-contain">
                         </div>
                     @endif
 
@@ -76,7 +76,7 @@
                         <div class="space-y-6">
                             @foreach($project->gallery as $index => $img)
                                 <div class="group relative bg-surface border border-[rgba(15,23,42,0.06)] overflow-hidden">
-                                    <img src="{{ Str::startsWith($img, 'storage') ? Storage::url($img) : asset($img) }}" alt="{{ $project->title }} - Imagen {{ $index + 1 }}" class="w-full h-auto object-cover max-h-[500px] transition duration-700 group-hover:scale-[1.02]">
+                                    <img src="{{ image_url($img) }}" alt="{{ $project->title }} - Imagen {{ $index + 1 }}" class="w-full h-auto object-cover max-h-[500px] transition duration-700 group-hover:scale-[1.02]">
                                     <div class="absolute bottom-4 right-4 bg-primary/80 backdrop-blur-sm text-white text-xs font-mono px-3 py-1">
                                         {{ str_pad($index + 1, 2, '0', STR_PAD_LEFT) }} / {{ str_pad(count($project->gallery), 2, '0', STR_PAD_LEFT) }}
                                     </div>

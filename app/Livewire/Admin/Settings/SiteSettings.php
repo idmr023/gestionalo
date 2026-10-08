@@ -109,6 +109,17 @@ class SiteSettings extends Component
     {
         $this->authorize('update', new Setting);
 
+        // Normalize user typed URLs so "facebook.com/x" doesn't abort the
+        // whole save with a silent validation error.
+        $this->hero_cta_primary_url = normalize_url($this->hero_cta_primary_url) ?? '';
+        $this->calendar_prediagnostico = normalize_url($this->calendar_prediagnostico) ?? '';
+        $this->calendar_asesoria_virtual = normalize_url($this->calendar_asesoria_virtual) ?? '';
+        $this->calendar_visita_presencial = normalize_url($this->calendar_visita_presencial) ?? '';
+        $this->calendar_inspeccion_precompra = normalize_url($this->calendar_inspeccion_precompra) ?? '';
+        $this->social_facebook = normalize_url($this->social_facebook) ?? '';
+        $this->social_instagram = normalize_url($this->social_instagram) ?? '';
+        $this->social_linkedin = normalize_url($this->social_linkedin) ?? '';
+
         $this->validate([
             'hero_title' => 'required',
             'hero_cta_primary_text' => 'required',
@@ -121,18 +132,27 @@ class SiteSettings extends Component
             'calendar_visita_presencial' => 'nullable|url',
             'calendar_inspeccion_precompra' => 'nullable|url',
             'brochure_file' => 'nullable|file|mimes:pdf|max:20480',
-            'brand_logo' => 'nullable|image|max:2048',
+            'brand_logo' => 'nullable|image|max:10240',
             'social_facebook' => 'nullable|url',
             'social_instagram' => 'nullable|url',
             'social_linkedin' => 'nullable|url',
         ]);
 
         if ($this->brochure_file) {
-            $this->brochure_file_path = '/storage/'.$this->brochure_file->store('brochure', 'public');
+            $this->brochure_file_path = $this->brochure_file->store('brochure', 'public');
         }
 
         if ($this->brand_logo) {
-            $this->brand_logo_path = 'storage/'.$this->brand_logo->store('brand', 'public');
+            $this->brand_logo_path = $this->brand_logo->store('brand', 'public');
+        }
+
+        // Keep stored paths clean: never keep legacy "storage/" prefix.
+        foreach (['brochure_file_path', 'brand_logo_path'] as $pathProp) {
+            $clean = ltrim(trim($this->{$pathProp}), '/');
+            if (str_starts_with($clean, 'storage/')) {
+                $clean = substr($clean, strlen('storage/'));
+            }
+            $this->{$pathProp} = $clean;
         }
 
         $pairs = [

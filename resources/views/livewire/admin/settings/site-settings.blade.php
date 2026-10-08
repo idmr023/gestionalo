@@ -12,6 +12,17 @@
             </div>
         @endif
 
+        @if ($errors->any())
+            <div class="mb-6 px-6 py-4 bg-accent/10 border border-accent/20 text-accent text-sm">
+                <p class="font-semibold mb-1">No se guardó la configuración, revisa los campos marcados:</p>
+                <ul class="list-disc list-inside space-y-1">
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+
         <form wire:submit="save" class="space-y-8">
 
             {{-- Portada --}}
@@ -150,7 +161,7 @@
                     <label for="brand_logo" class="block text-sm font-medium text-primary/70 mb-2">Logo</label>
                     @if ($brand_logo_path)
                         <div class="mb-3">
-                            <img src="{{ Str::startsWith($brand_logo_path, 'http') ? $brand_logo_path : asset($brand_logo_path) }}" alt="Logo" class="h-12 w-auto">
+                            <img src="{{ image_url($brand_logo_path) }}" alt="Logo" class="h-12 w-auto">
                         </div>
                     @endif
                     <input id="brand_logo" type="file" wire:model="brand_logo" accept="image/*" class="block w-full text-sm text-primary/60">

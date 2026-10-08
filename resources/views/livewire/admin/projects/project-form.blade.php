@@ -78,7 +78,7 @@
                 <label for="logo" class="block text-sm font-medium text-primary/70 mb-2">Logotipo</label>
                 @if ($logo_path)
                     <div class="mb-3 inline-block p-3 bg-surface">
-                        <img src="{{ Str::startsWith($logo_path, 'storage') ? Storage::url($logo_path) : asset($logo_path) }}" alt="Logo actual" class="h-16 w-auto object-contain">
+                        <img src="{{ image_url($logo_path) }}" alt="Logo actual" class="h-16 w-auto object-contain">
                     </div>
                 @endif
                 <input id="logo" type="file" wire:model="logo" accept="image/*" class="block w-full text-sm text-primary/60">
@@ -92,7 +92,7 @@
                     <div class="grid grid-cols-3 gap-3 mb-4">
                         @foreach ($gallery as $index => $img)
                             <div class="relative border border-primary/10 overflow-hidden">
-                                <img src="{{ Str::startsWith($img, 'storage') ? Storage::url($img) : asset($img) }}" alt="Imagen {{ $index + 1 }}" class="h-24 w-full object-cover">
+                                <img src="{{ image_url($img) }}" alt="Imagen {{ $index + 1 }}" class="h-24 w-full object-cover">
                                 <button type="button" wire:click="removeGalleryImage({{ $index }})" class="absolute top-1 right-1 bg-primary/80 text-white w-6 h-6 flex items-center justify-center text-xs hover:bg-accent transition" title="Quitar">
                                     &times;
                                 </button>

@@ -5,9 +5,12 @@ namespace App\Livewire\Admin\Services;
 use App\Models\Service;
 use Illuminate\View\View;
 use Livewire\Component;
+use Livewire\WithFileUploads;
 
 class ServiceForm extends Component
 {
+    use WithFileUploads;
+
     public ?Service $service = null;
 
     public string $title = '';
@@ -15,6 +18,10 @@ class ServiceForm extends Component
     public string $description = '';
 
     public string $icon_svg = '';
+
+    public $image = null;
+
+    public string $image_path = '';
 
     public int $sort_order = 0;
 
@@ -39,6 +46,7 @@ class ServiceForm extends Component
             $this->title = $service->title;
             $this->description = $service->description;
             $this->icon_svg = $service->icon_svg;
+            $this->image_path = $service->image_path ?? '';
             $this->sort_order = $service->sort_order;
             $this->is_active = $service->is_active;
             $this->is_featured = $service->is_featured;
@@ -58,6 +66,7 @@ class ServiceForm extends Component
             'title' => 'required|max:255',
             'description' => 'required',
             'icon_svg' => 'nullable|string',
+            'image' => 'nullable|image|max:10240',
             'sort_order' => 'integer|min:0',
             'is_active' => 'boolean',
             'is_featured' => 'boolean',
@@ -68,12 +77,17 @@ class ServiceForm extends Component
             'related_project_url' => 'nullable|url|max:500',
         ]);
 
+        if ($this->image) {
+            $this->image_path = $this->image->store('services', 'public');
+        }
+
         Service::updateOrCreate(
             ['id' => $this->service?->id],
             [
                 'title' => $this->title,
                 'description' => $this->description,
                 'icon_svg' => $this->icon_svg,
+                'image_path' => $this->image_path ?: null,
                 'sort_order' => $this->sort_order,
                 'is_active' => $this->is_active,
                 'is_featured' => $this->is_featured,

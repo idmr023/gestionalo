@@ -73,8 +73,8 @@ class ProjectForm extends Component
             $this->description = $project->description ?? '';
             $this->services_performed = $project->services_performed ?? '';
             $this->result = $project->result ?? '';
-            $this->logo_path = $project->logo_path ?? '';
-            $this->gallery = $project->gallery ?? [];
+            $this->logo_path = $this->normalizePath($project->logo_path);
+            $this->gallery = array_values(array_filter(array_map($this->normalizePath(...), $project->gallery ?? [])));
             $this->gallerySources = $this->gallery;
             $this->related_service_id = $project->related_service_id;
             $this->related_post_url = $project->related_post_url ?? '';
@@ -100,8 +100,8 @@ class ProjectForm extends Component
             'summary' => 'nullable',
             'services_performed' => 'nullable',
             'result' => 'nullable',
-            'logo' => 'nullable|image|max:2048',
-            'galleryUploads.*' => 'nullable|image|max:5120',
+            'logo' => 'nullable|image|max:10240',
+            'galleryUploads.*' => 'nullable|image|max:10240',
             'related_service_id' => 'nullable|exists:services,id',
             'related_post_url' => 'nullable|url|max:500',
             'related_project_url' => 'nullable|url|max:500',
@@ -131,15 +131,16 @@ class ProjectForm extends Component
         ];
 
         if ($this->logo) {
-            $data['logo_path'] = $this->logo->store('projects', 'public');
+            $this->logo_path = $this->logo->store('projects', 'public');
         }
+        $data['logo_path'] = $this->logo_path ?: null;
 
         if ($this->galleryUploads) {
             foreach ($this->galleryUploads as $upload) {
-                $this->gallery[] = 'storage/'.$upload->store('projects', 'public');
+                $this->gallery[] = $upload->store('projects', 'public');
             }
-            $data['gallery'] = $this->gallery;
         }
+        $data['gallery'] = array_values($this->gallery) ?: null;
 
         Project::updateOrCreate(
             ['id' => $this->project?->id],
@@ -148,6 +149,21 @@ class ProjectForm extends Component
 
         session()->flash('message', $this->project ? 'Proyecto actualizado correctamente.' : 'Proyecto creado correctamente.');
         $this->redirectRoute('admin.projects.index', navigate: true);
+    }
+
+    protected function normalizePath(?string $path): string
+    {
+        if ($path === null) {
+            return '';
+        }
+
+        $clean = ltrim(trim($path), '/');
+
+        if (str_starts_with($clean, 'storage/')) {
+            $clean = substr($clean, strlen('storage/'));
+        }
+
+        return $clean;
     }
 
     public function removeGalleryImage(int $index): void

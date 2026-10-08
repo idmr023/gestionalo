@@ -37,19 +37,23 @@ unset($__defined_vars); ?>
         </div>
 
         <div class="relative">
-            <span class="absolute -top-40 -right-20 text-[500px] font-display font-bold text-[rgba(234,88,12,0.03)] leading-none select-none pointer-events-none hidden md:block">02</span>
-
             <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php $__currentLoopData = $services->take(3); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $i => $service): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <?php $isEven = $i % 2 === 0; ?>
                 <div class="flex flex-col md:flex-row <?php echo e($isEven ? '' : 'md:flex-row-reverse'); ?> gap-8 md:gap-16 <?php echo e(!$loop->first ? 'mt-16 md:mt-24 pt-16 md:pt-24 border-t border-[rgba(15,23,42,0.04)]' : ''); ?>">
                     <div class="md:w-1/3 flex-shrink-0">
-                        <div class="flex items-start gap-4 md:gap-6">
-                            <span class="text-[80px] md:text-[120px] font-display font-bold text-accent/10 leading-none -mt-4 select-none"><?php echo e(str_pad($i + 1, 2, '0', STR_PAD_LEFT)); ?></span>
-                            <div class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center text-accent mt-2 flex-shrink-0">
-                                <?php echo $service->icon_svg; ?>
-
+                        <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if($service->image_path): ?>
+                            <div class="bg-white border border-[rgba(15,23,42,0.06)] overflow-hidden">
+                                <img src="<?php echo e(image_url($service->image_path)); ?>" alt="<?php echo e($service->title); ?>" class="w-full h-56 object-cover">
                             </div>
-                        </div>
+                        <?php else: ?>
+                            <div class="flex items-start gap-4 md:gap-6">
+                                <span class="text-[80px] md:text-[120px] font-display font-bold text-accent/10 leading-none -mt-4 select-none"><?php echo e(str_pad($i + 1, 2, '0', STR_PAD_LEFT)); ?></span>
+                                <div class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center text-accent mt-2 flex-shrink-0">
+                                    <?php echo $service->icon_svg; ?>
+
+                                </div>
+                            </div>
+                        <?php endif; ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php endif; ?>
                     </div>
                     <div class="md:w-2/3">
                         <h3 class="text-2xl md:text-3xl font-bold font-display text-primary leading-tight"><?php echo e($service->title); ?></h3>

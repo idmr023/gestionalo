@@ -20,7 +20,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\console.php' => 
     array (
-      0 => '9adccc33e7dd400683e434774077c7fdb2f299c5712cedf16a43fdf56f2850fa',
+      0 => '7db4802a2dbe7bddfd7ed50efda733ced78c55a33132460c945abff6272edf86',
       1 => 
       array (
       ),

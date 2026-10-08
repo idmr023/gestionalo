@@ -19,7 +19,7 @@
                                     $coverImage = !empty($project->gallery) && is_array($project->gallery) ? $project->gallery[0] : $project->logo_path;
                                 @endphp
                                 @if ($coverImage)
-                                    <img src="{{ Str::startsWith($coverImage, 'storage') ? Storage::url($coverImage) : asset($coverImage) }}" alt="{{ $project->title }}" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                                    <img src="{{ image_url($coverImage) }}" alt="{{ $project->title }}" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
                                 @else
                                     <span class="text-6xl font-bold font-display text-[rgba(15,23,42,0.06)]">{{ strtoupper(substr($project->title, 0, 1)) }}</span>
                                 @endif

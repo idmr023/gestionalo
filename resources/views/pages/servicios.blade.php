@@ -15,12 +15,18 @@
                         @php $isEven = $i % 2 === 0; @endphp
                         <div id="{{ $service->slug }}" class="scroll-mt-28 flex flex-col md:flex-row {{ $isEven ? '' : 'md:flex-row-reverse' }} gap-8 md:gap-16 {{ !$loop->first ? 'mt-16 md:mt-24 pt-16 md:pt-24 border-t border-[rgba(15,23,42,0.04)]' : '' }}">
                             <div class="md:w-1/3 flex-shrink-0">
-                                <div class="flex items-start gap-4 md:gap-6">
-                                    <span class="text-[80px] md:text-[120px] font-display font-bold text-accent/10 leading-none -mt-4 select-none">{{ str_pad($i + 1, 2, '0', STR_PAD_LEFT) }}</span>
-                                    <div class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center text-accent mt-2 flex-shrink-0">
-                                        {!! $service->icon_svg !!}
+                                @if ($service->image_path)
+                                    <div class="bg-white border border-[rgba(15,23,42,0.06)] overflow-hidden">
+                                        <img src="{{ image_url($service->image_path) }}" alt="{{ $service->title }}" class="w-full h-56 object-cover">
                                     </div>
-                                </div>
+                                @else
+                                    <div class="flex items-start gap-4 md:gap-6">
+                                        <span class="text-[80px] md:text-[120px] font-display font-bold text-accent/10 leading-none -mt-4 select-none">{{ str_pad($i + 1, 2, '0', STR_PAD_LEFT) }}</span>
+                                        <div class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center text-accent mt-2 flex-shrink-0">
+                                            {!! $service->icon_svg !!}
+                                        </div>
+                                    </div>
+                                @endif
                             </div>
                             <div class="md:w-2/3">
                                 <h2 class="text-2xl md:text-3xl font-bold font-display text-primary leading-tight">{{ $service->title }}</h2>

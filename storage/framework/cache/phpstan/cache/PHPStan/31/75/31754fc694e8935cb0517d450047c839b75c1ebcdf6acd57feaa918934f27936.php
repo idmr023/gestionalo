@@ -128,7 +128,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Blog\\PostForm.php' => 
     array (
-      0 => 'c0c626b5750cef4b3ec6250df1278c09c49f75896efd421d05c5a2647a39ee84',
+      0 => '71369bdef7703dc83fc3cd9c391085c824d0979c592710bbc28df4ab6855b78f',
       1 => 
       array (
         0 => 'app\\livewire\\admin\\blog\\postform',
@@ -178,7 +178,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Projects\\ProjectForm.php' => 
     array (
-      0 => '523f13ef6020ff4459b19f9ca35fb1b20cdadd4803418378dab03132e2067c6c',
+      0 => 'a3b727d4ca62778634242f18c17b2863e3bd8da94f6ef29c7fa97e1ed8b85992',
       1 => 
       array (
         0 => 'app\\livewire\\admin\\projects\\projectform',
@@ -187,8 +187,9 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
         0 => 'app\\livewire\\admin\\projects\\mount',
         1 => 'app\\livewire\\admin\\projects\\save',
-        2 => 'app\\livewire\\admin\\projects\\removegalleryimage',
-        3 => 'app\\livewire\\admin\\projects\\render',
+        2 => 'app\\livewire\\admin\\projects\\normalizepath',
+        3 => 'app\\livewire\\admin\\projects\\removegalleryimage',
+        4 => 'app\\livewire\\admin\\projects\\render',
       ),
       3 => 
       array (
@@ -229,7 +230,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Services\\ServiceForm.php' => 
     array (
-      0 => '52f5798b3c23e2a0f9867b09ac939ef47a29a55229aef68da4ff4845b8e24eac',
+      0 => 'cb850d62430231b1f095a1ac08e8a02b6de2474a13965c30bff69a7b8e532c1f',
       1 => 
       array (
         0 => 'app\\livewire\\admin\\services\\serviceform',
@@ -318,7 +319,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Service.php' => 
     array (
-      0 => '26227a14246c565719d1de02d4c7a32ac25a83768ee3de819d8db0672a35464c',
+      0 => '297a8a4297da27fa82519ce3280ac80a655831bacb107f5a434c56e8ed51cdd8',
       1 => 
       array (
         0 => 'app\\models\\service',
@@ -987,7 +988,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Settings\\SiteSettings.php' => 
     array (
-      0 => '970f289b7e0d149548f31ecbe888c4cc982cd477e22e2f8bdaf56cecde85a503',
+      0 => '013e3534ffe8aee0c2b21ba6539ae65e12a56152fc9e02e31a101f274f4699e0',
       1 => 
       array (
         0 => 'app\\livewire\\admin\\settings\\sitesettings',
@@ -1004,7 +1005,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Setting.php' => 
     array (
-      0 => 'e4939c53eea32c115b40b7921fb4b9207207096c92350f45f84d635468492a0d',
+      0 => '4134c9c9e6a24b6fce8c67b23e7f528b4cf3a7d8dbbadfc8a9ba2c5947dec13d',
       1 => 
       array (
         0 => 'app\\models\\setting',
@@ -1014,8 +1015,9 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         0 => 'app\\models\\allcached',
         1 => 'app\\models\\get',
         2 => 'app\\models\\set',
-        3 => 'app\\models\\flushcache',
-        4 => 'app\\models\\booted',
+        3 => 'app\\models\\withretry',
+        4 => 'app\\models\\flushcache',
+        5 => 'app\\models\\booted',
       ),
       3 => 
       array (
@@ -1039,15 +1041,32 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\helpers.php' => 
     array (
-      0 => 'c9e1a5178a0e30e9d1b1f27682685fa6c4e48515d0c4304d1b71531baad35197',
+      0 => 'c476478f378ffa5d951436ddc3b58d39e71cf771c7bde62b35dabd7f1e5bc492',
       1 => 
       array (
       ),
       2 => 
       array (
-        0 => 'setting',
-        1 => 'whatsapp_url',
-        2 => 'google_calendar_url',
+        0 => 'image_url',
+        1 => 'normalize_url',
+        2 => 'setting',
+        3 => 'whatsapp_url',
+        4 => 'google_calendar_url',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Console\\Commands\\KeepAliveDb.php' => 
+    array (
+      0 => '68c85def1466f50ecd79108b01dbd9041fa637681ae1245d7a9262ec0ecdd82d',
+      1 => 
+      array (
+        0 => 'app\\console\\commands\\keepalivedb',
+      ),
+      2 => 
+      array (
+        0 => 'app\\console\\commands\\handle',
       ),
       3 => 
       array (

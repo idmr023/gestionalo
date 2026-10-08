@@ -30,7 +30,7 @@ class Setting extends Model
         // Never cache an empty/failed result, otherwise a single transient
         // DB error would poison the cache forever and every setting would
         // silently fall back to config('site.*').
-        $fresh = self::query()->pluck('value', 'key')->toArray();
+        $fresh = self::withRetry(fn (): array => self::query()->pluck('value', 'key')->toArray());
 
         if ($fresh !== []) {
             Cache::forever(self::CACHE_KEY, $fresh);
@@ -58,18 +58,47 @@ class Setting extends Model
 
     public static function set(string $key, mixed $value, string $group = 'general', string $type = 'string'): self
     {
-        $setting = self::updateOrCreate(
+        $setting = self::withRetry(fn (): self => self::updateOrCreate(
             ['key' => $key],
             [
                 'value' => is_array($value) ? json_encode($value) : $value,
                 'group' => $group,
                 'type' => $type,
             ]
-        );
+        ));
 
         self::flushCache();
 
         return $setting;
+    }
+
+    /**
+     * Wrap a DB read in a short retry loop so a cold/waking database
+     * (e.g. Neon autosuspend) does not immediately fall back to defaults.
+     *
+     * @template TReturn
+     *
+     * @param  callable(): TReturn  $callback
+     * @return TReturn
+     */
+    private static function withRetry(callable $callback): mixed
+    {
+        $attempts = 0;
+
+        while (true) {
+            try {
+                return $callback();
+            } catch (\Throwable $e) {
+                $attempts++;
+
+                if ($attempts >= 3) {
+                    throw $e;
+                }
+
+                // Give a suspended database up to ~5s total to wake up.
+                usleep(1_500_000 * $attempts);
+            }
+        }
     }
 
     public static function flushCache(): void

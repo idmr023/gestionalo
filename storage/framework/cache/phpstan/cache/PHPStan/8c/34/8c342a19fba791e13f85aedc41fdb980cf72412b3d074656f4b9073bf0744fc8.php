@@ -172,7 +172,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\PostSeeder.php' => 
     array (
-      0 => '1c48347179938c0f4e7bbf421a954e0b62ce4b1c83d5aac73b49e620ce9345d6',
+      0 => '025e13a772739b5f6585f61de8ebfbf81d6bbc11b809311d15d4ba335858bf19',
       1 => 
       array (
         0 => 'database\\seeders\\postseeder',
@@ -187,7 +187,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\ProjectSeeder.php' => 
     array (
-      0 => 'ea8c29418875a8667b7e5a727f4fd4ad6acf63c2b93fa78027e9877dacbd271a',
+      0 => 'dfc23ce70df1198d7aaeac47eec3e326eae67a819ba2491a20100bf2685f10b4',
       1 => 
       array (
         0 => 'database\\seeders\\projectseeder',
@@ -202,7 +202,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\ServiceSeeder.php' => 
     array (
-      0 => 'e46094e59342724cd47a1784bf98f1a9cf9f74ca769f46ded858cbb857ef35d4',
+      0 => 'fb13a31b08e794ffed05e486e9d6f84265b3a85ffb8472f933c75f8ffd96c6c4',
       1 => 
       array (
         0 => 'database\\seeders\\serviceseeder',
@@ -488,7 +488,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\seeders\\SettingSeeder.php' => 
     array (
-      0 => 'daa6efaf143518158542a226484099b8312b6f05131954efe7c3d93ad7462b55',
+      0 => 'd5e41ff5e21548f6b3adcef63ec3d9b229c8a2c6834d213c02f5a82f2dc31383',
       1 => 
       array (
         0 => 'database\\seeders\\settingseeder',
@@ -518,7 +518,38 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_09_22_060000_feature_default_services.php' => 
     array (
-      0 => 'eb3267368cc30f01d35fee594668c4b228d9359729e2f576eef5244c345f6a87',
+      0 => '5c5971a886f671fb29a4b5d1b00df13544695dde6fcc13441faae38350aada95',
+      1 => 
+      array (
+      ),
+      2 => 
+      array (
+        0 => 'up',
+        1 => 'down',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_10_08_120000_normalize_image_paths_and_urls.php' => 
+    array (
+      0 => '117211ecc9f5ed70cd293dcf4ef8d3b1b6c59d20f85e1ca4240a8f6593337271',
+      1 => 
+      array (
+      ),
+      2 => 
+      array (
+        0 => 'up',
+        1 => 'down',
+        2 => 'stripstorageprefix',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_10_08_120100_add_image_path_to_services.php' => 
+    array (
+      0 => 'c7f9089cd225bcd625f3f0ae1c76a2bc5dd1021697e7ea1c76b948349f0c141d',
       1 => 
       array (
       ),

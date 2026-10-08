@@ -1,6 +1,72 @@
 <?php
 
 use App\Models\Setting;
+use Illuminate\Support\Facades\Storage;
+
+if (! function_exists('image_url')) {
+    /**
+     * Normalize any stored image/file path into a public URL.
+     *
+     * Handles every legacy format in DB:
+     *  - http(s)://...        → returned as is
+     *  - storage/projects/x   → /storage/projects/x   (bad prefix from old code)
+     *  - /storage/brochure/x  → /storage/brochure/x
+     *  - projects/x           → /storage/projects/x   (fresh store() value)
+     *  - assets/images/logo   → /assets/images/logo   (static public file)
+     *  - /BROCHURE_2026.pdf   → /BROCHURE_2026.pdf    (public root file)
+     */
+    function image_url(?string $path): ?string
+    {
+        if ($path === null || trim($path) === '') {
+            return null;
+        }
+
+        $path = trim($path);
+
+        if (preg_match('#^https?://#i', $path)) {
+            return $path;
+        }
+
+        $clean = ltrim($path, '/');
+
+        // Wrongly prefixed with "storage/" when saving (legacy).
+        if (str_starts_with($clean, 'storage/')) {
+            $clean = substr($clean, strlen('storage/'));
+        }
+
+        // Static files that live directly in /public.
+        if (str_starts_with($clean, 'assets/') || str_starts_with($clean, 'images/') || ! str_contains($clean, '/')) {
+            return asset($clean);
+        }
+
+        return Storage::url($clean);
+    }
+}
+
+if (! function_exists('normalize_url')) {
+    /**
+     * Make user typed URLs valid: prepends https:// when scheme is missing.
+     * Returns null/empty string untouched.
+     */
+    function normalize_url(?string $url): ?string
+    {
+        if ($url === null) {
+            return null;
+        }
+
+        $url = trim($url);
+
+        if ($url === '') {
+            return '';
+        }
+
+        if (! preg_match('#^https?://#i', $url)) {
+            $url = 'https://'.ltrim($url, "/\t");
+        }
+
+        return $url;
+    }
+}
 
 if (! function_exists('setting')) {
     /**

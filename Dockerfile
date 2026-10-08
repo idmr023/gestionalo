@@ -19,6 +19,15 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 # Install PHP extensions
 RUN docker-php-ext-install pdo pdo_pgsql pgsql mbstring exif pcntl bcmath gd opcache
 
+# Raise upload limits (Laravel uploads: brochure PDF up to 20MB, images up to 5MB)
+RUN { \
+      echo 'upload_max_filesize=25M'; \
+      echo 'post_max_size=30M'; \
+      echo 'max_file_uploads=20'; \
+      echo 'max_execution_time=180'; \
+      echo 'memory_limit=512M'; \
+    } > /usr/local/etc/php/conf.d/uploads.ini
+
 # Get latest Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 

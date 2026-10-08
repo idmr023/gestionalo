@@ -1616,7 +1616,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Service.php' => '26227a14246c565719d1de02d4c7a32ac25a83768ee3de819d8db0672a35464c',
+      'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Service.php' => '297a8a4297da27fa82519ce3280ac80a655831bacb107f5a434c56e8ed51cdd8',
       'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Traits\\Auditable.php' => 'dfdcb93e82a54ce4dea6cdd77cacf54c3cd08aff5e9712b9c953356990a429e0',
       'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\vendor\\composer\\..\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Factories\\HasFactory.php' => 'f656f22af602c0c7a3b73524ece133d391640c8c78d29da5ddc48a235e583431',
       'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\vendor\\composer\\..\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\SoftDeletes.php' => '088774910033ee16d93400eb71c4befe82edb195c45e9cb4579093e91e9fe2df',

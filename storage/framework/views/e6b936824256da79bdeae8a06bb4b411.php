@@ -44,14 +44,14 @@ unset($__defined_vars); ?>
             <div>
                 <?php if (isset($component)) { $__componentOriginal671d372eac62910ec53af33795aee79b = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal671d372eac62910ec53af33795aee79b = $attributes; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.front.picture','data' => ['src' => ''.e(setting('brand.logo_path', 'assets/images/logo.png')).'','alt' => 'Gestionalo','class' => 'h-8 w-auto mb-5 brightness-0 invert opacity-80']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.front.picture','data' => ['src' => ''.e(image_url(setting('brand.logo_path', 'assets/images/logo.png'))).'','alt' => 'Gestionalo','class' => 'h-8 w-auto mb-5 brightness-0 invert opacity-80']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
 <?php $component->withName('front.picture'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
 <?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
 <?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
 <?php endif; ?>
-<?php $component->withAttributes(['src' => ''.e(setting('brand.logo_path', 'assets/images/logo.png')).'','alt' => 'Gestionalo','class' => 'h-8 w-auto mb-5 brightness-0 invert opacity-80']); ?>
+<?php $component->withAttributes(['src' => ''.e(image_url(setting('brand.logo_path', 'assets/images/logo.png'))).'','alt' => 'Gestionalo','class' => 'h-8 w-auto mb-5 brightness-0 invert opacity-80']); ?>
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
 <?php if (isset($__attributesOriginal671d372eac62910ec53af33795aee79b)): ?>
@@ -63,6 +63,26 @@ unset($__defined_vars); ?>
 <?php unset($__componentOriginal671d372eac62910ec53af33795aee79b); ?>
 <?php endif; ?>
                 <p class="text-sm text-white/50 leading-relaxed"><?php echo e($config['tagline']); ?></p>
+                <?php if (isset($component)) { $__componentOriginal781bb62ce2791f63b9071a640979167b = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal781bb62ce2791f63b9071a640979167b = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.front.social-links','data' => ['class' => 'flex items-center gap-4 mt-5','iconClass' => 'w-5 h-5','linkClass' => 'text-white/40 hover:text-accent transition']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('front.social-links'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['class' => 'flex items-center gap-4 mt-5','icon-class' => 'w-5 h-5','link-class' => 'text-white/40 hover:text-accent transition']); ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal781bb62ce2791f63b9071a640979167b)): ?>
+<?php $attributes = $__attributesOriginal781bb62ce2791f63b9071a640979167b; ?>
+<?php unset($__attributesOriginal781bb62ce2791f63b9071a640979167b); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal781bb62ce2791f63b9071a640979167b)): ?>
+<?php $component = $__componentOriginal781bb62ce2791f63b9071a640979167b; ?>
+<?php unset($__componentOriginal781bb62ce2791f63b9071a640979167b); ?>
+<?php endif; ?>
             </div>
 
             <div>
@@ -110,7 +130,7 @@ unset($__defined_vars); ?>
                 <div>
                     <h4 class="font-semibold font-display text-white/90 mb-5 uppercase text-xs tracking-[0.2em]">Brochure</h4>
                     <p class="text-sm text-white/50 mb-4"><?php echo e(setting('brochure.description', '')); ?></p>
-                    <a href="<?php echo e(Str::startsWith($brochureUrl, 'http') ? $brochureUrl : asset($brochureUrl)); ?>" target="_blank" rel="noopener noreferrer"
+                    <a href="<?php echo e(image_url($brochureUrl)); ?>" target="_blank" rel="noopener noreferrer"
                        class="inline-flex items-center gap-2 border border-accent/60 text-accent hover:bg-accent hover:text-white px-5 py-3 text-sm font-semibold transition tracking-wide">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
                         <?php echo e($brochureText); ?>

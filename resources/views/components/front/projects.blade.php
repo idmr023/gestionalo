@@ -1,18 +1,9 @@
 @props(['clients'])
 
 @php
-use Illuminate\Support\Facades\Storage;
-
 if ($clients instanceof \Illuminate\Support\Collection || $clients instanceof \Illuminate\Database\Eloquent\Collection) {
     $clients = $clients->map(function($p) {
-        $logo = $p->logo_path;
-        if (!$logo) {
-            $logo = 'assets/images/logo.png';
-        } elseif (str_starts_with($logo, 'assets/')) {
-            $logo = asset($logo);
-        } else {
-            $logo = Storage::url($logo);
-        }
+        $logo = image_url($p->logo_path) ?? image_url('assets/images/logo.png');
         return [
             'name' => $p->title,
             'logo' => $logo,

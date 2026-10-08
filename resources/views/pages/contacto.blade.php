@@ -141,7 +141,7 @@
                     <div class="bg-accent/5 border border-accent/20 p-6">
                         <h3 class="text-sm font-semibold font-display text-primary uppercase tracking-[0.2em] mb-2">Brochure</h3>
                         <p class="text-sm text-primary/50 mb-4">{{ setting('brochure.description', '') }}</p>
-                        <a href="{{ Str::startsWith(setting('brochure.file_path', '/BROCHURE_2026.pdf'), 'http') ? setting('brochure.file_path', '/BROCHURE_2026.pdf') : asset(setting('brochure.file_path', '/BROCHURE_2026.pdf')) }}" target="_blank" rel="noopener noreferrer"
+                        <a href="{{ image_url(setting('brochure.file_path', '/BROCHURE_2026.pdf')) }}" target="_blank" rel="noopener noreferrer"
                            class="inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-white font-semibold px-6 py-3 transition text-sm tracking-wide">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
                             {{ setting('brochure.title', 'Descargar Brochure Ejecutivo B2B') }}

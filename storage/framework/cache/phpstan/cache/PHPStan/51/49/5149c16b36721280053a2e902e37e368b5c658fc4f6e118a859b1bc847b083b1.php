@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\idmr_\OneDrive\Escritorio\gestionalo\app\Livewire\Admin\Projects\ProjectForm.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Livewire\Admin\Projects\ProjectForm
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.5.8-523f13ef6020ff4459b19f9ca35fb1b20cdadd4803418378dab03132e2067c6c',
+   'variableKey' => 'v2-6.70.0.3-8.5.8-a3b727d4ca62778634242f18c17b2863e3bd8da94f6ef29c7fa97e1ed8b85992',
    'data' => 
   array (
     'locatedSource' => 
@@ -27,7 +27,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     array (
     ),
     'startLine' => 11,
-    'endLine' => 165,
+    'endLine' => 181,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Livewire\\Component',
@@ -1170,7 +1170,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         ),
         'docComment' => NULL,
         'startLine' => 89,
-        'endLine' => 151,
+        'endLine' => 152,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -1178,6 +1178,86 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'isGenerator' => false,
         'isVariadic' => false,
         'modifiers' => 1,
+        'namespace' => 'App\\Livewire\\Admin\\Projects',
+        'declaringClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
+        'implementingClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
+        'currentClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
+        'aliasName' => NULL,
+      ),
+      'normalizePath' => 
+      array (
+        'name' => 'normalizePath',
+        'parameters' => 
+        array (
+          'path' => 
+          array (
+            'name' => 'path',
+            'default' => NULL,
+            'type' => 
+            array (
+              'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionUnionType',
+              'data' => 
+              array (
+                'types' => 
+                array (
+                  0 => 
+                  array (
+                    'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+                    'data' => 
+                    array (
+                      'name' => 'string',
+                      'isIdentifier' => true,
+                    ),
+                  ),
+                  1 => 
+                  array (
+                    'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+                    'data' => 
+                    array (
+                      'name' => 'null',
+                      'isIdentifier' => true,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            'isVariadic' => false,
+            'byRef' => false,
+            'isPromoted' => false,
+            'attributes' => 
+            array (
+            ),
+            'startLine' => 154,
+            'endLine' => 154,
+            'startColumn' => 38,
+            'endColumn' => 50,
+            'parameterIndex' => 0,
+            'isOptional' => false,
+          ),
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'string',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => NULL,
+        'startLine' => 154,
+        'endLine' => 167,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 2,
         'namespace' => 'App\\Livewire\\Admin\\Projects',
         'declaringClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
         'implementingClassName' => 'App\\Livewire\\Admin\\Projects\\ProjectForm',
@@ -1208,8 +1288,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 153,
-            'endLine' => 153,
+            'startLine' => 169,
+            'endLine' => 169,
             'startColumn' => 40,
             'endColumn' => 49,
             'parameterIndex' => 0,
@@ -1230,8 +1310,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 153,
-        'endLine' => 158,
+        'startLine' => 169,
+        'endLine' => 174,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -1265,8 +1345,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 160,
-        'endLine' => 164,
+        'startLine' => 176,
+        'endLine' => 180,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
