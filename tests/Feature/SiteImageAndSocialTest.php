@@ -7,7 +7,6 @@ use App\Models\Service;
 use App\Models\Setting;
 use Database\Seeders\SettingSeeder;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Support\Facades\Storage;
 use Tests\TestCase;
 
 class SiteImageAndSocialTest extends TestCase
@@ -21,14 +20,14 @@ class SiteImageAndSocialTest extends TestCase
 
         $this->assertSame('https://cdn.example.com/x.png', image_url('https://cdn.example.com/x.png'));
 
-        // Fresh store() values (no prefix) resolve to /storage/...
-        $this->assertSame(Storage::url('projects/a.jpg'), image_url('projects/a.jpg'));
+        // Fresh upload paths resolve to the database-backed /media route.
+        $this->assertSame('/media/projects/a.jpg', image_url('projects/a.jpg'));
 
         // Legacy wrong prefix "storage/..." must not become /storage/storage/...
-        $this->assertSame(Storage::url('projects/a.jpg'), image_url('storage/projects/a.jpg'));
+        $this->assertSame('/media/projects/a.jpg', image_url('storage/projects/a.jpg'));
 
         // Stored with leading slash
-        $this->assertSame(Storage::url('brochure/x.pdf'), image_url('/storage/brochure/x.pdf'));
+        $this->assertSame('/media/brochure/x.pdf', image_url('/storage/brochure/x.pdf'));
 
         // Static files in /public
         $this->assertSame(asset('assets/images/logo.png'), image_url('assets/images/logo.png'));
@@ -75,7 +74,7 @@ class SiteImageAndSocialTest extends TestCase
 
         $this->get(route('project.show', $project))
             ->assertOk()
-            ->assertSee('storage/projects/logo.jpg', false)
+            ->assertSee('media/projects/logo.jpg', false)
             ->assertDontSee('storage/storage/projects/', false);
     }
 
@@ -90,7 +89,7 @@ class SiteImageAndSocialTest extends TestCase
 
         $this->get(route('services.index'))
             ->assertOk()
-            ->assertSee('storage/services/cover.jpg', false)
+            ->assertSee('media/services/cover.jpg', false)
             ->assertDontSee('storage/storage/services/', false);
     }
 }

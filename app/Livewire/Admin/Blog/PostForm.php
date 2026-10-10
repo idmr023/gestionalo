@@ -4,6 +4,7 @@ namespace App\Livewire\Admin\Blog;
 
 use App\Models\Category;
 use App\Models\Post;
+use App\Services\MediaStorage;
 use Illuminate\View\View;
 use Livewire\Component;
 use Livewire\WithFileUploads;
@@ -47,7 +48,7 @@ class PostForm extends Component
             'title' => 'required|max:255',
             'excerpt' => 'nullable',
             'body' => 'required',
-            'featured_image' => 'nullable|image|max:10240',
+            'featured_image' => 'nullable|mimes:jpg,jpeg,png,webp,gif|max:10240',
             'is_published' => 'boolean',
         ]);
 
@@ -59,7 +60,9 @@ class PostForm extends Component
         ];
 
         if ($this->featured_image) {
-            $data['featured_image'] = $this->featured_image->store('blog', 'public');
+            MediaStorage::forget($this->featured_image_path);
+            $this->featured_image_path = MediaStorage::store($this->featured_image, 'blog');
+            $data['featured_image'] = $this->featured_image_path;
         }
 
         if ($this->is_published && ! $this->post?->published_at) {

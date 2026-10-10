@@ -3,6 +3,7 @@
 namespace App\Livewire\Admin\Services;
 
 use App\Models\Service;
+use App\Services\MediaStorage;
 use Illuminate\View\View;
 use Livewire\Component;
 use Livewire\WithFileUploads;
@@ -66,7 +67,7 @@ class ServiceForm extends Component
             'title' => 'required|max:255',
             'description' => 'required',
             'icon_svg' => 'nullable|string',
-            'image' => 'nullable|image|max:10240',
+            'image' => 'nullable|mimes:jpg,jpeg,png,webp,gif|max:10240',
             'sort_order' => 'integer|min:0',
             'is_active' => 'boolean',
             'is_featured' => 'boolean',
@@ -78,7 +79,8 @@ class ServiceForm extends Component
         ]);
 
         if ($this->image) {
-            $this->image_path = $this->image->store('services', 'public');
+            MediaStorage::forget($this->image_path);
+            $this->image_path = MediaStorage::store($this->image, 'services');
         }
 
         Service::updateOrCreate(

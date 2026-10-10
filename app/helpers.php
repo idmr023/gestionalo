@@ -8,12 +8,12 @@ if (! function_exists('image_url')) {
      * Normalize any stored image/file path into a public URL.
      *
      * Handles every legacy format in DB:
-     *  - http(s)://...        → returned as is
-     *  - storage/projects/x   → /storage/projects/x   (bad prefix from old code)
-     *  - /storage/brochure/x  → /storage/brochure/x
-     *  - projects/x           → /storage/projects/x   (fresh store() value)
-     *  - assets/images/logo   → /assets/images/logo   (static public file)
-     *  - /BROCHURE_2026.pdf   → /BROCHURE_2026.pdf    (public root file)
+     *  - https://...           → returned as is (already remote)
+     *  - storage/projects/x    → /media/projects/x  (wrong prefix + DB storage)
+     *  - /storage/brochure/x   → /media/brochure/x
+     *  - projects/x            → /media/projects/x  (fresh store() value)
+     *  - assets/images/logo    → /assets/images/logo (static public file)
+     *  - /BROCHURE_2026.pdf    → /BROCHURE_2026.pdf  (public root file)
      */
     function image_url(?string $path): ?string
     {
@@ -32,6 +32,13 @@ if (! function_exists('image_url')) {
         // Wrongly prefixed with "storage/" when saving (legacy).
         if (str_starts_with($clean, 'storage/')) {
             $clean = substr($clean, strlen('storage/'));
+        }
+
+        // Uploads live in the `media` table and are served by /media/{path}.
+        foreach (['projects/', 'blog/', 'services/', 'brand/', 'brochure/'] as $dir) {
+            if (str_starts_with($clean, $dir)) {
+                return '/media/'.$clean;
+            }
         }
 
         // Static files that live directly in /public.

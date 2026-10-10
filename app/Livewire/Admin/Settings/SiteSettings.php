@@ -3,6 +3,7 @@
 namespace App\Livewire\Admin\Settings;
 
 use App\Models\Setting;
+use App\Services\MediaStorage;
 use Illuminate\View\View;
 use Livewire\Component;
 use Livewire\WithFileUploads;
@@ -132,18 +133,20 @@ class SiteSettings extends Component
             'calendar_visita_presencial' => 'nullable|url',
             'calendar_inspeccion_precompra' => 'nullable|url',
             'brochure_file' => 'nullable|file|mimes:pdf|max:20480',
-            'brand_logo' => 'nullable|image|max:10240',
+            'brand_logo' => 'nullable|mimes:jpg,jpeg,png,webp,gif|max:10240',
             'social_facebook' => 'nullable|url',
             'social_instagram' => 'nullable|url',
             'social_linkedin' => 'nullable|url',
         ]);
 
         if ($this->brochure_file) {
-            $this->brochure_file_path = $this->brochure_file->store('brochure', 'public');
+            MediaStorage::forget($this->brochure_file_path);
+            $this->brochure_file_path = MediaStorage::store($this->brochure_file, 'brochure');
         }
 
         if ($this->brand_logo) {
-            $this->brand_logo_path = $this->brand_logo->store('brand', 'public');
+            MediaStorage::forget($this->brand_logo_path);
+            $this->brand_logo_path = MediaStorage::store($this->brand_logo, 'brand');
         }
 
         // Keep stored paths clean: never keep legacy "storage/" prefix.

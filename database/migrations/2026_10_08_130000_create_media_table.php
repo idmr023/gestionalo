@@ -1,0 +1,32 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Binary storage inside the database so uploaded files survive
+     * ephemeral hosting (Render containers are destroyed on every deploy).
+     *
+     * `payload` holds base64 bytes: portable across pgsql/sqlite and safe
+     * from null-byte issues when binding binary strings.
+     */
+    public function up(): void
+    {
+        Schema::create('media', function (Blueprint $table) {
+            $table->id();
+            $table->string('path', 500)->unique();
+            $table->string('mime', 100);
+            $table->unsignedBigInteger('size');
+            $table->longText('payload');
+            $table->timestamps();
+        });
+    }
+
+    public function down(): void
+    {
+        Schema::dropIfExists('media');
+    }
+};

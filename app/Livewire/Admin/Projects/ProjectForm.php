@@ -4,6 +4,7 @@ namespace App\Livewire\Admin\Projects;
 
 use App\Models\Project;
 use App\Models\Service;
+use App\Services\MediaStorage;
 use Illuminate\View\View;
 use Livewire\Component;
 use Livewire\WithFileUploads;
@@ -100,8 +101,8 @@ class ProjectForm extends Component
             'summary' => 'nullable',
             'services_performed' => 'nullable',
             'result' => 'nullable',
-            'logo' => 'nullable|image|max:10240',
-            'galleryUploads.*' => 'nullable|image|max:10240',
+            'logo' => 'nullable|mimes:jpg,jpeg,png,webp,gif|max:10240',
+            'galleryUploads.*' => 'nullable|mimes:jpg,jpeg,png,webp,gif|max:10240',
             'related_service_id' => 'nullable|exists:services,id',
             'related_post_url' => 'nullable|url|max:500',
             'related_project_url' => 'nullable|url|max:500',
@@ -131,16 +132,24 @@ class ProjectForm extends Component
         ];
 
         if ($this->logo) {
-            $this->logo_path = $this->logo->store('projects', 'public');
+            MediaStorage::forget($this->logo_path);
+            $this->logo_path = MediaStorage::store($this->logo, 'projects');
         }
         $data['logo_path'] = $this->logo_path ?: null;
 
         if ($this->galleryUploads) {
             foreach ($this->galleryUploads as $upload) {
-                $this->gallery[] = $upload->store('projects', 'public');
+                $this->gallery[] = MediaStorage::store($upload, 'projects');
             }
         }
-        $data['gallery'] = array_values($this->gallery) ?: null;
+        $this->gallery = array_values(array_unique(array_filter($this->gallery)));
+
+        // Delete images removed from the gallery.
+        foreach (array_diff($this->gallerySources, $this->gallery) as $removed) {
+            MediaStorage::forget($removed);
+        }
+
+        $data['gallery'] = $this->gallery ?: null;
 
         Project::updateOrCreate(
             ['id' => $this->project?->id],
@@ -170,7 +179,6 @@ class ProjectForm extends Component
     {
         unset($this->gallery[$index]);
         $this->gallery = array_values($this->gallery);
-        $this->gallerySources = $this->gallery;
     }
 
     public function render(): View

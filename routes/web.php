@@ -3,6 +3,7 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\FrontController;
 use App\Http\Controllers\HealthController;
+use App\Http\Controllers\MediaController;
 use App\Http\Controllers\SummaryController;
 use Illuminate\Support\Facades\Route;
 
@@ -28,6 +29,7 @@ Route::get('/api/blog/{post:slug}/{type}', SummaryController::class)
     ->name('blog.summary');
 
 Route::get('/buscar', [FrontController::class, 'search'])->name('search');
+Route::get('/media/{path}', MediaController::class)->where('path', '.*')->name('media.show');
 Route::get('/health', HealthController::class)->name('health');
 
 Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
