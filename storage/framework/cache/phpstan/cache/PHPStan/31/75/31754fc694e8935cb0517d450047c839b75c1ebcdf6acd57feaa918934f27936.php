@@ -128,7 +128,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Blog\\PostForm.php' => 
     array (
-      0 => '71369bdef7703dc83fc3cd9c391085c824d0979c592710bbc28df4ab6855b78f',
+      0 => 'ece532f513bca1e0460a1d43419e7859fec0102e3165e9fb423c68b32763b7c5',
       1 => 
       array (
         0 => 'app\\livewire\\admin\\blog\\postform',
@@ -178,7 +178,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Projects\\ProjectForm.php' => 
     array (
-      0 => 'a3b727d4ca62778634242f18c17b2863e3bd8da94f6ef29c7fa97e1ed8b85992',
+      0 => '34eb2bba469ed9de522ee21550ffe1ba37a87c4bf929d74f4ecb5ecec236b231',
       1 => 
       array (
         0 => 'app\\livewire\\admin\\projects\\projectform',
@@ -230,7 +230,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Services\\ServiceForm.php' => 
     array (
-      0 => 'cb850d62430231b1f095a1ac08e8a02b6de2474a13965c30bff69a7b8e532c1f',
+      0 => '28a227ef0e01f3788016db22d9f3e3ec8d7d5014f1211b990511cb213222ea69',
       1 => 
       array (
         0 => 'app\\livewire\\admin\\services\\serviceform',
@@ -988,7 +988,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Livewire\\Admin\\Settings\\SiteSettings.php' => 
     array (
-      0 => '013e3534ffe8aee0c2b21ba6539ae65e12a56152fc9e02e31a101f274f4699e0',
+      0 => '3b8b500ceaface345a3d4c352d34eff244580ff754b994301b010204cc402bf5',
       1 => 
       array (
         0 => 'app\\livewire\\admin\\settings\\sitesettings',
@@ -1041,7 +1041,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\helpers.php' => 
     array (
-      0 => 'c476478f378ffa5d951436ddc3b58d39e71cf771c7bde62b35dabd7f1e5bc492',
+      0 => 'aa77adf7cfbf678b2a8f9841b606b37fff18730193053e80cc49620936df208f',
       1 => 
       array (
       ),
@@ -1067,6 +1067,82 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       2 => 
       array (
         0 => 'app\\console\\commands\\handle',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Http\\Controllers\\MediaController.php' => 
+    array (
+      0 => 'c78a4116d400dedb111c0e6ec0f74d38f93ecc314f751bb5256b4a403cefc528',
+      1 => 
+      array (
+        0 => 'app\\http\\controllers\\mediacontroller',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\controllers\\__invoke',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Models\\Media.php' => 
+    array (
+      0 => '86b2851af8549260f456629fd9b835c8b267bd0d239ad28a572d01c39f51ccfe',
+      1 => 
+      array (
+        0 => 'app\\models\\media',
+      ),
+      2 => 
+      array (
+        0 => 'app\\models\\bytes',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Services\\MediaStorage.php' => 
+    array (
+      0 => '05c2027e071403939f023cfc700bc5c41c2f3700df29fd12ae70cb4d4d287d5f',
+      1 => 
+      array (
+        0 => 'app\\services\\mediastorage',
+      ),
+      2 => 
+      array (
+        0 => 'app\\services\\store',
+        1 => 'app\\services\\remember',
+        2 => 'app\\services\\exists',
+        3 => 'app\\services\\forget',
+        4 => 'app\\services\\normalizepath',
+        5 => 'app\\services\\optimize',
+        6 => 'app\\services\\applyexiforientation',
+        7 => 'app\\services\\extensionfor',
+        8 => 'app\\services\\detectmime',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\app\\Console\\Commands\\ImportMedia.php' => 
+    array (
+      0 => 'f5a9e82db3d673e1e37d2a01d4511baba2cee53229ceb7ece36b69cea0650008',
+      1 => 
+      array (
+        0 => 'app\\console\\commands\\importmedia',
+      ),
+      2 => 
+      array (
+        0 => 'app\\console\\commands\\handle',
+        1 => 'app\\console\\commands\\importfrommap',
+        2 => 'app\\console\\commands\\importfromurl',
+        3 => 'app\\console\\commands\\importfromdir',
+        4 => 'app\\console\\commands\\fetch',
+        5 => 'app\\console\\commands\\cabundle',
+        6 => 'app\\console\\commands\\referencedtargets',
+        7 => 'app\\console\\commands\\summary',
+        8 => 'app\\console\\commands\\human',
       ),
       3 => 
       array (

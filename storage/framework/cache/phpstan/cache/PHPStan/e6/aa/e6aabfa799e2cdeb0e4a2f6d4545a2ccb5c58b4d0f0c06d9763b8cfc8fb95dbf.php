@@ -1096,7 +1096,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:/Users/idmr_/OneDrive/Escritorio/gestionalo/app/helpers.php' => 
     array (
-      0 => 'c476478f378ffa5d951436ddc3b58d39e71cf771c7bde62b35dabd7f1e5bc492',
+      0 => 'aa77adf7cfbf678b2a8f9841b606b37fff18730193053e80cc49620936df208f',
       1 => 
       array (
       ),

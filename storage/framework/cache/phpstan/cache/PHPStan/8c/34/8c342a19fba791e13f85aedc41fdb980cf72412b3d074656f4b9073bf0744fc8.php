@@ -562,5 +562,20 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
+    'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\database\\migrations\\2026_10_08_130000_create_media_table.php' => 
+    array (
+      0 => 'cfcf481bd01f4c35f15456cfb3904fb7dca0b4d246b871694c71c462682d1a84',
+      1 => 
+      array (
+      ),
+      2 => 
+      array (
+        0 => 'up',
+        1 => 'down',
+      ),
+      3 => 
+      array (
+      ),
+    ),
   ),
 ));

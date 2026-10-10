@@ -33,7 +33,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\idmr_\\OneDrive\\Escritorio\\gestionalo\\routes\\web.php' => 
     array (
-      0 => 'aee846c5d4f6eb800172348fc00284ff4cc7219a28f23547db3b84ae84d854d0',
+      0 => 'c8cbc145b59948068721a12ea59dc00afe025d724b59ff2c5445c097d24702cf',
       1 => 
       array (
       ),
