@@ -47,7 +47,9 @@ RUN npm install && npm run build \
 # Set permissions and storage link
 RUN chmod -R 775 storage bootstrap/cache \
     && chmod -R 755 public \
-    && php artisan storage:link --ansi || true
+    && rm -f public/storage \
+    && rm -rf public/storage \
+    && php artisan storage:link
 
 # Make start script executable
 RUN chmod +x start.sh

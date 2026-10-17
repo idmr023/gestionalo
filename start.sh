@@ -1,6 +1,13 @@
 #!/bin/sh
 php artisan migrate --force
-php artisan storage:link || true
+# Remove any existing storage link or directory before creating symlink
+if [ -L public/storage ]; then
+    rm public/storage
+fi
+if [ -d public/storage ]; then
+    rm -rf public/storage
+fi
+php artisan storage:link
 php artisan config:cache
 php artisan route:cache
 php artisan view:cache
